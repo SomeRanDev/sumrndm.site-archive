@@ -31,19 +31,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup NodeJS and NPM
-        uses: actions/setup-node@v6
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
       - name: Setup HTML Minifier
-        run: npm i -g html-minifier
+        run: deno install -g npm:html-beautifier
+      - name: Edit Base HRefs
+        run: deno run edit-base-href sumrndm.site /sumrndm.site-archive/
       - name: Minify Everything
-        run: html-minifier --input-dir ./sumrndm.site --output-dir ./sumrndm.site --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --minify-css true --minify-js true
+        run: deno run minify-html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './sumrndm.site'
+          path: "./sumrndm.site"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

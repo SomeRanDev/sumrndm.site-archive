@@ -1,0 +1,6 @@
+{
+	"tasks": {
+		"edit-base-href": "deno run --allow-read --allow-write EditBaseHRef.ts",
+		"minify-html": "deno run -A npm:html-minifier --input-dir ./sumrndm.site --output-dir ./sumrndm.site --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --minify-css true --minify-js true"
+	}
+}
