@@ -33,7 +33,7 @@
     clear: both;
     content: "";
     display: block;
-    background-image: url("/wp-content/plugins/ninja-forms/assets/img/ninja-forms-app-header-logo@2x.png");
+    background-image: url("wp-content/plugins/ninja-forms/assets/img/ninja-forms-app-header-logo@2x.png");
     background-size: 160px 60px;
     background-repeat: no-repeat;
     background-position: 0 100%;

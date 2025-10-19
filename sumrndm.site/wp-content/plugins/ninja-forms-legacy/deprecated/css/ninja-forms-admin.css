@@ -647,7 +647,7 @@ a.tooltip span
 }
 .nf-brand-header .wpn-logo {
 	background: #fff;
-	background-image: url("/wp-content/plugins/ninja-forms-legacy/deprecated/images/wpninjas-logo.png");
+	background-image: url("wp-content/plugins/ninja-forms-legacy/deprecated/images/wpninjas-logo.png");
 	background-size: 83px 70px;
 	background-position: 0 10px;
 	background-repeat: no-repeat;

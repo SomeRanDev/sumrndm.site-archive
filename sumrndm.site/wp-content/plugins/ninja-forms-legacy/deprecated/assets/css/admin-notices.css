@@ -14,7 +14,7 @@
   clear: both;
   content: "";
   display: block;
-  background-image: url("/wp-content/plugins/ninja-forms-legacy/deprecated/assets/images/nf-logo-vert.png");
+  background-image: url("wp-content/plugins/ninja-forms-legacy/deprecated/assets/images/nf-logo-vert.png");
   background-size: 125px 83px;
   background-repeat: no-repeat;
   background-position: 0 45%;
