@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Camera Core &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Camera Core &ndash; MV Plugin Comments Feed" href="/camera-core/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/787">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/camera-core/">
+	<link rel="shortlink" href="/?p=787">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcamera-core%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcamera-core%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-787 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-787" class="post-787 post type-post status-publish format-standard hentry category-plugins category-map-plugins tag-camera tag-focus tag-map tag-mv tag-plugin tag-zoom">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Camera Core &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2017-01-13T18:01:36-05:00">January 13, 2017</time> <time class="updated" style="display:none;" datetime="2017-04-30T04:01:45-05:00">April 30, 2017</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/camera-core/#comments">25 Comments<span class="screen-reader-text"> on Camera Core &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe width="711" height="400" src="https://www.youtube.com/embed/K9Pk_3Gs5ro?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+							<p>This plugin allows developers to preform various camera motions including focusing and zooming.</p>
+							<p><span id="more-787"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/ovjn1oguxnik3lx/SRD_CameraCore.js?dl=0" target="_blank">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/ovjn1oguxnik3lx/SRD_CameraCore.js?dl=1">[Download]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>Camera Core<br>
+									SumRndmDde</p>
+								<p>This plugin allows developers to preform various camera motions including<br>
+									focusing and zooming.</p>
+								<p>=======================================================================<br>
+									Camera Focusing<br>
+									=======================================================================</p>
+								<p>If you wish for the camera to focus on something, use the following<br>
+									Plugin Commands:</p>
+								<p><strong>FocusCamera [x] [y] [duration]</strong></p>
+								<p>Insert an X and Y coordinate on the map to have the camera focus on it.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p><strong>FocusCamera event [id] [duration]</strong></p>
+								<p>Replace &ldquo;id&rdquo; with an Event&rsquo;s ID on the current map to have the camera focus<br>
+									on that specific event. The duration determines how many frames it takes the<br>
+									camera to transition.</p>
+								<p><strong>FocusCamera follower [id] [duration]</strong></p>
+								<p>Replace &ldquo;id&rdquo; with a Follower&rsquo;s index in the current party to have the camera<br>
+									focus on that specific follower. The duration determines how many frames it<br>
+									takes the camera to transition.</p>
+								<p><strong>FocusCamera player [duration]</strong></p>
+								<p>Focues the camera onto the player.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p><strong>ResetFocus [duration]</strong></p>
+								<p>Resets the focus on the camera back to the player.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p>=======================================================================<br>
+									Zooming<br>
+									=======================================================================</p>
+								<p>In order to zoom the camera in and out, use the following commands:</p>
+								<p><strong>ZoomIn [scale] [duration]</strong></p>
+								<p>Set &ldquo;scale&rdquo; to the scale you wish the camera to zoom in.<br>
+									Setting scale to 1 would be the normal scale, greater than 1 would zoom in.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p><strong>ZoomOut [scale] [duration]</strong></p>
+								<p>Set &ldquo;scale&rdquo; to the scale you wish the camera to zoom in.<br>
+									Setting scale to 1 would be the normal scale, greater than 1 would zoom out.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p><strong>ResetZoom [duration]</strong></p>
+								<p>Resets the zoom back to its default.<br>
+									The duration determines how many frames it takes the camera to transition.</p>
+								<p>=======================================================================<br>
+									Camera Shifting<br>
+									=======================================================================</p>
+								<p>If you wish to shift the camera, use the following Plugin Command:</p>
+								<p><strong>ShiftCamera [x-shift] [y-shift] [duration]</strong></p>
+								<p>This shifts the camera a certain x and/or y blocks.<br>
+									This does NOT change the camera&rsquo;s focus. If the camera&rsquo;s focused on the<br>
+									player, for example, and the camera is shifted upward 2 squares, the camera<br>
+									will continue to follow the player, only it will be shifted up two squares.</p>
+								<p>=======================================================================<br>
+									Camera Waiting<br>
+									=======================================================================</p>
+								<p>If you wish to have an event &ldquo;wait&rdquo; before a camera is done moving, use the<br>
+									following Plugin Commands:</p>
+								<p><strong>WaitForCamera</strong></p>
+								<p>This will stop the event processing until the camera has completed its focus<br>
+									and zooming.</p>
+								<p><strong>WaitForCameraFocus</strong></p>
+								<p>This will wait for the camera to complete its movement to a new focus.</p>
+								<p><strong>WaitForCameraZoom</strong></p>
+								<p>This will wait for the camera to finish its zoom motion.</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-788" src="/wp-content/uploads/2017/01/Camera-Core-SS.png" alt="" width="816" height="624" srcset="/wp-content/uploads/2017/01/Camera-Core-SS.png 816w, /wp-content/uploads/2017/01/Camera-Core-SS-150x115.png 150w, /wp-content/uploads/2017/01/Camera-Core-SS-300x229.png 300w, /wp-content/uploads/2017/01/Camera-Core-SS-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/map-plugins/" rel="tag">Map Plugins</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/camera/" rel="tag">camera</a>, <a href="/tag/focus/" rel="tag">focus</a>, <a href="/tag/map/" rel="tag">map</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a>, <a href="/tag/zoom/" rel="tag">zoom</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/translation-engine/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Translation Engine &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-message-faces/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Message Faces &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/auto-updater/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Auto Updater Plugin &ndash; MV Plugin</a></div>
+									<div class="nav-next"><a href="/auto-camera/" rel="next">Auto Camera &ndash; MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							25 thoughts on &ldquo;<span>Camera Core &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-43377">
+								<article id="comment-43377" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/52a18281089842003d5196dc84c68bb53829babda5b9e855bf26d7b8c31c5a31?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/52a18281089842003d5196dc84c68bb53829babda5b9e855bf26d7b8c31c5a31?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" decoding="async"><cite><b class="fn">Chris</b> </cite><a href="/camera-core/#comment-43377"><time datetime="2019-12-05T21:29:40-05:00">December 5, 2019 at 9:29 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>So this can be used in commercial games, right?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=43377#respond" data-commentid="43377" data-postid="787" data-belowelement="comment-43377" data-respondelement="respond" data-replyto="Reply to Chris" aria-label="Reply to Chris">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-43708">
+								<article id="comment-43708" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/52a18281089842003d5196dc84c68bb53829babda5b9e855bf26d7b8c31c5a31?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/52a18281089842003d5196dc84c68bb53829babda5b9e855bf26d7b8c31c5a31?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Chris</b> </cite><a href="/camera-core/#comment-43708"><time datetime="2019-12-12T21:54:34-05:00">December 12, 2019 at 9:54 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way to make this work as soon as the game loads? I want to have the camera zoomed permanently, but so far, this only seems to work if I step on an event &ndash; and, unfortunately, it won&rsquo;t allow me to create an event on the same square that my character starts on. </p>
+										<p>Thanks!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=43708#respond" data-commentid="43708" data-postid="787" data-belowelement="comment-43708" data-respondelement="respond" data-replyto="Reply to Chris" aria-label="Reply to Chris">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-45070">
+										<article id="comment-45070" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/1a3c13f1bd8b6ef4b57c2473e7e67a0ac8db521ed9beda68370de2ca4d7fee6d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/1a3c13f1bd8b6ef4b57c2473e7e67a0ac8db521ed9beda68370de2ca4d7fee6d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">LUKElcs</b> </cite><a href="/camera-core/#comment-45070"><time datetime="2020-01-02T21:35:10-05:00">January 2, 2020 at 9:35 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I would try using parallel events.<br>
+													When an events trigger is set to parallel, it loops continously, kind of like autorun, however, other events can run on-top<br>
+													of it, and the player can still move around. Once the zoom effect is applied, you can just switch it off with self switch.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=45070#respond" data-commentid="45070" data-postid="787" data-belowelement="comment-45070" data-respondelement="respond" data-replyto="Reply to LUKElcs" aria-label="Reply to LUKElcs">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+									<li class="comment odd alt depth-2" id="li-comment-52641">
+										<article id="comment-52641" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/9fa1c669ea796156c6cc51040b4fbc9d045dee87d00272fb330178365a435edb?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9fa1c669ea796156c6cc51040b4fbc9d045dee87d00272fb330178365a435edb?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jacob</b> </cite><a href="/camera-core/#comment-52641"><time datetime="2020-06-21T07:44:24-05:00">June 21, 2020 at 7:44 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Try having the event run as parallel.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=52641#respond" data-commentid="52641" data-postid="787" data-belowelement="comment-52641" data-respondelement="respond" data-replyto="Reply to Jacob" aria-label="Reply to Jacob">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-45355">
+								<article id="comment-45355" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/beb8d0fefadf0cabb2d46ca4f19d58195430cd9971ba2d44fb50b922b579a34e?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/beb8d0fefadf0cabb2d46ca4f19d58195430cd9971ba2d44fb50b922b579a34e?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">kwingo</b> </cite><a href="/camera-core/#comment-45355"><time datetime="2020-01-10T10:10:06-05:00">January 10, 2020 at 10:10 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;ve tried using this to that when I exit a room for example, it then is meant to focus on an enemy and move along with him, however, I am getting reference [eventID] not defined? Any ideas?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=45355#respond" data-commentid="45355" data-postid="787" data-belowelement="comment-45355" data-respondelement="respond" data-replyto="Reply to kwingo" aria-label="Reply to kwingo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-51225">
+										<article id="comment-51225" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/25abbb6e5065a20674f4228ad486d51696ae46e61f40a567e6b7adb068e2a3a7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/25abbb6e5065a20674f4228ad486d51696ae46e61f40a567e6b7adb068e2a3a7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">CSEmber</b> </cite><a href="/camera-core/#comment-51225"><time datetime="2020-05-15T22:06:25-05:00">May 15, 2020 at 10:06 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Your player will already be on the other map if you&rsquo;ve already done the transfer. Try setting your player character to transparent so they *appear* to have left but the player is still viewing the map they just exited.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=51225#respond" data-commentid="51225" data-postid="787" data-belowelement="comment-51225" data-respondelement="respond" data-replyto="Reply to CSEmber" aria-label="Reply to CSEmber">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-45926">
+								<article id="comment-45926" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/bcf2977f85a482940e27b6fb29ae0522a33c7f931f4db96181f57edd7347e0e0?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/bcf2977f85a482940e27b6fb29ae0522a33c7f931f4db96181f57edd7347e0e0?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kevin Frost</b> </cite><a href="/camera-core/#comment-45926"><time datetime="2020-01-22T23:39:57-05:00">January 22, 2020 at 11:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Great stuff here, as usual! I do have one question though. Is it possible to lock the camera to the mouse cursor?<br>
+											The project I&rsquo;m working on is based heavily on UI interaction with the mouse, and I need to be able to pan around a map a bit. If possible to be able to move the camera with mouse movement if it&rsquo;s x amount of pixels away from the center of the screen (the further from the center the faster the camera scrolls) that would be awesome!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=45926#respond" data-commentid="45926" data-postid="787" data-belowelement="comment-45926" data-respondelement="respond" data-replyto="Reply to Kevin Frost" aria-label="Reply to Kevin Frost">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-46079">
+								<article id="comment-46079" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/3a3acf99a8ee76b1704e78bc233b097d18bc87a9640b02fea5acc0b8cd2bbd62?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/3a3acf99a8ee76b1704e78bc233b097d18bc87a9640b02fea5acc0b8cd2bbd62?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">some_nerd_idk</b> </cite><a href="/camera-core/#comment-46079"><time datetime="2020-01-28T19:38:35-05:00">January 28, 2020 at 7:38 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>this plugin is great but im having problems,im using Yanfly CoreEngine and im trying to zoom out in one scene but black line appear around where the camera was,and the thing is i saw there was the option to fix the black line especifically because of the yanfly core but i put it to true and it still didnt work,would really apreciate if i could get some help.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=46079#respond" data-commentid="46079" data-postid="787" data-belowelement="comment-46079" data-respondelement="respond" data-replyto="Reply to some_nerd_idk" aria-label="Reply to some_nerd_idk">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-46858">
+								<article id="comment-46858" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d8ab3ccc6b0ba49726653be3a84d9fe0d7dc671593cb1a26fe94b9c41264284d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d8ab3ccc6b0ba49726653be3a84d9fe0d7dc671593cb1a26fe94b9c41264284d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Stompai</b> </cite><a href="/camera-core/#comment-46858"><time datetime="2020-02-13T00:59:04-05:00">February 13, 2020 at 12:59 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>It&rsquo;s a pretty good plugin, along with the smooth camera one.<br>
+											A shame that it doesn&rsquo;t work with parallaxes mapping :'(</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=46858#respond" data-commentid="46858" data-postid="787" data-belowelement="comment-46858" data-respondelement="respond" data-replyto="Reply to Stompai" aria-label="Reply to Stompai">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="pingback odd alt thread-even depth-1" id="comment-50684">
+								<p>Pingback: <a href="https://www.memoriabit.com.br/10-dicas-de-desenvolvimento-no-rpg-maker-mv/" class="url" rel="ugc external nofollow">10 dicas de desenvolvimento no RPG Maker MV - Mem&oacute;ria BIT</a> </p>
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51110">
+								<article id="comment-51110" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d6ef88c4e9b4469fe5a03c079897d7b68722bfc528f2a0ec1fdf94813a05b17c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d6ef88c4e9b4469fe5a03c079897d7b68722bfc528f2a0ec1fdf94813a05b17c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Name Name</b> </cite><a href="/camera-core/#comment-51110"><time datetime="2020-05-10T18:48:02-05:00">May 10, 2020 at 6:48 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>i keep getting a javascript error like &ldquo;Octal literals are not allowed in strict mode.&rdquo; whenever i try to activate an event thats supposed to zoom in on another event. not only that, but when the camera does work it only ever seems to want to zoom in on the center of the screen regardless of what i say&hellip;anybody got any ideas? i guess i can make my game work without being able to move the camera wherever but it sort of defeats the point of the plugin -_-</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=51110#respond" data-commentid="51110" data-postid="787" data-belowelement="comment-51110" data-respondelement="respond" data-replyto="Reply to Name Name" aria-label="Reply to Name Name">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-51674">
+										<article id="comment-51674" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/8e78aab53751442e10713782733bf1bd7acef0404acf1160c3cbf57770e44558?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/8e78aab53751442e10713782733bf1bd7acef0404acf1160c3cbf57770e44558?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Digashi Steelhead</b> </cite><a href="/camera-core/#comment-51674"><time datetime="2020-06-03T03:01:47-05:00">June 3, 2020 at 3:01 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Octal literals means something is in octal form. aka, an Id or an x value is 002 instead of 2. This confuses javascript, bc of how octals work which is a bit complicated. Just make sure there is no leading zeros, and it should work.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=51674#respond" data-commentid="51674" data-postid="787" data-belowelement="comment-51674" data-respondelement="respond" data-replyto="Reply to Digashi Steelhead" aria-label="Reply to Digashi Steelhead">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-57138">
+								<article id="comment-57138" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/80ff8a0ea0ef61eb4a8e17e0af2fdf71260b1e36bf20afc69ae4ab7cfb2b4c43?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/80ff8a0ea0ef61eb4a8e17e0af2fdf71260b1e36bf20afc69ae4ab7cfb2b4c43?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">justsomeguy</b> </cite><a href="/camera-core/#comment-57138"><time datetime="2020-08-30T19:41:21-05:00">August 30, 2020 at 7:41 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I am also getting thin black lines when zooming in during battles. </p>
+										<p>Enabling the option to fix this causes my game to crash on startup with the error: cannot read property &ldquo;x&rdquo; of undefined.</p>
+										<p>Got excited when I saw this option as this think black line has been bugging me.. only to be met with a crash 🙁</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=57138#respond" data-commentid="57138" data-postid="787" data-belowelement="comment-57138" data-respondelement="respond" data-replyto="Reply to justsomeguy" aria-label="Reply to justsomeguy">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-59221">
+								<article id="comment-59221" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/fd23f3af11bd2568292f6e12ded6e50c0ead32fac95a848eb3d92727f2b26e43?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/fd23f3af11bd2568292f6e12ded6e50c0ead32fac95a848eb3d92727f2b26e43?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="https://blog.naver.com/829kgh" class="url" rel="ugc external nofollow">ㅇㅇ</a></b> </cite><a href="/camera-core/#comment-59221"><time datetime="2020-12-29T00:25:30-05:00">December 29, 2020 at 12:25 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Just a fantastic plug-in.</p>
+										<p>I always feel that your voice in the video is very passionate!</p>
+										<p>Have a happy holiday!!!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=59221#respond" data-commentid="59221" data-postid="787" data-belowelement="comment-59221" data-respondelement="respond" data-replyto="Reply to ㅇㅇ" aria-label="Reply to ㅇㅇ">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64236">
+								<article id="comment-64236" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/341fd3b00502c4d213199b0068255659a5839463744caf1ee96fd565db3d7327?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/341fd3b00502c4d213199b0068255659a5839463744caf1ee96fd565db3d7327?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Dio</b> </cite><a href="/camera-core/#comment-64236"><time datetime="2021-03-21T15:07:39-05:00">March 21, 2021 at 3:07 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;m trying to focus the camera on a wagon that&rsquo;s moving but whenever I use the command FocusCamera event [id] [Duration] it focus in on it but wont follow it. Any idea why that might be?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64236#respond" data-commentid="64236" data-postid="787" data-belowelement="comment-64236" data-respondelement="respond" data-replyto="Reply to Dio" aria-label="Reply to Dio">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64369">
+								<article id="comment-64369" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/791dfd6da526f22ee6b96183adb35cfde456bdcd5efcc59e00e3ecc580d255e1?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/791dfd6da526f22ee6b96183adb35cfde456bdcd5efcc59e00e3ecc580d255e1?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Ari Artsy</b> </cite><a href="/camera-core/#comment-64369"><time datetime="2021-06-01T20:34:23-05:00">June 1, 2021 at 8:34 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;m having an issue. Whenever I specify it to zoom or focus on the player, it doesn&rsquo;t work. It zoomed when I changed the default zoom, but it won&rsquo;t follow the player or even focus on them. Amy fixes?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64369#respond" data-commentid="64369" data-postid="787" data-belowelement="comment-64369" data-respondelement="respond" data-replyto="Reply to Ari Artsy" aria-label="Reply to Ari Artsy">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64467">
+								<article id="comment-64467" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/dd711dcfcf212eac7cfa77c7c48eb26e8a9fef87dee776c9a9da68c140b5cdef?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dd711dcfcf212eac7cfa77c7c48eb26e8a9fef87dee776c9a9da68c140b5cdef?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">PureIceBlue</b> </cite><a href="/camera-core/#comment-64467"><time datetime="2021-07-02T16:09:09-05:00">July 2, 2021 at 4:09 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>This is been a huge help, but I&rsquo;m having one issue. The point where the camera stops scrolling when at 2x is before the actual map stops, making parts of the map unseeable. Is there a way to change the stop point with this plugin or another?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64467#respond" data-commentid="64467" data-postid="787" data-belowelement="comment-64467" data-respondelement="respond" data-replyto="Reply to PureIceBlue" aria-label="Reply to PureIceBlue">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64612">
+								<article id="comment-64612" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/ca41e46877b5fef2f0dfb19d6766db8711fc5f8af211cc5dc37bde04241fdd05?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ca41e46877b5fef2f0dfb19d6766db8711fc5f8af211cc5dc37bde04241fdd05?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Daisuki</b> </cite><a href="/camera-core/#comment-64612"><time datetime="2021-08-28T21:51:56-05:00">August 28, 2021 at 9:51 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>when i turn on the pluggin, the game says &ldquo;cannot set property paintOpacity of undefined</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64612#respond" data-commentid="64612" data-postid="787" data-belowelement="comment-64612" data-respondelement="respond" data-replyto="Reply to Daisuki" aria-label="Reply to Daisuki">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64626">
+								<article id="comment-64626" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/6b542e11c4c9c8344bbbbe827ed5fad376716ac8b4408ccb48bd28e91217d64c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/6b542e11c4c9c8344bbbbe827ed5fad376716ac8b4408ccb48bd28e91217d64c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Aandel</b> </cite><a href="/camera-core/#comment-64626"><time datetime="2021-09-06T19:32:42-05:00">September 6, 2021 at 7:32 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I really want to use this plugin.<br>
+											I use Parallax and pictures for light effects and the SRD_Camera Core plugin makes the pictures too dark.</p>
+										<p>When I disable the SRD_CameraCore, the picture returns to its original black level</p>
+										<p>Can you solve this problem?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64626#respond" data-commentid="64626" data-postid="787" data-belowelement="comment-64626" data-respondelement="respond" data-replyto="Reply to Aandel" aria-label="Reply to Aandel">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64754">
+								<article id="comment-64754" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/e19ff99a7d82d5ff568539f03421d9dcd5173183cf9b2a43083f8d3d7b513bd1?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/e19ff99a7d82d5ff568539f03421d9dcd5173183cf9b2a43083f8d3d7b513bd1?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Omar</b> </cite><a href="/camera-core/#comment-64754"><time datetime="2021-11-24T23:54:35-05:00">November 24, 2021 at 11:54 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello! So I wanted to use this plugin but every time I try to test it to see if it works or not in my game it would just show me a black screen and the plugin would not work. Is there something I can do to fix this?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64754#respond" data-commentid="64754" data-postid="787" data-belowelement="comment-64754" data-respondelement="respond" data-replyto="Reply to Omar" aria-label="Reply to Omar">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64829">
+								<article id="comment-64829" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/100face527b65a0295dadc28e1fae23306a30dd469f19b53d4553ff2cfb2f652?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/100face527b65a0295dadc28e1fae23306a30dd469f19b53d4553ff2cfb2f652?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Bex</b> </cite><a href="/camera-core/#comment-64829"><time datetime="2022-01-21T22:41:43-05:00">January 21, 2022 at 10:41 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>This Plugin is awesome, it opens up so many possibilities for more creativity.<br>
+											Thank you very much for it.<br>
+											This should be a standard functionality of the next upcoming RPG Maker.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64829#respond" data-commentid="64829" data-postid="787" data-belowelement="comment-64829" data-respondelement="respond" data-replyto="Reply to Bex" aria-label="Reply to Bex">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64973">
+								<article id="comment-64973" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/dedfceeafe763990b285f69bf88bb2ab83e6894ef5507099af573f303a64cf32?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dedfceeafe763990b285f69bf88bb2ab83e6894ef5507099af573f303a64cf32?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Walter</b> </cite><a href="/camera-core/#comment-64973"><time datetime="2022-03-29T14:47:35-05:00">March 29, 2022 at 2:47 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;m trying to use this plugin but it conflicts with Shaz&rsquo;s tile size plugin and causing the camera not properly focus on the player.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=64973#respond" data-commentid="64973" data-postid="787" data-belowelement="comment-64973" data-respondelement="respond" data-replyto="Reply to Walter" aria-label="Reply to Walter">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65221">
+								<article id="comment-65221" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/73f0d95c5e8b189a40db070d3b21863fa0437e59ddc83aa2aa18466de0c50584?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/73f0d95c5e8b189a40db070d3b21863fa0437e59ddc83aa2aa18466de0c50584?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">ArtisticChaos</b> </cite><a href="/camera-core/#comment-65221"><time datetime="2023-03-25T11:36:44-05:00">March 25, 2023 at 11:36 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>This plugin is VERY handy and all that but theres one problem when going into the plugin settings i can change the default zoom and i changed it to 2 but for some reason the edge of the map is not seen by 3 times the 48 square (I dont know how to properly say it)<br>
+											Theres just basically a big gap inbetween the actouly edge of the screen and what you can see as the player and that is very&hellip; annoying and i was hoping that this is just a bug that can be fixed</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=65221#respond" data-commentid="65221" data-postid="787" data-belowelement="comment-65221" data-respondelement="respond" data-replyto="Reply to ArtisticChaos" aria-label="Reply to ArtisticChaos">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65281">
+										<article id="comment-65281" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/3700fb4e1524309565cdf100f7fe8678d1852ad2a5a773914130987216a85a0f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/3700fb4e1524309565cdf100f7fe8678d1852ad2a5a773914130987216a85a0f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">dsfjghyb</b> </cite><a href="/camera-core/#comment-65281"><time datetime="2023-08-05T10:32:00-05:00">August 5, 2023 at 10:32 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Just make the map bigger by 3 squares around all the edges, keep the edges blank. That way the camera &ldquo;cuts off&rdquo; the edges and you can move to the absolute edge of your map as intended.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=65281#respond" data-commentid="65281" data-postid="787" data-belowelement="comment-65281" data-respondelement="respond" data-replyto="Reply to dsfjghyb" aria-label="Reply to dsfjghyb">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65510">
+								<article id="comment-65510" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/7e2d275e881071b6037ff0fbb7181d9605543ede583867f8e6db0eb1b2e86ab2?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/7e2d275e881071b6037ff0fbb7181d9605543ede583867f8e6db0eb1b2e86ab2?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">LumiPixel</b> </cite><a href="/camera-core/#comment-65510"><time datetime="2024-06-02T11:45:20-05:00">June 2, 2024 at 11:45 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>It&rsquo;s a great plugin I&rsquo;ve ever use. But unfortunately, it doesn&rsquo;t work for another plugin like MOG_Weather_EX (Moghunter). If I want to use the plugin, I have to turn off one of the plugins. But tbh, this Camera Core plugin is the best for me.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/camera-core/?replytocom=65510#respond" data-commentid="65510" data-postid="787" data-belowelement="comment-65510" data-respondelement="respond" data-replyto="Reply to LumiPixel" aria-label="Reply to LumiPixel">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/camera-core/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="787" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+</body>
+
+</html>

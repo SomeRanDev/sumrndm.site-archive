@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Battle Status Customizer &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Battle Status Customizer &ndash; MV Plugin Comments Feed" href="/battle-status-customizer/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/738">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/battle-status-customizer/">
+	<link rel="shortlink" href="/?p=738">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fbattle-status-customizer%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fbattle-status-customizer%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-738 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-738" class="post-738 post type-post status-publish format-standard hentry category-plugins category-battle-plugins tag-battle tag-gui tag-mv tag-plugin tag-status">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Battle Status Customizer &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2016-12-31T20:00:52-05:00">December 31, 2016</time> <time class="updated" style="display:none;" datetime="2017-04-30T04:02:30-05:00">April 30, 2017</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/battle-status-customizer/#comments">16 Comments<span class="screen-reader-text"> on Battle Status Customizer &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe width="711" height="400" src="https://www.youtube.com/embed/Tsr5jkr8AR4?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+							<p>This plugin gives developers control over the information provided within the Battle Status windows for each Actor.</p>
+							<p><span id="more-738"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/ei39j6r3j08m5r3/SRD_BattleStatusCustomizer.js?dl=0" target="_blank">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/ei39j6r3j08m5r3/SRD_BattleStatusCustomizer.js?dl=1">[Download Part 1]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/7m5anapnztq6mnj/SRD_BattleStatusCustomizer_Part2.js?dl=1">[Download Part 2]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>Battle Status Customizer<br>
+									SumRndmDde</p>
+								<p>This plugin gives developers control over the information provided within<br>
+									the Battle Status windows for each Actor.</p>
+								<p>This plugin requires that you have both PARTS 1 and 2!<br>
+									Be sure you have them installed!</p>
+								<p>=======================================================================<br>
+									Part System<br>
+									=======================================================================</p>
+								<p>Within this plugin, each Actor is given it&rsquo;s own window. These windows<br>
+									act as the Actor&rsquo;s small section for information.</p>
+								<p>In order to customize which pieces appear within the Actor&rsquo;s section,<br>
+									one can use the &ldquo;Default Parts Used&rdquo;. However, if one wants to specify<br>
+									the parts used, they can use the following notetag:</p>
+								<p><strong>&lt;Battle Status Parts: parts&gt;</strong></p>
+								<p>For example:</p>
+								<p><strong>&lt;Battle Status Parts: Face, Icons, Text 1, Text 2, Gauge 1, Gauge 2&gt;</strong></p>
+								<p>&nbsp;</p>
+								<p><em>All the parts that are available are:</em></p>
+								<p><strong>Face</strong></p>
+								<p>Shows the Actor&rsquo;s face.</p>
+								<p><strong>Icons</strong></p>
+								<p>Shows the State Icons for an Actor.</p>
+								<p><strong>Text [num]</strong></p>
+								<p>Shows a text defined in the Parameters.</p>
+								<p><strong>Gauge [num]</strong></p>
+								<p>Shows a text defined in the Parameters.</p>
+								<p>=======================================================================<br>
+									Actors Notetags<br>
+									=======================================================================</p>
+								<p>In order to specifically customize the window tone for an Actor&rsquo;s window,<br>
+									use the following notetag:</p>
+								<p><strong>&lt;Battle Status Window Tone: red, green, blue&gt;</strong></p>
+								<p>For example:</p>
+								<p><strong>&lt;Battle Status Window Tone: 100, -50, 0&gt;</strong></p>
+								<p>=======================================================================</p>
+								<p>In order to customize the window skin used for an Actor&rsquo;s window, use<br>
+									the following notetag:</p>
+								<p><strong>&lt;Battle Status Window Skin: filename&gt;</strong></p>
+								<p>Determines a special window skin to use for the Actor&rsquo;s window.</p>
+								<p><strong>&lt;Battle Status Window Skin: Window2&gt;</strong></p>
+								<p>=======================================================================</p>
+								<p>In order to customize the opacity of the Actor&rsquo;s window, use the following<br>
+									notetag:</p>
+								<p><strong>&lt;Battle Status Window Opacity: opacity&gt;</strong></p>
+								<p>For example:</p>
+								<p><strong>&lt;Battle Status Window Opacity: 192&gt;</strong></p>
+								<p>=======================================================================<br>
+									Plugin Command<br>
+									=======================================================================</p>
+								<p>If you wish to change an Actor&rsquo;s part list, use this plugin command:</p>
+								<p><strong>SetBattleStatusParts [actorId] [partList]</strong></p>
+								<p>For example:</p>
+								<p><strong>SetBattleStatusParts 2 Face, Icons, Text 1, Text 2, Gauge 1, Gauge 2</strong></p>
+								<p>=======================================================================<br>
+									Absorption Barrier<br>
+									=======================================================================</p>
+								<p>If you&rsquo;re using Yanfly&rsquo;s Absorption Barrier, and you wish to create an<br>
+									HP bar with it, simply input:</p>
+								<p><strong>&lt;Draw Absorption Barrier&gt;</strong></p>
+								<p>within the &ldquo;Text&rdquo; input for a gauge.</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-740" src="/wp-content/uploads/2016/12/Battle-Status-Customizer-SS.png" alt="" width="816" height="624" srcset="/wp-content/uploads/2016/12/Battle-Status-Customizer-SS.png 816w, /wp-content/uploads/2016/12/Battle-Status-Customizer-SS-150x115.png 150w, /wp-content/uploads/2016/12/Battle-Status-Customizer-SS-300x229.png 300w, /wp-content/uploads/2016/12/Battle-Status-Customizer-SS-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/battle-plugins/" rel="tag">Battle Plugins</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/battle/" rel="tag">battle</a>, <a href="/tag/gui/" rel="tag">GUI</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a>, <a href="/tag/status/" rel="tag">status</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/translation-engine/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Translation Engine &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-message-faces/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Message Faces &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/battle-gui-core/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Battle GUI Core &ndash; MV Plugin</a></div>
+									<div class="nav-next"><a href="/different-menu/" rel="next">Different Menu Plugin &ndash; MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							16 thoughts on &ldquo;<span>Battle Status Customizer &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-21860">
+								<article id="comment-21860" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/78434c53acdbea32694d7d9076c9b8f8016a13a426bb99ba2e21fd2cfd2fc138?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/78434c53acdbea32694d7d9076c9b8f8016a13a426bb99ba2e21fd2cfd2fc138?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" decoding="async"><cite><b class="fn">Matthew R</b> </cite><a href="/battle-status-customizer/#comment-21860"><time datetime="2019-09-29T12:38:26-05:00">September 29, 2019 at 12:38 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there is a way to temporarily hide some Battle Status Parts?? In other words, I&rsquo;m trying to create a system in which I have a meter that has multiple units that deplete when used. I&rsquo;m trying to use a plugin command to change the parts that are currently being used during a battle but it tells me, &ldquo;assignment to constant variable.&rdquo; I also have active updating set to &ldquo;true.&rdquo;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=21860#respond" data-commentid="21860" data-postid="738" data-belowelement="comment-21860" data-respondelement="respond" data-replyto="Reply to Matthew R" aria-label="Reply to Matthew R">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-46317">
+								<article id="comment-46317" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/011f4c6a67f7736e90810c0335a1df0e94e87385ae8f3fb879fa419a587b2089?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/011f4c6a67f7736e90810c0335a1df0e94e87385ae8f3fb879fa419a587b2089?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Banjoman</b> </cite><a href="/battle-status-customizer/#comment-46317"><time datetime="2020-02-02T12:17:10-05:00">February 2, 2020 at 12:17 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;ve have it pulling in Yanfly&rsquo;s ATB bar but can&rsquo;t figure out how to get it to change for &ldquo;Charging.&rdquo;<br>
+											Is that a possible thing to do?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=46317#respond" data-commentid="46317" data-postid="738" data-belowelement="comment-46317" data-respondelement="respond" data-replyto="Reply to Banjoman" aria-label="Reply to Banjoman">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-48448">
+								<article id="comment-48448" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c40de9ef3b578a75d3d6c1709a25e5de0a3557f0cf59be1600e5b1b989f9c83e?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c40de9ef3b578a75d3d6c1709a25e5de0a3557f0cf59be1600e5b1b989f9c83e?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">ForbiddenKraken</b> </cite><a href="/battle-status-customizer/#comment-48448"><time datetime="2020-03-10T23:01:45-05:00">March 10, 2020 at 11:01 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>When I tried to do the Yanfly Window Skins I&rsquo;m getting the following error:</p>
+										<p>Failed to load: imag/system/Grey.png</p>
+										<p>Why is this? I&rsquo;m on a Mac Desktop using rpg maker mv through steam.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=48448#respond" data-commentid="48448" data-postid="738" data-belowelement="comment-48448" data-respondelement="respond" data-replyto="Reply to ForbiddenKraken" aria-label="Reply to ForbiddenKraken">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-50024">
+										<article id="comment-50024" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/0644fc69fb1653a40b2e9f710ced51aba4cbe22895d2bedeabf0902809f5effd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0644fc69fb1653a40b2e9f710ced51aba4cbe22895d2bedeabf0902809f5effd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Buttmuncher</b> </cite><a href="/battle-status-customizer/#comment-50024"><time datetime="2020-04-04T21:06:27-05:00">April 4, 2020 at 9:06 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Check that everything is spelled properly in what you&rsquo;ve entered, and try again.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=50024#respond" data-commentid="50024" data-postid="738" data-belowelement="comment-50024" data-respondelement="respond" data-replyto="Reply to Buttmuncher" aria-label="Reply to Buttmuncher">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51484">
+								<article id="comment-51484" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/7c6e83baa1093b4fdbaff35e51a8e96f91e71a601b2088c2443370321b6305e8?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/7c6e83baa1093b4fdbaff35e51a8e96f91e71a601b2088c2443370321b6305e8?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nascimento</b> </cite><a href="/battle-status-customizer/#comment-51484"><time datetime="2020-05-27T01:49:41-05:00">May 27, 2020 at 1:49 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>So, if i want to show def parameter name, how exactly i do that? i do show the valor but can&rsquo;t show the name in the bar, TextManager.def doesn&rsquo;t work&hellip;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=51484#respond" data-commentid="51484" data-postid="738" data-belowelement="comment-51484" data-respondelement="respond" data-replyto="Reply to Nascimento" aria-label="Reply to Nascimento">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-52038">
+								<article id="comment-52038" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/4bef8c230a8e05983e5fe53ed721c0b4fe288f283422779cc36889778dda2978?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4bef8c230a8e05983e5fe53ed721c0b4fe288f283422779cc36889778dda2978?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nyar99</b> </cite><a href="/battle-status-customizer/#comment-52038"><time datetime="2020-06-11T11:31:35-05:00">June 11, 2020 at 11:31 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way to show only the gauge current and not the gauge max? Leaving the space blank make the entire gauge disappear.<br>
+											Alternatively, is there a function that points at how many absorbtion barrier points you had at the start of the battle? In the game I&rsquo;m making they change with the class (which you can swap) and not the actor, so I can&rsquo;t simply write a Mathematical function that describes them, unless we can select which cauges we show with the class and not with the actor</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=52038#respond" data-commentid="52038" data-postid="738" data-belowelement="comment-52038" data-respondelement="respond" data-replyto="Reply to Nyar99" aria-label="Reply to Nyar99">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-56215">
+								<article id="comment-56215" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/55fe01d12f3cfb00b0cc7e3d401204687e787222059f809afaca7cf449f0dc16?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/55fe01d12f3cfb00b0cc7e3d401204687e787222059f809afaca7cf449f0dc16?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Sam</b> </cite><a href="/battle-status-customizer/#comment-56215"><time datetime="2020-08-13T17:35:49-05:00">August 13, 2020 at 5:35 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Uhh, are damage popups implemented or is that something I either have broken or conflicting with another plugin?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=56215#respond" data-commentid="56215" data-postid="738" data-belowelement="comment-56215" data-respondelement="respond" data-replyto="Reply to Sam" aria-label="Reply to Sam">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-58642">
+								<article id="comment-58642" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/678719b18aa761495664037c91a7bc0ae29c3c56b81571d4a261910132418340?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/678719b18aa761495664037c91a7bc0ae29c3c56b81571d4a261910132418340?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">RosstheBoss0</b> </cite><a href="/battle-status-customizer/#comment-58642"><time datetime="2020-10-19T22:31:47-05:00">October 19, 2020 at 10:31 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi, SRD!</p>
+										<p>I&rsquo;m having an issue with the BattleStatusUpgrade for MV.<br>
+											As soon as battle begins, I get the error </p>
+										<p>&ldquo;Cannot read property &lsquo;1&rsquo; of undefined&rdquo;</p>
+										<p>I&rsquo;ve been looking for a solution but but have to yet to find one.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=58642#respond" data-commentid="58642" data-postid="738" data-belowelement="comment-58642" data-respondelement="respond" data-replyto="Reply to RosstheBoss0" aria-label="Reply to RosstheBoss0">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-58703">
+								<article id="comment-58703" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/6599ed612af33bf13f9ed9e18cb5064fcb7619e3386b8d1755b92108ebe5686b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/6599ed612af33bf13f9ed9e18cb5064fcb7619e3386b8d1755b92108ebe5686b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">S.E.</b> </cite><a href="/battle-status-customizer/#comment-58703"><time datetime="2020-11-23T12:16:01-05:00">November 23, 2020 at 12:16 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way to change the position of the gauge texts? They don&rsquo;t seem to be affected by the global settings.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=58703#respond" data-commentid="58703" data-postid="738" data-belowelement="comment-58703" data-respondelement="respond" data-replyto="Reply to S.E." aria-label="Reply to S.E.">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64341">
+								<article id="comment-64341" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/887fcf616a98ad91b1cfb24184572cea28dc7045fb0bffcf5e26ecb4eca27d89?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/887fcf616a98ad91b1cfb24184572cea28dc7045fb0bffcf5e26ecb4eca27d89?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Micheal Gerweck</b> </cite><a href="/battle-status-customizer/#comment-64341"><time datetime="2021-05-20T07:57:16-05:00">May 20, 2021 at 7:57 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Thank you so much for your plugins. This one helped me a TON in making a Phantasy Star looking battle system.<br>
+											You&rsquo;re a legend.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=64341#respond" data-commentid="64341" data-postid="738" data-belowelement="comment-64341" data-respondelement="respond" data-replyto="Reply to Micheal Gerweck" aria-label="Reply to Micheal Gerweck">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-64399">
+										<article id="comment-64399" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/f7009e52af025c6510b8ce3e0a7d4059e0f9e63e33ee344711a9d546559e5477?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f7009e52af025c6510b8ce3e0a7d4059e0f9e63e33ee344711a9d546559e5477?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Azel</b> </cite><a href="/battle-status-customizer/#comment-64399"><time datetime="2021-06-16T12:53:35-05:00">June 16, 2021 at 12:53 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>What is the direction for the skins, is that at the time of putting them in the game only transparent</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=64399#respond" data-commentid="64399" data-postid="738" data-belowelement="comment-64399" data-respondelement="respond" data-replyto="Reply to Azel" aria-label="Reply to Azel">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65074">
+								<article id="comment-65074" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/63daaba27bfebc0b6dbfd0c076d979a2847a55e6607657ea9749a163d2a725ef?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/63daaba27bfebc0b6dbfd0c076d979a2847a55e6607657ea9749a163d2a725ef?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Xavier91</b> </cite><a href="/battle-status-customizer/#comment-65074"><time datetime="2022-07-22T10:47:15-05:00">July 22, 2022 at 10:47 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Okay, problem. I followed your instructions to the letter with a brand new test project. I installed both customizers and nothing has changed it is still all text based, no actor images or anything. What am I missing?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=65074#respond" data-commentid="65074" data-postid="738" data-belowelement="comment-65074" data-respondelement="respond" data-replyto="Reply to Xavier91" aria-label="Reply to Xavier91">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65243">
+								<article id="comment-65243" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c6a92da53a15a6a9083ecfb30bc671ea9fdd0e608a57a4251060673a532778f5?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c6a92da53a15a6a9083ecfb30bc671ea9fdd0e608a57a4251060673a532778f5?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kiramu</b> </cite><a href="/battle-status-customizer/#comment-65243"><time datetime="2023-06-28T08:59:48-05:00">June 28, 2023 at 8:59 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello, does &ldquo;Supertools Engine &ldquo;work with this plugin?<br>
+											Because when I try to move the window status of individual actors using the &ldquo;menu editor&rdquo;, it doesn&rsquo;t save the changes. I would like to be able to move them freely. How can I do that? Thanks!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=65243#respond" data-commentid="65243" data-postid="738" data-belowelement="comment-65243" data-respondelement="respond" data-replyto="Reply to Kiramu" aria-label="Reply to Kiramu">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65435">
+								<article id="comment-65435" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/41031e572ed83a4344d4834510de9adc0b3b809e965ae93668d4573fe8f701e5?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/41031e572ed83a4344d4834510de9adc0b3b809e965ae93668d4573fe8f701e5?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Leonardotexc</b> </cite><a href="/battle-status-customizer/#comment-65435"><time datetime="2023-12-02T13:55:46-05:00">December 2, 2023 at 1:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there anyway to change the max health / health number position on the bar? im really having trouble to make it</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=65435#respond" data-commentid="65435" data-postid="738" data-belowelement="comment-65435" data-respondelement="respond" data-replyto="Reply to Leonardotexc" aria-label="Reply to Leonardotexc">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65495">
+								<article id="comment-65495" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/82c9a29e4516e3894a6d267e66d78e82d0085d45b35f144841ab48acfe400f85?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/82c9a29e4516e3894a6d267e66d78e82d0085d45b35f144841ab48acfe400f85?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nguyen Thanh Dat</b> </cite><a href="/battle-status-customizer/#comment-65495"><time datetime="2024-05-12T05:18:28-05:00">May 12, 2024 at 5:18 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>i got this problem. and i dont know how to fix this</p>
+										<p>TypeError<br>
+											Cannot read property &lsquo;1&rsquo; of undefined</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=65495#respond" data-commentid="65495" data-postid="738" data-belowelement="comment-65495" data-respondelement="respond" data-replyto="Reply to Nguyen Thanh Dat" aria-label="Reply to Nguyen Thanh Dat">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65592">
+								<article id="comment-65592" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/95544f8bb817ccb6fb685d50cb7644f70d40e59f59632a5878a8bd94f03b656b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/95544f8bb817ccb6fb685d50cb7644f70d40e59f59632a5878a8bd94f03b656b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">K-apple</b> </cite><a href="/battle-status-customizer/#comment-65592"><time datetime="2025-03-10T17:48:14-05:00">March 10, 2025 at 5:48 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I am using some plugins called YEP_BattleStatusWindow and GBCCoffe_MV_FrontViewActorAnimations (they allow attack animations to be played by the enemy over the Player Portraits). But this plugin seems to be disabling those. Is there something I can do to fix that or is that just a normal side effect?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/battle-status-customizer/?replytocom=65592#respond" data-commentid="65592" data-postid="738" data-belowelement="comment-65592" data-respondelement="respond" data-replyto="Reply to K-apple" aria-label="Reply to K-apple">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/battle-status-customizer/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="738" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+</body>
+
+</html>

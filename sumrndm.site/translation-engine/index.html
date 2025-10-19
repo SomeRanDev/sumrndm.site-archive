@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Translation Engine &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Translation Engine &ndash; MV Plugin Comments Feed" href="/translation-engine/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/3989">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/translation-engine/">
+	<link rel="shortlink" href="/?p=3989">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Ftranslation-engine%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Ftranslation-engine%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-3989 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-3989" class="post-3989 post type-post status-publish format-standard hentry category-plugins category-tool-plugins tag-engine tag-mv tag-plugin tag-tool tag-translation">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Translation Engine &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2018-03-12T14:01:35-05:00">March 12, 2018</time> <time class="updated" style="display:none;" datetime="2018-03-12T14:04:02-05:00">March 12, 2018</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/translation-engine/#comments">19 Comments<span class="screen-reader-text"> on Translation Engine &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe width="711" height="400" src="https://www.youtube.com/embed/BWw1a2TskM4?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+							<p><em>This plugin does not have any dependencies.</em></p>
+							<p>This plugin provides game developers with tools necessary to easily and effectively translate and localize all the text within their game. This is through both an in-game tool that can be used while playtesting and a powerful notetag system for translating database inputs.</p>
+							<p><span id="more-3989"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/112djn7ydqh57rv/SRD_TranslationEngine.js?dl=0" target="_blank" rel="noopener noreferrer">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/112djn7ydqh57rv/SRD_TranslationEngine.js?dl=1">[Download]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/qouajigd5unntxd/Translation%20Engine.zip?dl=1">[Demo Project]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>=======================================================================<br>
+									Translation Engine<br>
+									SumRndmDde<br>
+									=======================================================================<br>
+									This plugin provides game developers with tools necessary to easily and<br>
+									effectively translate and localize all the text within their game. This is<br>
+									through both an in-game tool that can be used while playtesting and a<br>
+									powerful notetag system for translating database inputs.</p>
+								<p>=======================================================================<br>
+									Installing the Plugin<br>
+									=======================================================================<br>
+									Here&rsquo;s a quick overview on how to properly install the plugin:</p>
+								<p>1) Place this plugin at the bottom of your plugin list!</p>
+								<p>2) Fill out the [Languages] plugin parameter with all the languages the<br>
+									game will be translated to.</p>
+								<p>3) Set the [Source Language Name] plugin parameter to the name of the<br>
+									language used by the text by default.</p>
+								<p>4) Finally, set [Provide Option?] ON or OFF based on whether or not you<br>
+									wish to provide the player with the option to change the language in<br>
+									the options menu.</p>
+								<p>=======================================================================<br>
+									How to open the Translation App<br>
+									=======================================================================<br>
+									While playtesting, press [CTRL + T] on Windows or [CMD + T] on Mac in<br>
+									order to open the &ldquo;Translation App&rdquo;. This is an app/editor that allows<br>
+									one to set up translations while playing the game.</p>
+								<p>Once the app is open, it will act as a separate window from the game<br>
+									window.</p>
+								<p>Here are a few rules that apply:</p>
+								<p>1) While the app is open, the game will only show the default text. You<br>
+									may not view translations unless the tool is closed. This is to help<br>
+									avoid confusion while editing since changes will not be applied until<br>
+									the app window is closed.</p>
+								<p>2) The game cannot completely shut down unless both the game window and the<br>
+									editor window are both closed. If, for some reason, you cannot playtest<br>
+									your game, be sure the Translation App is closed!</p>
+								<p>3) The app will save its position when it is closed. If you open it again,<br>
+									it will appear where it left off! However, once you close or reset the<br>
+									game, its position will also be reset.</p>
+								<p>=======================================================================<br>
+									How to use the Translation App<br>
+									=======================================================================<br>
+									To start translating, first select the language you wish to translate to<br>
+									in the top-right corner of the app. Next, select what aspect of your game<br>
+									you wish to translate. All four choices appear as tabs you may select from<br>
+									the top of the editor. They are:</p>
+								<p>~ Messages<br>
+									~ Commands<br>
+									~ Terms<br>
+									~ Custom Translations</p>
+								<p>Here&rsquo;s an explanation of each one:</p>
+								<p>=========================<br>
+									Messages<br>
+									=========================<br>
+									This allows developers to provide translations for text within &ldquo;Show Text&rdquo;<br>
+									events and &ldquo;Show Scrolling Text&rdquo; events. While the &ldquo;Messages&rdquo; tab is open,<br>
+									the Original input will update itself to the current text displayed within<br>
+									one of the aforementioned events. If neither of those events are active,<br>
+									the input will remain blank.</p>
+								<p>While Original input box has text in it, one may create a translation for<br>
+									the displayed text in the Translation input box. Simply type the text in<br>
+									and it will save automatically!</p>
+								<p>Keep in mind the translations should include the desired text codes!</p>
+								<p>Also, this mode works great with the Event &ldquo;Test&rdquo; feature!</p>
+								<p>=========================<br>
+									Commands<br>
+									=========================<br>
+									One may provide translations for any command windows using the &ldquo;Commands&rdquo;<br>
+									tab. While this tab is open, all one must do is have an active cursor on<br>
+									a command window, and the Original input will update itself. Insert a<br>
+									corresponding translation into the Translation input to translate the<br>
+									command!</p>
+								<p>Some windows that fall under the category of &ldquo;command windows&rdquo; include:</p>
+								<p>* The title screen command window<br>
+									* The menu command window<br>
+									* Command menus in other scenes<br>
+									* The options window<br>
+									* The game end window<br>
+									* Event choice windows</p>
+								<p>This, of course, will also work with command windows added through<br>
+									external plugins. Don&rsquo;t be afraid to experiment!</p>
+								<p>=========================<br>
+									Terms<br>
+									=========================<br>
+									This section allows developers to translate the terms and messages from<br>
+									within their project&rsquo;s Database&rsquo;s Terms tab. All the Base Statuses,<br>
+									Parameters, and Messages can be translated here. First, select the &ldquo;Term&rdquo;<br>
+									from the dropdown list. Next, input a translation based upon the provided<br>
+									Original input that contains the current text for that term.</p>
+								<p>Similar to the previous tabs, once you insert the text into the Translation<br>
+									box, it will immediately be saved!</p>
+								<p>When one begins his or her translation process, it is recommended he or<br>
+									she starts the process here. This tab provides the capability to make a<br>
+									large number of helpful base translations!</p>
+								<p>=========================<br>
+									Custom Translations<br>
+									=========================<br>
+									Custom translations allow for developers to set a word to phrase to<br>
+									specifically translate into another. This is primarily used to translate<br>
+									text that cannot be translated through any of the other mediums provided<br>
+									through this plugin. Use this as a last resort for anything you cannot<br>
+									translate normally!</p>
+								<p>In order to add a translation, simply fill out both the &ldquo;Original&rdquo; and<br>
+									&ldquo;Translation&rdquo; inputs, then press the &ldquo;Add Translation&rdquo; button. This will<br>
+									add the pair to a list of custom translations displayed on the lower-half<br>
+									of the page.</p>
+								<p>In order to delete a translation, fill out the &ldquo;Original&rdquo; input with the<br>
+									original text for that translation, then press the &ldquo;Delete Translation&rdquo;<br>
+									button. This will remove that translation pair from both the list and the<br>
+									game itself.</p>
+								<p>=========================<br>
+									RegExp Translations<br>
+									=========================<br>
+									Custom translations can also use Regular Expressions. As opposed to the<br>
+									normal custom translations which require exact matching in order to work,<br>
+									Regular Expressions can allow for more dynamic checks and replacements from<br>
+									within larger bodies of text.</p>
+								<p>In order to setup a Regular Expression, simply set the Original input to<br>
+									have a Regular Expression using the typical JavaScript format:</p>
+								<p>/expression/flags</p>
+								<p>For example:</p>
+								<p>/Harold/ig</p>
+								<p>This example will check all texts for this match and apply a replacement<br>
+									in order to replace this with the text defined in the Translation input.</p>
+								<p>=======================================================================<br>
+									Translating the Database<br>
+									=======================================================================<br>
+									The second part of this plugin revolves around translating Database inputs<br>
+									by using a notetag setup to translate specific fields. This can be done<br>
+									with Actors, Classes, Skills, Items, Weapons, Armors, Enemies, States, and<br>
+									Tilesets.</p>
+								<p>To do this, use the following notetag structure:</p>
+								[PROP]:VAL<br>
+								[PROP]:VAL<br>
+								&lt;/LANGUAGE Translation&gt;
+								[LANGUAGE] =&gt; The name of the language this is a translation for.<br>
+								[PROP] =&gt; A field name for this data object.<br>
+								[VAL] =&gt; The translated value for that data object&rsquo;s field.
+								<p>=========================<br>
+									Example<br>
+									=========================<br>
+									This may appear to be a little confusing, but here is an example that one<br>
+									may use to translate an Actor&rsquo;s fields:</p>
+								<p>&lt;Spanish Translation&gt;<br>
+									[name]:Haroldo<br>
+									[nickname]:Harldy<br>
+									[profile]:Este es el h&eacute;roe del juego.<br>
+									Le gusta caminar por la playa y jugar juegos.<br>
+									&lt;/Spanish Translation&gt;</p>
+								<p>This means, when the language is set to Spanish, this Actor will have the<br>
+									following changes:</p>
+								<p>Name will be set to &ldquo;Haroldo&rdquo;.<br>
+									Nickname will be set to &ldquo;Harldy&rdquo;.<br>
+									Profile will be set to &ldquo;Este es el h&eacute;roe del juego.<br>
+									Le gusta caminar por la playa y jugar juegos.&rdquo;</p>
+								<p>=========================<br>
+									All Common Fields<br>
+									=========================<br>
+									Here is a list of all the common field names you may wish to use<br>
+									corresponding to each Database section:</p>
+								<p><strong>[Actors]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									[profile]:<br>
+									[nickname]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[Classes]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[Skills]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									[description]:<br>
+									[message1]:<br>
+									[message2]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[Items, Weapons, Armors]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									[description]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[Enemies]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[States]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									[message1]:<br>
+									[message2]:<br>
+									[message3]:<br>
+									[message4]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p><strong>[Tilesets]</strong><br>
+									&lt;LANGUAGE Translation&gt;<br>
+									[name]:<br>
+									&lt;/LANGUAGE Translation&gt;</p>
+								<p>=======================================================================<br>
+									Different Images Based on Language<br>
+									=======================================================================<br>
+									One may load alternative images based on the game&rsquo;s language. To do this,<br>
+									one must use the following format for the image file name:</p>
+								<p>IMAGENAME_[LANGUAGE]
+								</p>
+								<p>To allow the plugin to recognize that an image can be translated, first<br>
+									set the original image&rsquo;s file name to:</p>
+								<p>IMAGENAME_[Original]
+								</p>
+								<p>Then set up names for all your alternative images:</p>
+								<p>IMAGENAME_[Spanish]
+									IMAGENAME_[Portuguese]
+								</p>
+								<p>Be sure to set up images for all languages in your game!</p>
+								<p>=======================================================================<br>
+									Plugin Commands<br>
+									=======================================================================<br>
+									In order to force the game to use a specific language, the following<br>
+									plugin command must be invoked in an event. This can be different for<br>
+									every game file.</p>
+								<p>SetTranslation LANGUAGE</p>
+								<p>For example:</p>
+								<p>SetTranslation Spanish</p>
+								<p>=======================================================================<br>
+									Once a language is forced, it cannot be changed in the options menu.<br>
+									In order to remove a forced translation, use the plugin command:</p>
+								<p>RevertTranslation</p>
+								<p>=======================================================================<br>
+									Checking Current Language<br>
+									=======================================================================<br>
+									In order to change events based on the current language, the following<br>
+									script condition needs to be used:</p>
+								<p>ConfigManager.getLanguage() === &ldquo;LANGUAGE&rdquo;</p>
+								<p>For example:</p>
+								<p>ConfigManager.getLanguage() === &ldquo;Spanish&rdquo;</p>
+								<p>=======================================================================<br>
+									End of Help Section<br>
+									=======================================================================</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-3990" src="/wp-content/uploads/2018/03/Translation-Engine-SS.png" alt="" width="1327" height="673" srcset="/wp-content/uploads/2018/03/Translation-Engine-SS.png 1327w, /wp-content/uploads/2018/03/Translation-Engine-SS-150x76.png 150w, /wp-content/uploads/2018/03/Translation-Engine-SS-300x152.png 300w, /wp-content/uploads/2018/03/Translation-Engine-SS-1024x519.png 1024w, /wp-content/uploads/2018/03/Translation-Engine-SS-624x316.png 624w" sizes="(max-width: 1327px) 100vw, 1327px"></p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/tool-plugins/" rel="tag">Tool Plugins</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/engine/" rel="tag">engine</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a>, <a href="/tag/tool/" rel="tag">tool</a>, <a href="/tag/translation/" rel="tag">translation</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-message-faces/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Message Faces &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-dynamic-actors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Dynamic Actors &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/super-message-editor/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Super Message Editor &ndash; VNM Extension</a></div>
+									<div class="nav-next"><a href="/elemental-skill-colors/" rel="next">Elemental Skill Colors &ndash; C++ MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							19 thoughts on &ldquo;<span>Translation Engine &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-13975">
+								<article id="comment-13975" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/72a7db9665442076ddfef7867d10033c1b55878a047f456ab64998e8fb093437?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/72a7db9665442076ddfef7867d10033c1b55878a047f456ab64998e8fb093437?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" decoding="async"><cite><b class="fn">Edson Okamoto</b> </cite><a href="/translation-engine/#comment-13975"><time datetime="2019-09-13T21:16:45-05:00">September 13, 2019 at 9:16 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;ve read in forum that it doesn&rsquo;t work in Android (json is not found and translation is not recognized), is it right?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=13975#respond" data-commentid="13975" data-postid="3989" data-belowelement="comment-13975" data-respondelement="respond" data-replyto="Reply to Edson Okamoto" aria-label="Reply to Edson Okamoto">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-30812">
+										<article id="comment-30812" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/4f35afb8ed7a172a46e93f59f8370021ca9899726e223e73ef304942a2a29c20?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4f35afb8ed7a172a46e93f59f8370021ca9899726e223e73ef304942a2a29c20?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">earnailies</b> </cite><a href="/translation-engine/#comment-30812"><time datetime="2019-10-19T20:20:07-05:00">October 19, 2019 at 8:20 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>This is only for Windows/Mac RPG Maker Games.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=30812#respond" data-commentid="30812" data-postid="3989" data-belowelement="comment-30812" data-respondelement="respond" data-replyto="Reply to earnailies" aria-label="Reply to earnailies">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+									<li class="comment even depth-2" id="li-comment-64583">
+										<article id="comment-64583" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/943bd6cf645898cfdafc5fda9798843aaa9717167fd40476f4eef3e484367202?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/943bd6cf645898cfdafc5fda9798843aaa9717167fd40476f4eef3e484367202?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">TheDiv</b> </cite><a href="/translation-engine/#comment-64583"><time datetime="2021-08-13T21:44:24-05:00">August 13, 2021 at 9:44 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>It happens that I am making an android game and I have tried many things. Even though I have not tested this plugin yet, I have seen that error you mention in many plugins that add .js or .json content.</p>
+												<p>I think I have the idea of how to fix it:<br>
+													&mdash;<br>
+													When using this plugin the program will create a file called &ldquo;Translations.json&rdquo; in the &ldquo;data&rdquo; folder, this file is external to rpg maker and it is not counted when it is &ldquo;explored in android&rdquo;, so I think (I don&rsquo;t know sincerely ) that when the project is exported this file &ldquo;Translations.json&rdquo; is excluded.</p>
+												<p>The solution is to manually copy the &ldquo;Translations.json&rdquo; file into our exported &ldquo;www / data&rdquo; folder.</p>
+												<p>Or so I think, I will confirm it in a few days (or weeks).</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=64583#respond" data-commentid="64583" data-postid="3989" data-belowelement="comment-64583" data-respondelement="respond" data-replyto="Reply to TheDiv" aria-label="Reply to TheDiv">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-64903">
+												<article id="comment-64903" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/ce7a1a08cc451caaac4243a582daacbbe6078a2ecb303d01117e26cc3b70725c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ce7a1a08cc451caaac4243a582daacbbe6078a2ecb303d01117e26cc3b70725c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">NeM</b> </cite><a href="/translation-engine/#comment-64903"><time datetime="2022-02-19T14:55:14-05:00">February 19, 2022 at 2:55 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>Did you make a test 😀 ?</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=64903#respond" data-commentid="64903" data-postid="3989" data-belowelement="comment-64903" data-respondelement="respond" data-replyto="Reply to NeM" aria-label="Reply to NeM">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+											<li class="comment even depth-3" id="li-comment-65012">
+												<article id="comment-65012" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/b1ac908541b88bd9b296a78232d85cd0536971748c40ee8cdaaafe4825f4cd91?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b1ac908541b88bd9b296a78232d85cd0536971748c40ee8cdaaafe4825f4cd91?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Zenrei</b> </cite><a href="/translation-engine/#comment-65012"><time datetime="2022-05-02T17:09:26-05:00">May 2, 2022 at 5:09 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>I also want to know if someone has tested this. I&rsquo;m in the middle of making a demo and if this is not possible then I don&rsquo;t think I can use this for my game, because a translation tool is EXTREMELY important for what I&rsquo;m working on.</p>
+														<p>If it isn&rsquo;t too much trouble, it would be great is if the plugin was updated in a way that saved and referenced a Translation.json in the project folder so it would workaround this problem altogether.</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=65012#respond" data-commentid="65012" data-postid="3989" data-belowelement="comment-65012" data-respondelement="respond" data-replyto="Reply to Zenrei" aria-label="Reply to Zenrei">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26746">
+								<article id="comment-26746" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/56fe2d8745e5d38727d6321838dd3cb63e93c6ae01601ffa92cdbfacbe121667?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/56fe2d8745e5d38727d6321838dd3cb63e93c6ae01601ffa92cdbfacbe121667?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Suu</b> </cite><a href="/translation-engine/#comment-26746"><time datetime="2019-10-07T09:41:14-05:00">October 7, 2019 at 9:41 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Love this plugin so much &ndash; you did a great job there 🙂<br>
+											The only thing I&rsquo;m missing is that I could also translate the &ldquo;Gold&rdquo; (cause with the custom section it doesnt translate it in the menu / battle screen). Or did I miss something?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=26746#respond" data-commentid="26746" data-postid="3989" data-belowelement="comment-26746" data-respondelement="respond" data-replyto="Reply to Suu" aria-label="Reply to Suu">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-42301">
+								<article id="comment-42301" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/df33c0632780e7f42b440b2e2a51af27959428e922fab8dff57ee89c549a89e0?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/df33c0632780e7f42b440b2e2a51af27959428e922fab8dff57ee89c549a89e0?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Zoe Zero</b> </cite><a href="/translation-engine/#comment-42301"><time datetime="2019-11-15T20:31:53-05:00">November 15, 2019 at 8:31 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way to add it to YEP&rsquo;s OptionsCore?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=42301#respond" data-commentid="42301" data-postid="3989" data-belowelement="comment-42301" data-respondelement="respond" data-replyto="Reply to Zoe Zero" aria-label="Reply to Zoe Zero">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-51694">
+								<article id="comment-51694" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/38ddb41d99905ee4a159f437bb89e35b0109ccb1f03738bcef3737db26b8bdb1?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/38ddb41d99905ee4a159f437bb89e35b0109ccb1f03738bcef3737db26b8bdb1?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Taishu</b> </cite><a href="/translation-engine/#comment-51694"><time datetime="2020-06-04T06:56:09-05:00">June 4, 2020 at 6:56 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello!<br>
+											Thank you so much for this amazing script! You&rsquo;re a lifesaver.<br>
+											I&rsquo;ve run into a small problem that I already fixed but would like to report:<br>
+											So, if your source language is not English and even if English is not on your list of languages, it continues to appear in the Options menu, but it&rsquo;ll not appear in the CTRL+T menu. Then, if you do include English, it&rsquo;ll appear twice in the Options menu, but only once in the CTRL+T menu.<br>
+											I&rsquo;m a bit of a programmer too, so I made a slight alteration to the script:<br>
+											&gt; On the line 1767, I changed the &lsquo;English&rsquo; to &lsquo;Default&rsquo;, so it&rsquo;ll make more sense to the average player.<br>
+											So effectively, the languages they&rsquo;ll see are: &ldquo;Default&rdquo;(which in my case is Portuguese) and &ldquo;English&rdquo;.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=51694#respond" data-commentid="51694" data-postid="3989" data-belowelement="comment-51694" data-respondelement="respond" data-replyto="Reply to Taishu" aria-label="Reply to Taishu">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+														<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-58658">
+								<article id="comment-58658" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/e5c43ec7aca3fe3fd73cdca9e47ce8220271d9b8c7c398be85efb7b04c2c452b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/e5c43ec7aca3fe3fd73cdca9e47ce8220271d9b8c7c398be85efb7b04c2c452b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">dum</b> </cite><a href="/translation-engine/#comment-58658"><time datetime="2020-11-05T19:59:03-05:00">November 5, 2020 at 7:59 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey, Thank you this is really useful. However, I can&rsquo;t get the command &lsquo;SetTranslation LANGUAGE&rsquo; to work. I&rsquo;ve tried over and over in different ways but it just doesn&rsquo;t seem to work. Maybe I&rsquo;m missing something? Can you please check it?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=58658#respond" data-commentid="58658" data-postid="3989" data-belowelement="comment-58658" data-respondelement="respond" data-replyto="Reply to dum" aria-label="Reply to dum">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="pingback even thread-even depth-1" id="comment-61488">
+								<p>Pingback: <a href="http://www.fiction-interactive.fr/comment-traduire-une-fiction-interactive/" class="url" rel="ugc external nofollow">Comment traduire une fiction interactive ? &ndash; Fiction-interactive.fr</a> </p>
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-62029">
+								<article id="comment-62029" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/f980265e3876e0e21a74d3a4dcb2ad0a60b9e7683d2a29bdcedbf23eba4d8bee?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f980265e3876e0e21a74d3a4dcb2ad0a60b9e7683d2a29bdcedbf23eba4d8bee?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Lorenzo Rossetti</b> </cite><a href="/translation-engine/#comment-62029"><time datetime="2021-01-31T09:10:02-05:00">January 31, 2021 at 9:10 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi SRDude, I love this plugin and it is very usefull as well!<br>
+											But today I found an issue&hellip;<br>
+											So far everything was fine, but today I noticed that the Notetag Structure for Enemies, Weapons, Skills etc. doesn&rsquo;t work anymore&hellip;<br>
+											I don&rsquo;t know why, it worked so good until yesterday. What could have happened? I haven&rsquo;t even changed anything in the code!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=62029#respond" data-commentid="62029" data-postid="3989" data-belowelement="comment-62029" data-respondelement="respond" data-replyto="Reply to Lorenzo Rossetti" aria-label="Reply to Lorenzo Rossetti">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64299">
+								<article id="comment-64299" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/a3b485f66ce618dc134017c673cb0a6c4db028143beb6a608d216525ff0a6169?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a3b485f66ce618dc134017c673cb0a6c4db028143beb6a608d216525ff0a6169?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kiki McCloud</b> </cite><a href="/translation-engine/#comment-64299"><time datetime="2021-04-11T19:05:39-05:00">April 11, 2021 at 7:05 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello there!<br>
+											I have a problem with your plugin&hellip;<br>
+											I started a game some years ago and started translating it with your great plugin.<br>
+											Now i want to w&ouml;rk at this game again, but&hellip;<br>
+											I have the full version of the RPG maker MV from STEAM (version 1.6.2) and now I can&rsquo;t open the plugin anymore.<br>
+											I open the game in the test-mode but&hellip; The Plugin window didn&rsquo;t open when I press Crtrl +T&hellip;<br>
+											Any ideas what this causes and what I can do?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=64299#respond" data-commentid="64299" data-postid="3989" data-belowelement="comment-64299" data-respondelement="respond" data-replyto="Reply to Kiki McCloud" aria-label="Reply to Kiki McCloud">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64307">
+								<article id="comment-64307" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/4bb49cd61116bc36115f49122d6b1fa75eb0afa6d77000eb4448d3fa6a5ae35d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4bb49cd61116bc36115f49122d6b1fa75eb0afa6d77000eb4448d3fa6a5ae35d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="http://gingersungames.blogspot.com/" class="url" rel="ugc external nofollow">GingerSun Games</a></b> </cite><a href="/translation-engine/#comment-64307"><time datetime="2021-04-21T08:12:17-05:00">April 21, 2021 at 8:12 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>hy i want to ask some of question.<br>
+											1. How to make this translation engine work correctly with Galv Quest Log. Because inside them using data.txt. and than after i copied all of them with symbol and than after i check almostly inside them cant translate it. ?</p>
+										<p>2. and than i create choice language in first launch in new game. after player decided to change language in second option and that restart the game he cant change again into original<br>
+											I create Plugin Command SetTranslation , my question how to change back into source language. My Source language its English. After i try With SetTranslation Original or SetTranslation English in plugin command it doent work to bring back source language. But its work only in option menu. </p>
+										<p>thanks if u response it</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=64307#respond" data-commentid="64307" data-postid="3989" data-belowelement="comment-64307" data-respondelement="respond" data-replyto="Reply to GingerSun Games" aria-label="Reply to GingerSun Games">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65589">
+										<article id="comment-65589" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/78dc61f8d20b55543bbfb35d15aa957091de58df37f59520384a44a8bebb361e?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/78dc61f8d20b55543bbfb35d15aa957091de58df37f59520384a44a8bebb361e?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Showme</b> </cite><a href="/translation-engine/#comment-65589"><time datetime="2025-03-02T05:31:19-05:00">March 2, 2025 at 5:31 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>You solve it?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=65589#respond" data-commentid="65589" data-postid="3989" data-belowelement="comment-65589" data-respondelement="respond" data-replyto="Reply to Showme" aria-label="Reply to Showme">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64911">
+								<article id="comment-64911" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/3d7f92f8f223fbb59a8a0f308c34d27eb8bdbe8ce21d616f371920d26e1d9ebd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/3d7f92f8f223fbb59a8a0f308c34d27eb8bdbe8ce21d616f371920d26e1d9ebd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="http://Don%20have%20Q,Q/" class="url" rel="ugc external nofollow">OtroNombreRaro</a></b> </cite><a href="/translation-engine/#comment-64911"><time datetime="2022-02-22T20:39:32-05:00">February 22, 2022 at 8:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;m using it to translate some free games that are out there. Unfortunately I noticed a small bug if you open the translator window too quickly. If you open the translator window before it fully loads the game, it crashes generating an error in the game and converting everything written in the translation file to &ldquo;null&rdquo;. It was a bad day for me.<br>
+											PD:For people who have problems translating some yanfly plugins, use the derivation with variable = text. in the message of the yanfly plugin use \V[number] , if it is in the translated language the variable = text must be the translated one, if it is in the original language the variable must be in the original language</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=64911#respond" data-commentid="64911" data-postid="3989" data-belowelement="comment-64911" data-respondelement="respond" data-replyto="Reply to OtroNombreRaro" aria-label="Reply to OtroNombreRaro">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65010">
+								<article id="comment-65010" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/2b5a2c07560622fa574ccea9e83776c4426241976f9809bff4a211b6dbc7c06b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/2b5a2c07560622fa574ccea9e83776c4426241976f9809bff4a211b6dbc7c06b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Zalzany</b> </cite><a href="/translation-engine/#comment-65010"><time datetime="2022-05-01T07:35:50-05:00">May 1, 2022 at 7:35 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I got ask does this work with MZ?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=65010#respond" data-commentid="65010" data-postid="3989" data-belowelement="comment-65010" data-respondelement="respond" data-replyto="Reply to Zalzany" aria-label="Reply to Zalzany">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-65222">
+								<article id="comment-65222" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/16cde0e9549c767021cfb1f0408b566c41485e8c7b8e5ce510347db8fd2945da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/16cde0e9549c767021cfb1f0408b566c41485e8c7b8e5ce510347db8fd2945da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Stevefox</b> </cite><a href="/translation-engine/#comment-65222"><time datetime="2023-04-01T10:44:11-05:00">April 1, 2023 at 10:44 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi, how can I add this &ldquo;language&rdquo; option to Yanfly&rsquo;s Options Core?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=65222#respond" data-commentid="65222" data-postid="3989" data-belowelement="comment-65222" data-respondelement="respond" data-replyto="Reply to Stevefox" aria-label="Reply to Stevefox">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65248">
+								<article id="comment-65248" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c32d6651cf15709ef4ac8318c7bba5d87ff1b0c13ff6ed7b5dac1727f60078ef?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c32d6651cf15709ef4ac8318c7bba5d87ff1b0c13ff6ed7b5dac1727f60078ef?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Matthew</b> </cite><a href="/translation-engine/#comment-65248"><time datetime="2023-06-29T11:02:16-05:00">June 29, 2023 at 11:02 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Does this translation plugin have access to game text created by other plugins, or only from the main game? For example, I am using a plugin that allows the player to quit from the main menu, which is very common. Can this plugin see the word &ldquo;Quit&rdquo; in the main menu? Thanks.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/translation-engine/?replytocom=65248#respond" data-commentid="65248" data-postid="3989" data-belowelement="comment-65248" data-respondelement="respond" data-replyto="Reply to Matthew" aria-label="Reply to Matthew">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/translation-engine/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea autocomplete="new-password" id="fb8a015351" name="fb8a015351" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-label="hp-comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea>
+										<script data-noptimize>
+											document.getElementById("comment").setAttribute("id", "ab487900f780cb3942e89f793a9bc451");
+											document.getElementById("fb8a015351").setAttribute("id", "comment");
+										</script>
+									</p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="3989" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+									<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8a12d22c30"></p>
+									<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&Delta;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="32">
+										<script>
+											document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+										</script>
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			},
+			"cached": 1
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+	<script defer type="text/javascript" src="/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1752612151" id="akismet-frontend-js"></script>
+</body>
+
+</html><!-- Page generated by LiteSpeed Cache 4.4.5 on 2025-10-19 14:34:56 -->

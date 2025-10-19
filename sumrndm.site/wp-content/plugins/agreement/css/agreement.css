@@ -1,0 +1,32 @@
+.licence-agreement{
+	background: #333333;
+	opacity: 200;
+	border: 3px dotted #ccccff;
+	z-index: 909090909090909090909090909090;
+        color: white;
+        line-height: 140%;
+}
+.licence-agreement p{
+	margin: 10px;
+}
+#aggrument {
+    cursor: pointer;
+    color: #018125;
+}
+.licence-agreementbase {
+    width: 100000px;
+    height: 100000px;
+    background-color: #cccccc;
+    position:absolute;
+    opacity: 0.5;
+    overflow:hidden;
+}
+.licence-submit-button{
+	margin:10px;
+}
+.licence-submit-button #agree{
+	margin: 0 50px 0 0;
+}
+.licence-submit-button #dis-agree{
+	margin: 0 50px 0 0;
+}

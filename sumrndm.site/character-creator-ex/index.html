@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Character Creator EX &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Character Creator EX &ndash; MV Plugin Comments Feed" href="/character-creator-ex/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/1965">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/character-creator-ex/">
+	<link rel="shortlink" href="/?p=1965">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcharacter-creator-ex%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcharacter-creator-ex%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-1965 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-1965" class="post-1965 post type-post status-publish format-standard hentry category-plugins category-character-creator tag-character-creator tag-ex tag-maker tag-mv tag-plugin">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Character Creator EX &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2017-06-09T14:04:10-05:00">June 9, 2017</time> <time class="updated" style="display:none;" datetime="2020-04-18T08:00:10-05:00">April 18, 2020</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/character-creator-ex/#comments">57 Comments<span class="screen-reader-text"> on Character Creator EX &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe title="Character Creator EX Plugin - RPG Maker MV" width="711" height="400" src="https://www.youtube.com/embed/AbDnuUh1OFs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+							<p>This is a plugin that allows players to create their own custom characters in game (+more!).</p>
+							<p><span id="more-1965"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/px27enpgyy3o6ab/SRD_CharacterCreatorEX.js?dl=0" target="_blank" rel="noopener noreferrer">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/px27enpgyy3o6ab/SRD_CharacterCreatorEX.js?dl=1">[Download]</a></li>
+								<li><a href="https://www.dropbox.com/s/bjqmvwiqtczmied/Character%20Creator%20EX%20Assets.zip?dl=1">[Sample Images]</a></li>
+								<li><a href="https://forums.rpgmakerweb.com/index.php?threads/update-to-srd-character-creator-25-5-added-ices-resources.77641/#post-726450">[Rhino&rsquo;s CC Resource Thread]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>Character Creator EX<br>SumRndmDde</p>
+								<p>This is a plugin that allows players to create their own custom characters<br>in game.</p>
+								<p>A menu system in which the player can create a character can be called<br>upon at any time and assigned to an Actor. Once an Actor has been assigned<br>a custom character, that character will be used on the map and in side-<br>view battles.</p>
+								<p>In order to modify the properties of the sections and pieces, one must<br>use the Super Tools Engine. Simply go to:</p>
+								<p>Database EX BAK Custom Editors BAK Character Creator Editor</p>
+								<p>With this, you&rsquo;ll be able to easily customize the various properties<br>that exist within the sections!</p>
+								<p>=======================================================================<br>Setting up Files<br>=======================================================================</p>
+								<p>In order to set up the &ldquo;generator&rdquo; pieces, you need to create a new<br>folder in the &ldquo;img&rdquo; folder called &ldquo;character-creator&rdquo;.</p>
+								<p>So the file location should be:</p>
+								<p>/img/character-creator-ex/</p>
+								<p>Within this folder, you need a folder for each section, for example:</p>
+								<p>/img/character-creator-ex/Body/<br>/img/character-creator-ex/Mouth/<br>/img/character-creator-ex/Nose/<br>/img/character-creator-ex/Glasses/<br>etc&hellip;</p>
+								<p>Within each of these folders, you&rsquo;ll also need 4 more folders:</p>
+								<p>/walk/<br>/dead/<br>/face/<br>/sv/</p>
+								<p>As you can probably guess, each of those folders will contain the<br>corresponding walking, dead, face, and side-view parts of the<br>parent folder.</p>
+								<p>For example, in order to store the &ldquo;Face&rdquo; parts of the &ldquo;Body&rdquo; section<br>you would place them in:</p>
+								<p>/img/character-creator-ex/Body/face/</p>
+								<p>=======================================================================<br>Other Images<br>=======================================================================</p>
+								<p>Finally, you&rsquo;re also going to need a couple required images placed in:</p>
+								<p>/img/SumRndmDde/character-creator-ex/</p>
+								<p>These images are:</p>
+								<p>Background.png<br>CustomCharacter.png<br>CustomFace.png<br>Walk-Background.png<br>Dead-Background.png<br>Face-Background.png<br>SV-Background.png</p>
+								<p>The &ldquo;Background&rdquo; image will be used as a background for the character<br>creator if you choose to use it.</p>
+								<p>The &ldquo;CustomCharacter&rdquo; and &ldquo;CustomFace&rdquo; will be used in scenarios where<br>a custom character&rsquo;s Character or Face image cannot be loaded.</p>
+								<p>The &ldquo;____-Background&rdquo; images are used as piece backgrounds in the<br>editor itself.</p>
+								<p>=======================================================================<br>Opening the Character Creator<br>=======================================================================</p>
+								<p>In order to set up the Character Creator, use the Plugin Command:</p>
+								<p>OpenCharacterCreator [actorId]
+								</p>
+								<p>Set &ldquo;actorId&rdquo; to the Actor ID of the Actor you wish to create images for.</p>
+								<p>For example:</p>
+								<p>OpenCharacterCreator 3<br>OpenCharacterCreator 7<br>OpenCharacterCreator 26</p>
+								<p>=======================================================================<br>Showing Dead Custom Character<br>=======================================================================</p>
+								<p>Use the following Plugin Command to make an Actor use their &ldquo;dead&rdquo;<br>custom character image:</p>
+								<p>SetDeadCustomCharacter [actorId] [true/false]
+								</p>
+								<p>This will set it so the Actor defind by &ldquo;actorId&rdquo; will have their<br>dead image turned on or off.</p>
+								<p>For example:</p>
+								<p>SetDeadCustomCharacter 3 true<br>SetDeadCustomCharacter 8 false<br>SetDeadCustomCharacter 12 true</p>
+								<p>=======================================================================<br>Setting Event to use Custom Character<br>=======================================================================</p>
+								<p>If you wish for an event to use a custom character image, simply use<br>the event notetag:</p>
+								<p>&lt;CustomCharacter: [actorId]&gt;</p>
+								<p>This will set the event to use the custom image of the actor specified<br>through the &ldquo;actorId&rdquo; input.</p>
+								<p>You can also set an event to use a dead custom character using:</p>
+								<p>&lt;CustomDeadCharacter: [actorId]&gt;</p>
+								<p>Examples:</p>
+								<p>&lt;CustomCharacter: 3&gt;<br>&lt;CustomDeadCharacter: 23&gt;</p>
+								<p>=======================================================================<br>Showing Custom Face in Show Text<br>=======================================================================</p>
+								<p>If you wish to have a character&rsquo;s custom face used in a &ldquo;Show Text&rdquo;,<br>here&rsquo;s what you need to do:</p>
+								<p>1) Make sure there is a face image selected for the &ldquo;Show Text&rdquo; event.<br>It can be any face image, it just needs to be there.</p>
+								<p>2) Use the following notetag in the &ldquo;Show Text&rdquo; box:</p>
+								<p>&lt;CC Face: [id]&gt;</p>
+								<p>Set &ldquo;id&rdquo; to the ID of the Actor who has the Custom Face you wish to use.</p>
+								<p>=======================================================================<br>Disabling the Custom Images<br>=======================================================================</p>
+								<p>In order temporarily distable the custom images set up for an Actor, use<br>the Plugin Command:</p>
+								<p>DisableCharacterCreatorImages [actorId]
+								</p>
+								<p>Of course, simply set &ldquo;actorId&rdquo; to the Actor ID you wish to disable<br>custom character images for.</p>
+								<p>EnableCharacterCreatorImages [actorId]
+								</p>
+								<p>This would enable the character creator images again.</p>
+								<p>For example:</p>
+								<p>DisableCharacterCreatorImages 12<br>EnableCharacterCreatorImages 8</p>
+								<p>=======================================================================<br>Custom Colors<br>=======================================================================</p>
+								<p>While most of the properties that can be manipulated in the<br>&ldquo;Character Creator Editor&rdquo; in the Super Tools Engine are pretty<br>self explanatory, the color-customization section&hellip; is a bit more<br>difficult.</p>
+								<p>The colors are set up using JSON arrays, meaning:</p>
+								[info for color 1],<br>[info for color 2],<br>&hellip;<br>[info for last color]
+								<p>As you can see, each &ldquo;color&rdquo; is separated into its own brackets.<br>Every color is followed by a comma except for the last one.</p>
+								<p>Now within these colors, you may customize the:</p>
+								<p>&ndash; Name<br>&ndash; Hue<br>&ndash; Saturation<br>&ndash; Brightness<br>&ndash; Grayscale</p>
+								<p>For example:</p>
+								[&ldquo;Blue&rdquo;, 100, 0, 1, 0.5]
+								<p>This would set:</p>
+								<p>&ndash; Name: Blue<br>&ndash; Hue: 100<br>&ndash; Saturation: 0<br>&ndash; Brightness: 1<br>&ndash; Grayscale: 0.5</p>
+								<p>You are not forced to fill out all of the properties however. In fact,<br>the less you fill out, the better. For a simple Hue shift, all one<br>needs to do is:</p>
+								[&ldquo;Green&rdquo;, 200]
+								<p>This will create a simple color called Green that shifts the hue by 200.</p>
+								<p>The limits that may be defined through the properties are as follows:</p>
+								<p>&ndash; Hue [0 ~ 360]&ndash; Saturation [-1 ~ 1]&ndash; Brightness [0 ~ 1]&ndash; Grayscale [0 ~ 1]
+								</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-1966" src="/wp-content/uploads/2017/06/Character-Creator-EX-SS.png" alt="" width="816" height="624" srcset="/wp-content/uploads/2017/06/Character-Creator-EX-SS.png 816w, /wp-content/uploads/2017/06/Character-Creator-EX-SS-150x115.png 150w, /wp-content/uploads/2017/06/Character-Creator-EX-SS-300x229.png 300w, /wp-content/uploads/2017/06/Character-Creator-EX-SS-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+							<ul class="wp-block-list">
+								<li><a href="https://dl.dropboxusercontent.com/s/wktuwc392epkcxb/SRD_CharacterCreatorEX.js?dl=0" target="_blank" rel="noreferrer noopener">[View]</a></li>
+								<li><a href="https://www.dropbox.com/s/wktuwc392epkcxb/SRD_CharacterCreatorEX.js?dl=1">[Download]</a></li>
+							</ul>
+							<p></p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/character-creator/" rel="tag">Character Creator</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/character-creator/" rel="tag">character creator</a>, <a href="/tag/ex/" rel="tag">ex</a>, <a href="/tag/maker/" rel="tag">maker</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/translation-engine/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Translation Engine &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/super-message-editor/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Super Message Editor &ndash; VNM Extension </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/master-volume/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Master Volume &ndash; MV Plugin</a></div>
+									<div class="nav-next"><a href="/game-upgrade/" rel="next">Game Upgrade &ndash; MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							57 thoughts on &ldquo;<span>Character Creator EX &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-14904">
+								<article id="comment-14904" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/a6cb68dc6bda153b5e4a4a47be799a55a81cc6e7b7fcf887c241839e200df104?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a6cb68dc6bda153b5e4a4a47be799a55a81cc6e7b7fcf887c241839e200df104?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" decoding="async"><cite><b class="fn">Arnoch</b> </cite><a href="/character-creator-ex/#comment-14904"><time datetime="2019-09-15T21:05:51-05:00">September 15, 2019 at 9:05 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way to have a Gender Selected switch turn on or off when the Male or Female face is selected? That is the only thing preventing me from using this in any of my projects. Thanks in advance!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=14904#respond" data-commentid="14904" data-postid="1965" data-belowelement="comment-14904" data-respondelement="respond" data-replyto="Reply to Arnoch" aria-label="Reply to Arnoch">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-22964">
+								<article id="comment-22964" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/dd6c312f39b0de4b60a80d11f7c1f75fadf0ce22d53427b64cb9999498664c90?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dd6c312f39b0de4b60a80d11f7c1f75fadf0ce22d53427b64cb9999498664c90?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">buzboy</b> </cite><a href="/character-creator-ex/#comment-22964"><time datetime="2019-10-01T17:14:23-05:00">October 1, 2019 at 5:14 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>The color changing part of the plugin doesn&rsquo;t seem to work correctly. The hue doesn&rsquo;t change the colors when I edit it for skin tone.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=22964#respond" data-commentid="22964" data-postid="1965" data-belowelement="comment-22964" data-respondelement="respond" data-replyto="Reply to buzboy" aria-label="Reply to buzboy">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-51062">
+										<article id="comment-51062" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/1ce841ff3634e4588703617822e1da5432869c69009b80df31d07e35eab179f4?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/1ce841ff3634e4588703617822e1da5432869c69009b80df31d07e35eab179f4?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">RandomInternetStranger</b> </cite><a href="/character-creator-ex/#comment-51062"><time datetime="2020-05-08T10:40:38-05:00">May 8, 2020 at 10:40 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I tried to add and edit colors for skin tone, mouth tone, front and rear hair color, and none of it worked. I&rsquo;ll try to figure it out but no promises.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=51062#respond" data-commentid="51062" data-postid="1965" data-belowelement="comment-51062" data-respondelement="respond" data-replyto="Reply to RandomInternetStranger" aria-label="Reply to RandomInternetStranger">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-37284">
+								<article id="comment-37284" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/b10a18a0a798fd943bde35f53fa270cb4201ceeedc41d8b44fc030706bfdf980?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b10a18a0a798fd943bde35f53fa270cb4201ceeedc41d8b44fc030706bfdf980?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">palatkorm</b> </cite><a href="/character-creator-ex/#comment-37284"><time datetime="2019-11-02T11:05:57-05:00">November 2, 2019 at 11:05 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>This does not work when I get on Android.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=37284#respond" data-commentid="37284" data-postid="1965" data-belowelement="comment-37284" data-respondelement="respond" data-replyto="Reply to palatkorm" aria-label="Reply to palatkorm">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-47713">
+								<article id="comment-47713" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d551cd666ac8bb5e01595d996ca0462ff6ee488ae1f730a3ad860791fde749ee?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d551cd666ac8bb5e01595d996ca0462ff6ee488ae1f730a3ad860791fde749ee?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Reign</b> </cite><a href="/character-creator-ex/#comment-47713"><time datetime="2020-03-01T10:37:41-05:00">March 1, 2020 at 10:37 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I keep getting TYPEERROR cannot read property &lsquo;name&rsquo; of undefined?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=47713#respond" data-commentid="47713" data-postid="1965" data-belowelement="comment-47713" data-respondelement="respond" data-replyto="Reply to Reign" aria-label="Reply to Reign">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-64713">
+										<article id="comment-64713" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/0ae0ed75c9a0bb9b75315ebdbe5c28bc5f8bdf717cb921784270258968ad344f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0ae0ed75c9a0bb9b75315ebdbe5c28bc5f8bdf717cb921784270258968ad344f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">sienedo</b> </cite><a href="/character-creator-ex/#comment-64713"><time datetime="2021-10-26T11:40:37-05:00">October 26, 2021 at 11:40 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>hey i also have same error, have you solve this?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64713#respond" data-commentid="64713" data-postid="1965" data-belowelement="comment-64713" data-respondelement="respond" data-replyto="Reply to sienedo" aria-label="Reply to sienedo">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+									<li class="comment even depth-2" id="li-comment-65027">
+										<article id="comment-65027" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65027"><time datetime="2022-05-18T20:28:29-05:00">May 18, 2022 at 8:28 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>dubble check that all the images are in /img/SumRndmDde/character-creator-ex/<br>
+													it mislabeled as /img/character-creator-ex/ a couple times so you might of messed it up</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65027#respond" data-commentid="65027" data-postid="1965" data-belowelement="comment-65027" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-65439">
+												<article id="comment-65439" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/dc073ba705b2dd7b8e0d264095381a22c4c8200ea6021b043d1f9711219fda13?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dc073ba705b2dd7b8e0d264095381a22c4c8200ea6021b043d1f9711219fda13?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Wolf</b> </cite><a href="/character-creator-ex/#comment-65439"><time datetime="2023-12-11T10:55:52-05:00">December 11, 2023 at 10:55 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>when you write: /img/SumRndmDde/character-creator-ex/ you mean the img folder in the project folder, right? Because from the video, I see that he leaves it on the Desktop</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65439#respond" data-commentid="65439" data-postid="1965" data-belowelement="comment-65439" data-respondelement="respond" data-replyto="Reply to Wolf" aria-label="Reply to Wolf">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-49398">
+								<article id="comment-49398" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/86313ca6996c03f643a4bc421d521896703509ab982d26ea4caf1f4df0ee0f3c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/86313ca6996c03f643a4bc421d521896703509ab982d26ea4caf1f4df0ee0f3c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Alexis</b> </cite><a href="/character-creator-ex/#comment-49398"><time datetime="2020-03-21T21:27:06-05:00">March 21, 2020 at 9:27 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey dont know if you will see this, but will the additions for the normal character creator (like dynamic characters) be ported to the e ersion at any time?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=49398#respond" data-commentid="49398" data-postid="1965" data-belowelement="comment-49398" data-respondelement="respond" data-replyto="Reply to Alexis" aria-label="Reply to Alexis">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-49399">
+								<article id="comment-49399" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/86313ca6996c03f643a4bc421d521896703509ab982d26ea4caf1f4df0ee0f3c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/86313ca6996c03f643a4bc421d521896703509ab982d26ea4caf1f4df0ee0f3c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Lost</b> </cite><a href="/character-creator-ex/#comment-49399"><time datetime="2020-03-21T21:27:33-05:00">March 21, 2020 at 9:27 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey dont know if you will see this, but will the additions for the normal character creator (like dynamic characters) be ported to the e ersion at any time?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=49399#respond" data-commentid="49399" data-postid="1965" data-belowelement="comment-49399" data-respondelement="respond" data-replyto="Reply to Lost" aria-label="Reply to Lost">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-50581">
+								<article id="comment-50581" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9f634f10212e9e625e700cf41cf44a2b3e7a9e0ae9ae4dac715dc29873fd130e?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9f634f10212e9e625e700cf41cf44a2b3e7a9e0ae9ae4dac715dc29873fd130e?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Mike</b> </cite><a href="/character-creator-ex/#comment-50581"><time datetime="2020-04-17T00:47:53-05:00">April 17, 2020 at 12:47 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey thank you for all your hard work on this awesome plugin! However it seems the sample files linked are incomplete- many of the hair options, for example, are just black boxes and thus don&rsquo;t load for selection in game. Am I missing something?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=50581#respond" data-commentid="50581" data-postid="1965" data-belowelement="comment-50581" data-respondelement="respond" data-replyto="Reply to Mike" aria-label="Reply to Mike">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-50839">
+								<article id="comment-50839" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/734d8df124286286d12d897ffe4e6da5341032ca264946020b5652fae1c566b6?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/734d8df124286286d12d897ffe4e6da5341032ca264946020b5652fae1c566b6?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">DaEnderAssassin</b> </cite><a href="/character-creator-ex/#comment-50839"><time datetime="2020-05-03T04:57:02-05:00">May 3, 2020 at 4:57 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>For those following along using this site and not reading from the plugin itself (Like me) do NOT place body parts in /img/character-creator-ex/ but instead /img/SumRndmDde/character-creator-ex/</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=50839#respond" data-commentid="50839" data-postid="1965" data-belowelement="comment-50839" data-respondelement="respond" data-replyto="Reply to DaEnderAssassin" aria-label="Reply to DaEnderAssassin">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-54103">
+										<article id="comment-54103" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/84a255813b6785c0a9336bbab3e047fece3efc0be3bf8f83301402379ce4ce00?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/84a255813b6785c0a9336bbab3e047fece3efc0be3bf8f83301402379ce4ce00?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">RainbowWizzKid</b> </cite><a href="/character-creator-ex/#comment-54103"><time datetime="2020-07-11T05:59:50-05:00">July 11, 2020 at 5:59 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>this helped me out so much, thank you!</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=54103#respond" data-commentid="54103" data-postid="1965" data-belowelement="comment-54103" data-respondelement="respond" data-replyto="Reply to RainbowWizzKid" aria-label="Reply to RainbowWizzKid">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-51760">
+								<article id="comment-51760" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/5cbf55bc445f774a151b19d356d3e8670f70e0575a7dc41a41cb7e3f0eee43b3?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cbf55bc445f774a151b19d356d3e8670f70e0575a7dc41a41cb7e3f0eee43b3?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Uberderp</b> </cite><a href="/character-creator-ex/#comment-51760"><time datetime="2020-06-07T20:39:28-05:00">June 7, 2020 at 8:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>So why are there only female face parts&hellip;?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=51760#respond" data-commentid="51760" data-postid="1965" data-belowelement="comment-51760" data-respondelement="respond" data-replyto="Reply to Uberderp" aria-label="Reply to Uberderp">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51814">
+								<article id="comment-51814" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/b7fb7158db7cee6e9be9b3cd14426e6112eeb50acfe2b67072065e2f437cbacb?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b7fb7158db7cee6e9be9b3cd14426e6112eeb50acfe2b67072065e2f437cbacb?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">pleasecontactme</b> </cite><a href="/character-creator-ex/#comment-51814"><time datetime="2020-06-09T12:06:35-05:00">June 9, 2020 at 12:06 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi, so i&rsquo;ve got the character creator ex version 1.03<br>
+											and i have an issue with the controls where it&rsquo;s escape and spacebar, is there any way to change that to mouseclick left and right?<br>
+											but only have that be a thing in the editor, and not change it for everything else in my game? thanks.<br>
+											i hope you can reach out to me as soon as possible 🙂</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=51814#respond" data-commentid="51814" data-postid="1965" data-belowelement="comment-51814" data-respondelement="respond" data-replyto="Reply to pleasecontactme" aria-label="Reply to pleasecontactme">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-54341">
+								<article id="comment-54341" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/f60b3a6c51df9473be6b1e0fcbb0b8b3a68f35e8fef03a50541910c94f12f54e?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f60b3a6c51df9473be6b1e0fcbb0b8b3a68f35e8fef03a50541910c94f12f54e?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">lenny</b> </cite><a href="/character-creator-ex/#comment-54341"><time datetime="2020-07-15T13:32:20-05:00">July 15, 2020 at 1:32 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>hi i tried to use it but for some reason it will not work and if you say it has been updated the i downloaded it today so i put in the plugin command and it won&rsquo;t work i copied and paste it i put it in myself but still won&rsquo;t work can you plz fix this</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=54341#respond" data-commentid="54341" data-postid="1965" data-belowelement="comment-54341" data-respondelement="respond" data-replyto="Reply to lenny" aria-label="Reply to lenny">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-56503">
+										<article id="comment-56503" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/d6f4d85ab59375149a5fe90420aba23c8d07acf1d3fe16228079ef6a9981ebf2?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d6f4d85ab59375149a5fe90420aba23c8d07acf1d3fe16228079ef6a9981ebf2?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Encore</b> </cite><a href="/character-creator-ex/#comment-56503"><time datetime="2020-08-15T11:21:04-05:00">August 15, 2020 at 11:21 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I also encountered a similar situation, I put the directory&rdquo;character-creator-ex&rdquo; in this directory&rdquo;SumRndmDde&rdquo; ( /img/SumRndmDde/character-creator-ex/ ) , it was resolved, please try</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=56503#respond" data-commentid="56503" data-postid="1965" data-belowelement="comment-56503" data-respondelement="respond" data-replyto="Reply to Encore" aria-label="Reply to Encore">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-57295">
+								<article id="comment-57295" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/cb72d6a2596c5f72377cc0f90f29862eb54c30a3d771f4975669e004945da66a?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/cb72d6a2596c5f72377cc0f90f29862eb54c30a3d771f4975669e004945da66a?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kim marberry</b> </cite><a href="/character-creator-ex/#comment-57295"><time datetime="2020-09-02T14:40:25-05:00">September 2, 2020 at 2:40 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Does this work in MZ?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=57295#respond" data-commentid="57295" data-postid="1965" data-belowelement="comment-57295" data-respondelement="respond" data-replyto="Reply to Kim marberry" aria-label="Reply to Kim marberry">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-57296">
+										<article id="comment-57296" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/cb72d6a2596c5f72377cc0f90f29862eb54c30a3d771f4975669e004945da66a?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/cb72d6a2596c5f72377cc0f90f29862eb54c30a3d771f4975669e004945da66a?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kim marberry</b> </cite><a href="/character-creator-ex/#comment-57296"><time datetime="2020-09-02T14:54:32-05:00">September 2, 2020 at 2:54 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I try it in MZ and I get CacheMap is not defined. Am I just calling it wrong?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=57296#respond" data-commentid="57296" data-postid="1965" data-belowelement="comment-57296" data-respondelement="respond" data-replyto="Reply to Kim marberry" aria-label="Reply to Kim marberry">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-61525">
+												<article id="comment-61525" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/ebba4e7c2cb94940b94ae0ff48f762b31389a52d35e4d52d19ea6e9a923c44fa?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ebba4e7c2cb94940b94ae0ff48f762b31389a52d35e4d52d19ea6e9a923c44fa?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">DNGN</b> </cite><a href="/character-creator-ex/#comment-61525"><time datetime="2021-01-23T12:03:22-05:00">January 23, 2021 at 12:03 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>I just copy definition of CacheMap from MV, but my character not displayed</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=61525#respond" data-commentid="61525" data-postid="1965" data-belowelement="comment-61525" data-respondelement="respond" data-replyto="Reply to DNGN" aria-label="Reply to DNGN">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-57710">
+								<article id="comment-57710" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9a49d718339d34df7991b441e7f0782c06faf64a87d9aba5415293da6aafe9b2?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9a49d718339d34df7991b441e7f0782c06faf64a87d9aba5415293da6aafe9b2?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Adri&aacute;n</b> </cite><a href="/character-creator-ex/#comment-57710"><time datetime="2020-09-11T12:08:15-05:00">September 11, 2020 at 12:08 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Thanks for the plugin, but I speak Spanish, and I wanted to change the name of the folders, but now I get an error that cannot read colors, and I never edited something called colors. How can I fix it?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=57710#respond" data-commentid="57710" data-postid="1965" data-belowelement="comment-57710" data-respondelement="respond" data-replyto="Reply to Adri&aacute;n" aria-label="Reply to Adri&aacute;n">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-57711">
+										<article id="comment-57711" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/9a49d718339d34df7991b441e7f0782c06faf64a87d9aba5415293da6aafe9b2?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9a49d718339d34df7991b441e7f0782c06faf64a87d9aba5415293da6aafe9b2?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Adri&aacute;n</b> </cite><a href="/character-creator-ex/#comment-57711"><time datetime="2020-09-11T15:30:54-05:00">September 11, 2020 at 3:30 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I already fixed it and found the plugin in Super Tools Engine 😀</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=57711#respond" data-commentid="57711" data-postid="1965" data-belowelement="comment-57711" data-respondelement="respond" data-replyto="Reply to Adri&aacute;n" aria-label="Reply to Adri&aacute;n">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment even depth-3" id="li-comment-64274">
+												<article id="comment-64274" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/56ccfe4564f5c06986f7aeda5e42ed2d19bb03d1b7a68202161253ed86e97b2a?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/56ccfe4564f5c06986f7aeda5e42ed2d19bb03d1b7a68202161253ed86e97b2a?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Luis</b> </cite><a href="/character-creator-ex/#comment-64274"><time datetime="2021-04-01T17:49:49-05:00">April 1, 2021 at 5:49 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>What is the name of that plugin bro?</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64274#respond" data-commentid="64274" data-postid="1965" data-belowelement="comment-64274" data-respondelement="respond" data-replyto="Reply to Luis" aria-label="Reply to Luis">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-58176">
+								<article id="comment-58176" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/ee163407cd4481fefcdfec03c9f2586596be7284d05931b193860fef138fdb9c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ee163407cd4481fefcdfec03c9f2586596be7284d05931b193860fef138fdb9c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Mike</b> </cite><a href="/character-creator-ex/#comment-58176"><time datetime="2020-09-20T06:38:06-05:00">September 20, 2020 at 6:38 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I hope this plugin will become available for RPG maker MZ,I could really use it</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=58176#respond" data-commentid="58176" data-postid="1965" data-belowelement="comment-58176" data-respondelement="respond" data-replyto="Reply to Mike" aria-label="Reply to Mike">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-58621">
+								<article id="comment-58621" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/31bd1507813964b025b738fe9e3271a7c94455cfd21cc4881d604540d36f0db0?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/31bd1507813964b025b738fe9e3271a7c94455cfd21cc4881d604540d36f0db0?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Anda</b> </cite><a href="/character-creator-ex/#comment-58621"><time datetime="2020-10-01T08:17:59-05:00">October 1, 2020 at 8:17 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I have a Syntax Error on both my own project and a new clean one : </p>
+										<p>rpg_managers.js:1949 SyntaxError: Unexpected number<br>
+											at Game_Interpreter.command355 (rpg_objects.js:10500)<br>
+											at Game_Interpreter.executeCommand (rpg_objects.js:8930)<br>
+											at Game_Interpreter.update (rpg_objects.js:8838)<br>
+											at Game_Map.updateInterpreter (rpg_objects.js:6115)<br>
+											at Game_Map.update (rpg_objects.js:6022)<br>
+											at Scene_Map.updateMain (rpg_scenes.js:608)<br>
+											at Scene_Map.updateMainMultiply (rpg_scenes.js:600)<br>
+											at Scene_Map.update (rpg_scenes.js:589)<br>
+											at Function.SceneManager.updateScene (rpg_managers.js:2024)<br>
+											at Function.SceneManager.updateMain (rpg_managers.js:1983)</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=58621#respond" data-commentid="58621" data-postid="1965" data-belowelement="comment-58621" data-respondelement="respond" data-replyto="Reply to Anda" aria-label="Reply to Anda">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-58641">
+								<article id="comment-58641" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/25b25c71dca482433d39cd9452d244ef68c1c1693a3c94d70bca691cea55f30d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/25b25c71dca482433d39cd9452d244ef68c1c1693a3c94d70bca691cea55f30d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kyle</b> </cite><a href="/character-creator-ex/#comment-58641"><time datetime="2020-10-17T23:52:55-05:00">October 17, 2020 at 11:52 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi! would it be possible to exclude SV from this plugin? I don&rsquo;t use SV in my game and don&rsquo;t want to have to create graphics for it.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=58641#respond" data-commentid="58641" data-postid="1965" data-belowelement="comment-58641" data-respondelement="respond" data-replyto="Reply to Kyle" aria-label="Reply to Kyle">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-58699">
+										<article id="comment-58699" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/d22ae8b3f2f023f1302036b9b8cc8f4326682887a5d45419d0cf23679a89cc22?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d22ae8b3f2f023f1302036b9b8cc8f4326682887a5d45419d0cf23679a89cc22?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Pan</b> </cite><a href="/character-creator-ex/#comment-58699"><time datetime="2020-11-21T01:15:42-05:00">November 21, 2020 at 1:15 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Hello! My deep thanks for the awesome plugin! I actually bought RMMV only because of I found this and was desperate to try it out X&rsquo;3</p>
+												<p>Just wondering, would it ever be possible to use customized frame number for walking animation sprites?<br>
+													Like I was using other plugins for creating walking cycle with more than three frames, and would there be a way for me to make the customized characters doing the same?</p>
+												<p>Thank you to your time and effort!</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=58699#respond" data-commentid="58699" data-postid="1965" data-belowelement="comment-58699" data-respondelement="respond" data-replyto="Reply to Pan" aria-label="Reply to Pan">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64241">
+								<article id="comment-64241" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/df9a181e20132519325eef16a8fe652d05fd763ce93134b0b15543ba6c000b67?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/df9a181e20132519325eef16a8fe652d05fd763ce93134b0b15543ba6c000b67?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Pixel</b> </cite><a href="/character-creator-ex/#comment-64241"><time datetime="2021-03-23T09:55:05-05:00">March 23, 2021 at 9:55 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>No Ear</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64241#respond" data-commentid="64241" data-postid="1965" data-belowelement="comment-64241" data-respondelement="respond" data-replyto="Reply to Pixel" aria-label="Reply to Pixel">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64293">
+								<article id="comment-64293" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/a00986ff50f49105dbc10bd9534442f0d0be2af1d0a30fa99a4e22a742bcd87b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a00986ff50f49105dbc10bd9534442f0d0be2af1d0a30fa99a4e22a742bcd87b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Bez</b> </cite><a href="/character-creator-ex/#comment-64293"><time datetime="2021-04-08T12:48:34-05:00">April 8, 2021 at 12:48 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is this out dated? ive been trying all night to get it to work, i have everything set up correctly but when i try to start the event nothing happends.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64293#respond" data-commentid="64293" data-postid="1965" data-belowelement="comment-64293" data-respondelement="respond" data-replyto="Reply to Bez" aria-label="Reply to Bez">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-64714">
+										<article id="comment-64714" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/0ae0ed75c9a0bb9b75315ebdbe5c28bc5f8bdf717cb921784270258968ad344f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0ae0ed75c9a0bb9b75315ebdbe5c28bc5f8bdf717cb921784270258968ad344f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">sienedo</b> </cite><a href="/character-creator-ex/#comment-64714"><time datetime="2021-10-26T11:42:31-05:00">October 26, 2021 at 11:42 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>hey i have different error but maybe we can share each other thought on this?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64714#respond" data-commentid="64714" data-postid="1965" data-belowelement="comment-64714" data-respondelement="respond" data-replyto="Reply to sienedo" aria-label="Reply to sienedo">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64366">
+								<article id="comment-64366" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/badcfcc968640068b4ed47181bec872255cc383dd27166b05f952238406d0d3d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/badcfcc968640068b4ed47181bec872255cc383dd27166b05f952238406d0d3d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jdleeabc</b> </cite><a href="/character-creator-ex/#comment-64366"><time datetime="2021-05-31T17:18:09-05:00">May 31, 2021 at 5:18 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>To add colors, you need to edit the charactercreator.json file in the data folder of your project</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64366#respond" data-commentid="64366" data-postid="1965" data-belowelement="comment-64366" data-respondelement="respond" data-replyto="Reply to Jdleeabc" aria-label="Reply to Jdleeabc">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64531">
+								<article id="comment-64531" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/32cad4e97f18fee40a119f502fadd336f5311604ae9ee268e0856b2f8ebbafc4?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/32cad4e97f18fee40a119f502fadd336f5311604ae9ee268e0856b2f8ebbafc4?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">KillerPixeel</b> </cite><a href="/character-creator-ex/#comment-64531"><time datetime="2021-07-27T11:17:45-05:00">July 27, 2021 at 11:17 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello, so I am making a fully customized original art character generator game revolving around this script And I have three questions. </p>
+										<p>First, is there a way you can tie the assets In with a item? For example if I picked up a shirt it would unlock the shirt option in the generator.</p>
+										<p>Secondly, is there a way to tie certain assets to a body type? For example if I were to choose a female body tape the dress would be available if I had it but if I selected the male, The dress wouldn&rsquo;t be visible.</p>
+										<p>Lastly would there be any way to export their character to a folder located in to game folder? This one I&rsquo;m not sure If it&rsquo;s really possible but I was hoping there be a way that players could make a character and select a save option by doing so a snapshot of walking, sv, etc would be sent to that folder ready to be used n their own games.</p>
+										<p>I am planning on hiring a scripter to help with editing but I figured I&rsquo;d ask you first. It&rsquo;s a great plug-in, thanks.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64531#respond" data-commentid="64531" data-postid="1965" data-belowelement="comment-64531" data-respondelement="respond" data-replyto="Reply to KillerPixeel" aria-label="Reply to KillerPixeel">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64532">
+								<article id="comment-64532" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/32cad4e97f18fee40a119f502fadd336f5311604ae9ee268e0856b2f8ebbafc4?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/32cad4e97f18fee40a119f502fadd336f5311604ae9ee268e0856b2f8ebbafc4?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">KillerPixeel</b> </cite><a href="/character-creator-ex/#comment-64532"><time datetime="2021-07-27T11:23:20-05:00">July 27, 2021 at 11:23 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Oh And here&rsquo;s a link to what the creator willl look like if your interested.</p>
+										<p><a href="https://www.facebook.com/groups/823199521134826/permalink/4152549358199809/" rel="nofollow ugc">https://www.facebook.com/groups/823199521134826/permalink/4152549358199809/</a></p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64532#respond" data-commentid="64532" data-postid="1965" data-belowelement="comment-64532" data-respondelement="respond" data-replyto="Reply to KillerPixeel" aria-label="Reply to KillerPixeel">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64621">
+								<article id="comment-64621" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/dd79221667f29b7a935befaf199af04851a70db8d723d93dde42a2c4e0695f66?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dd79221667f29b7a935befaf199af04851a70db8d723d93dde42a2c4e0695f66?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Billy</b> </cite><a href="/character-creator-ex/#comment-64621"><time datetime="2021-09-03T14:43:26-05:00">September 3, 2021 at 2:43 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello! I am brand new to MZ and am excited to learn it. Understanding your directions pretty well, except for this part here: </p>
+										<p>&ldquo;Opening the Character Creator<br>
+											=======================================================================</p>
+										<p>In order to set up the Character Creator, use the Plugin Command:</p>
+										<p>OpenCharacterCreator [actorId]&rdquo;</p>
+										<p>No matter what I do, I can&rsquo;t figure out a way to even get the Plugin Command window open and hours of searching online hasn&rsquo;t helped. I understand what the actor id would be for, but I can&rsquo;t even get to this step. How would I open the creator and &ldquo;use the Plugin Command?&rdquo; Any help would be appreciated. I&rsquo;d love to use this in my game.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64621#respond" data-commentid="64621" data-postid="1965" data-belowelement="comment-64621" data-respondelement="respond" data-replyto="Reply to Billy" aria-label="Reply to Billy">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-64747">
+										<article id="comment-64747" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/ec87f055acf262321bc5f2d9707275cce0c3b052e64fbb8250c0907e5cd3f10c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ec87f055acf262321bc5f2d9707275cce0c3b052e64fbb8250c0907e5cd3f10c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Vermil</b> </cite><a href="/character-creator-ex/#comment-64747"><time datetime="2021-11-21T10:25:00-05:00">November 21, 2021 at 10:25 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Plugin Command is in the list of commands you can fit into your event lists, pretty much all the way at the end of it. It basically lets you scour through the Plugins you may or may not have installed and lets you trigger any events it may let you do, basically giving you access to even more events. Thing is, I downloaded this plugin, and it doesn&rsquo;t seem to be compatible, not letting me use said Plugin Command.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64747#respond" data-commentid="64747" data-postid="1965" data-belowelement="comment-64747" data-respondelement="respond" data-replyto="Reply to Vermil" aria-label="Reply to Vermil">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-64986">
+												<article id="comment-64986" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/7c9c578e12f7e7113f83831b20a177fda74cb78a11ecedb1852d2e61cee953dd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/7c9c578e12f7e7113f83831b20a177fda74cb78a11ecedb1852d2e61cee953dd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Lemon</b> </cite><a href="/character-creator-ex/#comment-64986"><time datetime="2022-04-10T10:23:33-05:00">April 10, 2022 at 10:23 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>The Character Creator doesn&rsquo;t work on MZ that&rsquo;s why its not working.</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64986#respond" data-commentid="64986" data-postid="1965" data-belowelement="comment-64986" data-respondelement="respond" data-replyto="Reply to Lemon" aria-label="Reply to Lemon">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+												<ol class="children">
+													<li class="comment even depth-4" id="li-comment-65023">
+														<article id="comment-65023" class="comment">
+															<header class="comment-meta comment-author vcard">
+																<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65023"><time datetime="2022-05-17T21:59:08-05:00">May 17, 2022 at 9:59 PM</time></a>
+															</header><!-- .comment-meta -->
+															<section class="comment-content comment">
+																<p>you do realize this is for mv right</p>
+															</section><!-- .comment-content -->
+															<div class="reply">
+																<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65023#respond" data-commentid="65023" data-postid="1965" data-belowelement="comment-65023" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+															</div><!-- .reply -->
+														</article><!-- #comment-## -->
+													</li><!-- #comment-## -->
+												</ol><!-- .children -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64679">
+								<article id="comment-64679" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/a147dce0ba2f7ac142a070e80ae604ce02293e452913edde561fee1d3f66aa09?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a147dce0ba2f7ac142a070e80ae604ce02293e452913edde561fee1d3f66aa09?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">enes44</b> </cite><a href="/character-creator-ex/#comment-64679"><time datetime="2021-09-27T00:05:05-05:00">September 27, 2021 at 12:05 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>please create a demo</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64679#respond" data-commentid="64679" data-postid="1965" data-belowelement="comment-64679" data-respondelement="respond" data-replyto="Reply to enes44" aria-label="Reply to enes44">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64739">
+								<article id="comment-64739" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c08fd81b2c67953a1a110e174ec4798fdb4f069182359394eec780740d11647b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c08fd81b2c67953a1a110e174ec4798fdb4f069182359394eec780740d11647b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">StreetDesign</b> </cite><a href="/character-creator-ex/#comment-64739"><time datetime="2021-11-14T01:40:41-05:00">November 14, 2021 at 1:40 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>you program is fonctional to rpg maker mz ?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64739#respond" data-commentid="64739" data-postid="1965" data-belowelement="comment-64739" data-respondelement="respond" data-replyto="Reply to StreetDesign" aria-label="Reply to StreetDesign">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64815">
+								<article id="comment-64815" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/a03e7289174fbf9f31a1aa9eb953d147b52d64b90994912b1cd7bd69ac89059b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a03e7289174fbf9f31a1aa9eb953d147b52d64b90994912b1cd7bd69ac89059b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Grubby</b> </cite><a href="/character-creator-ex/#comment-64815"><time datetime="2022-01-13T19:34:40-05:00">January 13, 2022 at 7:34 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey so I have a question how would I go about inserting my own customized battler designs for this plug in? I created my own sprites for battles but I am not sure how to implement it within this plugin</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64815#respond" data-commentid="64815" data-postid="1965" data-belowelement="comment-64815" data-respondelement="respond" data-replyto="Reply to Grubby" aria-label="Reply to Grubby">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64999">
+								<article id="comment-64999" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/229a767b4fcf6f095a962845ddd6ced7fff92f521740f1e7c80eec0f8bdd94a9?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/229a767b4fcf6f095a962845ddd6ced7fff92f521740f1e7c80eec0f8bdd94a9?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Yodhivah</b> </cite><a href="/character-creator-ex/#comment-64999"><time datetime="2022-04-25T08:33:02-05:00">April 25, 2022 at 8:33 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Great plugin just one problem, the SV data isnt loading and actors appear blank. HELP!!!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=64999#respond" data-commentid="64999" data-postid="1965" data-belowelement="comment-64999" data-respondelement="respond" data-replyto="Reply to Yodhivah" aria-label="Reply to Yodhivah">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65026">
+										<article id="comment-65026" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65026"><time datetime="2022-05-18T20:06:41-05:00">May 18, 2022 at 8:06 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>That SV looks fine for me, Maybe your files are setup incorrectly</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65026#respond" data-commentid="65026" data-postid="1965" data-belowelement="comment-65026" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65015">
+								<article id="comment-65015" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9c2c40c1d0ee78e684a08c558ada5bf62c27b85af90082c2e31e1fe8451eb787?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9c2c40c1d0ee78e684a08c558ada5bf62c27b85af90082c2e31e1fe8451eb787?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Skeppy J</b> </cite><a href="/character-creator-ex/#comment-65015"><time datetime="2022-05-06T00:05:59-05:00">May 6, 2022 at 12:05 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;ve literally tried to make this plugin work for years (on and off), each time I try nothing works and I end up giving up. I&rsquo;ve followed all the instructions included in the plugin, I&rsquo;ve tried all the tutorials I could find online, even Rhino&rsquo;s detailed forum thread about it, all to no avail. Is the plugin just no longer compatible with RPG maker MV? Why after all this time can&rsquo;t someone just make a working demo? I&rsquo;m at my wits end and this plugin is exactly what I need for my game idea 🙁</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65015#respond" data-commentid="65015" data-postid="1965" data-belowelement="comment-65015" data-respondelement="respond" data-replyto="Reply to Skeppy J" aria-label="Reply to Skeppy J">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65022">
+								<article id="comment-65022" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65022"><time datetime="2022-05-17T21:55:44-05:00">May 17, 2022 at 9:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Anyone have a fix,<br>
+											it always gives me the error<br>
+											Type Error<br>
+											Cannot read property &ldquo;name&rdquo; of undefined<br>
+											when I use the character customizer</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65022#respond" data-commentid="65022" data-postid="1965" data-belowelement="comment-65022" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65024">
+										<article id="comment-65024" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65024"><time datetime="2022-05-18T20:02:51-05:00">May 18, 2022 at 8:02 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>never mind i fixed it</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65024#respond" data-commentid="65024" data-postid="1965" data-belowelement="comment-65024" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-65394">
+												<article id="comment-65394" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/8d32ff2d4219fed4112a31d5b1b7f0b2ff9ef778b6317deaa0153ade0aad72cd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/8d32ff2d4219fed4112a31d5b1b7f0b2ff9ef778b6317deaa0153ade0aad72cd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">theya</b> </cite><a href="/character-creator-ex/#comment-65394"><time datetime="2023-10-13T13:02:50-05:00">October 13, 2023 at 1:02 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>how im getting it too how do i fix it?</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65394#respond" data-commentid="65394" data-postid="1965" data-belowelement="comment-65394" data-respondelement="respond" data-replyto="Reply to theya" aria-label="Reply to theya">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+									<li class="comment even depth-2" id="li-comment-65440">
+										<article id="comment-65440" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/dc073ba705b2dd7b8e0d264095381a22c4c8200ea6021b043d1f9711219fda13?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/dc073ba705b2dd7b8e0d264095381a22c4c8200ea6021b043d1f9711219fda13?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Wolf</b> </cite><a href="/character-creator-ex/#comment-65440"><time datetime="2023-12-11T11:08:18-05:00">December 11, 2023 at 11:08 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I get an error: Cannot read property &lsquo;trim&rsquo; of undefined. Anyone know how to solve it?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65440#respond" data-commentid="65440" data-postid="1965" data-belowelement="comment-65440" data-respondelement="respond" data-replyto="Reply to Wolf" aria-label="Reply to Wolf">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-65025">
+								<article id="comment-65025" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65025"><time datetime="2022-05-18T20:04:57-05:00">May 18, 2022 at 8:04 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>is there a way to set up the custom character before the character creator is opened in game?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65025#respond" data-commentid="65025" data-postid="1965" data-belowelement="comment-65025" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65141">
+										<article id="comment-65141" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">lucien haft</b> </cite><a href="/character-creator-ex/#comment-65141"><time datetime="2022-08-29T09:15:42-05:00">August 29, 2022 at 9:15 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>couple monthe late and i dont know if you have already solved it but her goes<br>
+													1. Firstly open the plugin parameters and change &ldquo;Print to Console&rdquo; to be true<br>
+													2. Use playtest charactercreator<br>
+													3. Press F8<br>
+													4. Copepaster to script call<br>
+													5. var id = characterId</p>
+												<p>example:<br>
+													var id = 2;<br>
+													$gameCharacterCreations.addInfos(id, {&ldquo;Body&rdquo;:{&ldquo;path&rdquo;:&rdquo;img/SumRndmDde/character-creator-ex/Body/walk/&rdquo;,&rdquo;file&rdquo;:&rdquo;Body (4)&rdquo;,&rdquo;color&rdquo;:[&ldquo;red&rdquo;,340]},</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65141#respond" data-commentid="65141" data-postid="1965" data-belowelement="comment-65141" data-respondelement="respond" data-replyto="Reply to lucien haft" aria-label="Reply to lucien haft">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-65142">
+												<article id="comment-65142" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">lucien haft</b> </cite><a href="/character-creator-ex/#comment-65142"><time datetime="2022-08-29T09:17:58-05:00">August 29, 2022 at 9:17 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>and put the example in a Script Call in a Event.</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65142#respond" data-commentid="65142" data-postid="1965" data-belowelement="comment-65142" data-respondelement="respond" data-replyto="Reply to lucien haft" aria-label="Reply to lucien haft">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65028">
+								<article id="comment-65028" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/59085013f02978ce273056ce33eec05d3e19b3ddefe906514e1f0923a9e9a7da?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Phacey</b> </cite><a href="/character-creator-ex/#comment-65028"><time datetime="2022-05-18T22:55:23-05:00">May 18, 2022 at 10:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>is there a way to give a customized character multiple facial expressions.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65028#respond" data-commentid="65028" data-postid="1965" data-belowelement="comment-65028" data-respondelement="respond" data-replyto="Reply to Phacey" aria-label="Reply to Phacey">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65143">
+										<article id="comment-65143" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">lucien haft</b> </cite><a href="/character-creator-ex/#comment-65143"><time datetime="2022-08-29T09:21:46-05:00">August 29, 2022 at 9:21 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>supose you can make a extra map with the face expressions from the from the generator.<br>
+													Even if you dont make it show by setting it visability to false you should be able to call it with a Scrip call event i mentiond in my last comment.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65143#respond" data-commentid="65143" data-postid="1965" data-belowelement="comment-65143" data-respondelement="respond" data-replyto="Reply to lucien haft" aria-label="Reply to lucien haft">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65144">
+								<article id="comment-65144" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f9a8ae8f5f47a24163457818e4eaf44998fd522d1eb23b55263876ecce0339d7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">lucien haft</b> </cite><a href="/character-creator-ex/#comment-65144"><time datetime="2022-08-29T09:23:40-05:00">August 29, 2022 at 9:23 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p><a href="https://forums.rpgmakerweb.com/index.php?threads/sumrndmddes-character-creator-ex-plugin-f-a-qs.88746/" rel="nofollow ugc">https://forums.rpgmakerweb.com/index.php?threads/sumrndmddes-character-creator-ex-plugin-f-a-qs.88746/</a></p>
+										<p>Has had many andsers to issue ive had.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65144#respond" data-commentid="65144" data-postid="1965" data-belowelement="comment-65144" data-respondelement="respond" data-replyto="Reply to lucien haft" aria-label="Reply to lucien haft">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65488">
+								<article id="comment-65488" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/ba444ce6a2a358afc3d2e424c54e6eb7c32a8996e5ae95608047565bb722394f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ba444ce6a2a358afc3d2e424c54e6eb7c32a8996e5ae95608047565bb722394f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">OniGiriGuy</b> </cite><a href="/character-creator-ex/#comment-65488"><time datetime="2024-04-18T20:57:22-05:00">April 18, 2024 at 8:57 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>When I download it, it says &ldquo;not secure&rdquo; and that the file could have been tampered with. Any idea why?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65488#respond" data-commentid="65488" data-postid="1965" data-belowelement="comment-65488" data-respondelement="respond" data-replyto="Reply to OniGiriGuy" aria-label="Reply to OniGiriGuy">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65533">
+								<article id="comment-65533" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9ab605520fbf94d7cc6291cf16160f94d38bb10cad540c31f61bf597c4b20663?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9ab605520fbf94d7cc6291cf16160f94d38bb10cad540c31f61bf597c4b20663?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Sad Sad</b> </cite><a href="/character-creator-ex/#comment-65533"><time datetime="2024-07-01T04:46:32-05:00">July 1, 2024 at 4:46 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>When I want to open the character menu: &ldquo;TypeError: Cannot read property &lsquo;name&rsquo; of undefined<br>
+											at Window_CharacterCreator_FolderList.currentFolder (SRD_CharacterCreatorEX.js:2108)<br>
+											at Window_CharacterCreator_FileList.initialize (SRD_CharacterCreatorEX.js:2192)<br>
+											at new Window_CharacterCreator_FileList (SRD_CharacterCreatorEX.js:399)<br>
+											at Scene_CharacterCreator.createFileList (SRD_CharacterCreatorEX.js:1335)<br>
+											at Scene_CharacterCreator.create (SRD_CharacterCreatorEX.js:1271)<br>
+											at Function.SceneManager.changeScene (rpg_managers.js:2005)<br>
+											at Function.SceneManager.updateMain (rpg_managers.js:1982)<br>
+											at Function.SceneManager.updateMain (SRD_SuperToolsEngine.js:413)<br>
+											at Function.SceneManager.update (rpg_managers.js:1907)&rdquo; </p>
+										<p>RIP</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65533#respond" data-commentid="65533" data-postid="1965" data-belowelement="comment-65533" data-respondelement="respond" data-replyto="Reply to Sad Sad" aria-label="Reply to Sad Sad">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65534">
+								<article id="comment-65534" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9ab605520fbf94d7cc6291cf16160f94d38bb10cad540c31f61bf597c4b20663?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9ab605520fbf94d7cc6291cf16160f94d38bb10cad540c31f61bf597c4b20663?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">sad sad</b> </cite><a href="/character-creator-ex/#comment-65534"><time datetime="2024-07-01T06:23:58-05:00">July 1, 2024 at 6:23 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>you should really pay attention to the folder structure. everything from &ldquo;length&rdquo; to &ldquo;name&rdquo; undefined is due to the wrong folder structure. that was my mistake</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65534#respond" data-commentid="65534" data-postid="1965" data-belowelement="comment-65534" data-respondelement="respond" data-replyto="Reply to sad sad" aria-label="Reply to sad sad">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65650">
+								<article id="comment-65650" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/7a2d6f2c9a34cba4746f3876ada8cc1d316be9054495967c0dcc1b9314301dfd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/7a2d6f2c9a34cba4746f3876ada8cc1d316be9054495967c0dcc1b9314301dfd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jmrcl</b> </cite><a href="/character-creator-ex/#comment-65650"><time datetime="2025-08-10T13:22:43-05:00">August 10, 2025 at 1:22 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi! There is a way to change some actor part by events?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/character-creator-ex/?replytocom=65650#respond" data-commentid="65650" data-postid="1965" data-belowelement="comment-65650" data-respondelement="respond" data-replyto="Reply to Jmrcl" aria-label="Reply to Jmrcl">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/character-creator-ex/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea autocomplete="new-password" id="fb8a015351" name="fb8a015351" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-label="hp-comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea>
+										<script data-noptimize>
+											document.getElementById("comment").setAttribute("id", "a03690367084fab4036620b025de2cd5");
+											document.getElementById("fb8a015351").setAttribute("id", "comment");
+										</script>
+									</p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1965" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+									<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1048ce5b5f"></p>
+									<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&Delta;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="53">
+										<script>
+											document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+										</script>
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+	<script defer type="text/javascript" src="/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1752612151" id="akismet-frontend-js"></script>
+</body>
+
+</html>

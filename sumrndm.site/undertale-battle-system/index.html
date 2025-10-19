@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Undertale Battle System &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Undertale Battle System &ndash; MV Plugin Comments Feed" href="/undertale-battle-system/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/565">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/undertale-battle-system/">
+	<link rel="shortlink" href="/?p=565">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fundertale-battle-system%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fundertale-battle-system%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-565 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-565" class="post-565 post type-post status-publish format-standard hentry category-plugins category-battle-plugins tag-battle tag-mv tag-plugin tag-skills tag-undertale">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Undertale Battle System &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2016-12-03T19:03:19-05:00">December 3, 2016</time> <time class="updated" style="display:none;" datetime="2017-04-30T04:03:18-05:00">April 30, 2017</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/undertale-battle-system/#comments">38 Comments<span class="screen-reader-text"> on Undertale Battle System &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe width="711" height="400" src="https://www.youtube.com/embed/PcfktBxI4fU?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+							<p>This is a plugin that replicates the Bullet-hell system from Undertale.</p>
+							<p><span id="more-565"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/xvlo4tw80br6fp6/SRD_UndertaleBattleSystem.js?dl=0" target="_blank">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/xvlo4tw80br6fp6/SRD_UndertaleBattleSystem.js?dl=1">[Download]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/fg7eonyf03mv9zt/Undertale%20Engine.zip?dl=">[Undertale Engine Project]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>Undertale Battle System<br>
+									SumRndmDde</p>
+								<p>This is a plugin that replicates the Bullet-hell system from Undertale.</p>
+								<p>========================================================================<br>
+									Skill Notetags<br>
+									========================================================================</p>
+								<p>Place these notetags into the notebox of a Skill to customize the qualities<br>
+									of the UTB attack!</p>
+								<p>========================================================================</p>
+								<p>For a Skill to use the Undertale Battle System, place this notetag in it:</p>
+								<p>&lt;Use Undertale Attack&gt;</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Duration: x&gt;</p>
+								<p>Set this to the amount of frames the UTB attack will last.<br>
+									60 frames = 1 second.</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Mode: 0&gt;<br>
+									Set&rsquo;s this Skill to use the default mode.</p>
+								<p>&lt;UTB Mode: 1&gt;<br>
+									Set&rsquo;s this Skill to use the blue mode (gravity mode).<br>
+									Can also use:<br>
+									1.2 = Gravity to the left<br>
+									1.3 = Gravity to the right<br>
+									1.4 = Gravity to the up</p>
+								<p>&lt;UTB Mode: 2&gt;<br>
+									Set&rsquo;s this Skill to use green mode (shield mode).</p>
+								<p>&lt;UTB Mode: 3&gt;<br>
+									Set&rsquo;s this Skill to use purple mode (trap mode).</p>
+								<p>&lt;UTB Mode: 4&gt;<br>
+									Set&rsquo;s this Skill to use yellow mode (shooter mode).</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Invincibility: x&gt;</p>
+								<p>Set this to the amount of frames of invincibility that the player should<br>
+									get when they&rsquo;re hit with an attack.<br>
+									60 frames = 1 second.</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Delete Outside Frame&gt;</p>
+								<p>If this Notetag is in the Notebox of the Skill, then the &ldquo;attacks&rdquo; will<br>
+									be deleted if they exit the battle frame.</p>
+								<p>If this isn&rsquo;t present, then attacks will be seen everywhere.</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Code&gt;<br>
+									&lt;/UTB Code&gt;</p>
+								<p>This allows you to customize JavaScript code for the overall Skill.<br>
+									You can use &lsquo;f&rsquo; and &lsquo;p&rsquo; which are variables representing the current frame<br>
+									and player object respectively.</p>
+								<p>Here&rsquo;s some examples:</p>
+								<p>&ndash; How to change Player&rsquo;s mode to 1 at frame 100:<br>
+									&lt;UTB Code&gt;<br>
+									if(f === 100) {<br>
+									p.setMode(1);<br>
+									}<br>
+									&lt;/UTB Code&gt;</p>
+								<p>&ndash; How to show a message at frame 300:<br>
+									&lt;UTB Code&gt;<br>
+									if(f === 300) {<br>
+									this.message(&ldquo;Hello \\!This is a message.&rdquo;);<br>
+									}<br>
+									&lt;/UTB Code&gt;</p>
+								<p>&ndash; How to have a 1 in 100 chance for an instance of Attack 1 to<br>
+									spawn every frame:<br>
+									&lt;UTB Code&gt;<br>
+									if(Math.randomInt(100) === 1) {<br>
+									this.createAttack(1);<br>
+									}<br>
+									&lt;/UTB Code&gt;</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Initial Code&gt;<br>
+									&lt;/UTB Initial Code&gt;</p>
+								<p>This is code that is run once at the start of the Skill.<br>
+									It is mainly used to initialize variables and spawn preparation attacks<br>
+									if it is necessary.</p>
+								<p>Here&rsquo;s some examples:</p>
+								<p>&ndash; Creates a number variable called &ldquo;count&rdquo;:<br>
+									&lt;UTB Initial Code&gt;<br>
+									this._count = 0;<br>
+									&lt;/UTB Initial Code&gt;</p>
+								<p>&ndash; Spawns Attack 1 on the first frame only:<br>
+									&lt;UTB Initial Code&gt;<br>
+									this.createAttack(1);<br>
+									&lt;/UTB Initial Code&gt;</p>
+								<p>&ndash; Sets the frame&rsquo;s Width to 500 and substract 50 from the frame&rsquo;s X:<br>
+									&lt;UTB Initial Code&gt;<br>
+									this.window.width = 500;<br>
+									this.window.x -= 50;<br>
+									&lt;/UTB Initial Code&gt;</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Attack x&gt;<br>
+									&lt;/UTB Attack x&gt;</p>
+								<p>Now, each Skill can have 9 individual &ldquo;UTB attacks&rdquo;.<br>
+									You can customize one of them by using the tags above.<br>
+									Then, you can customize the qualities of the attack by<br>
+									using notetags inside of the UTB attack tags.</p>
+								<p>You may have to use this online tool to make the creation convenient:<br>
+									http://sumrndmdde.github.io/UTB-Attack-Creator/</p>
+								<p>For example:</p>
+								<p>&lt;UTB Attack 1&gt;<br>
+									Initial X: this.x + 220<br>
+									Initial Y: this.y + 5<br>
+									Collision Type: Rect<br>
+									Width: 160<br>
+									Height: 20<br>
+									X Speed: 0<br>
+									Y Speed: 0.5<br>
+									X Accel: 0<br>
+									Y Accel: 0<br>
+									Color: green<br>
+									Spawn Rate: 100<br>
+									Spawn Delay: 0<br>
+									&lt;/UTB Attack 1&gt;</p>
+								<p>&lt;UTB Attack 2&gt;<br>
+									Initial X: this.x<br>
+									Initial Y: this.y<br>
+									X Speed: 1<br>
+									Y Speed: 1<br>
+									X Accel: 0<br>
+									Y Accel: 0<br>
+									Collision Type: circle<br>
+									Radius: 15<br>
+									Spawn Rate: 100<br>
+									Spawn Delay: 20<br>
+									Delete Distance: 50<br>
+									Destructible: true<br>
+									&lt;Direct Code&gt;<br>
+									if(this.x &gt; width) this.xspeed = -1;<br>
+									&lt;/Direct Code&gt;<br>
+									&lt;/UTB Attack 2&gt;</p>
+								<p>========================================================================<br>
+									Actor Notetags<br>
+									========================================================================</p>
+								<p>Use these to customize the Image and Collision of the Actor:</p>
+								<p>&lt;UTB Sprite: filename&gt;</p>
+								<p>Use this to set the file of the image of what you want the Actor to look<br>
+									like. The image must be stored in img/SumRndmDde/utb/</p>
+								<p>Example: &lt;UTB Sprite: heart&gt;</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Speed: speed&gt;</p>
+								<p>Set this to the speed the Actor should move in the frame.</p>
+								<p>Simply set this to a number.</p>
+								<p>Example: &lt;UTB Speed: 4&gt;<br>
+									&lt;UTB Speed: 6&gt;</p>
+								<p>========================================================================</p>
+								<p>&lt;UTB Shape: shape&gt;</p>
+								<p>Set this to the shape of this Actor&rsquo;s collision box.</p>
+								<p>You can use: &ldquo;circle&rdquo; or &ldquo;rect&rdquo;.</p>
+								<p>Example: &lt;UTB Shape: circle&gt;<br>
+									&lt;UTB Shape: rect&gt;</p>
+								<p>========================================================================</p>
+								<p>In order to customize the size of the shapes, use:</p>
+								<p>&lt;UTB Radius: number&gt;<br>
+									For the &ldquo;circle&rdquo; collision.</p>
+								<p>&lt;UTB Width: number&gt;<br>
+									&lt;UTB Height: number&gt;<br>
+									For the &ldquo;rect&rdquo; collision.</p>
+								<p>========================================================================<br>
+									Misc JavaScript Eval Info<br>
+									========================================================================</p>
+								<p>Undertale Attack Evals<br>
+									========================================================================</p>
+								<p>Here are the following variables for Undertale Attacks to be used in<br>
+									&ldquo;Direct Code&rdquo;:</p>
+								<p>Image &ndash; this.image<br>
+									Animation Frames &ndash; this.aniFrames<br>
+									Animation Speed &ndash; this.aniSpeed<br>
+									Type &ndash; this.type<br>
+									Initial X &ndash; this.x<br>
+									Initial Y &ndash; this.y<br>
+									Collision Type &ndash; this.shape<br>
+									Radius &ndash; this.radius<br>
+									Width &ndash; this._mywidth<br>
+									Height &ndash; this._myheight<br>
+									X Speed &ndash; this.xspeed<br>
+									Y Speed &ndash; this.yspeed<br>
+									X Accel &ndash; this.xaccel<br>
+									Y Accel &ndash; this.yaccel<br>
+									X Scale &ndash; this.scale.x<br>
+									Y Scale &ndash; this.scale.y<br>
+									Opacity &ndash; this.opacity<br>
+									Rotation &ndash; this.rotation<br>
+									Visibility &ndash; this.visibility<br>
+									Color &ndash; this.color<br>
+									Delete Distance &ndash; this.deleteDistance<br>
+									Destructible &ndash; this.destructible<br>
+									Direct Code &ndash; this.directCode<br>
+									Initial Code &ndash; this.iniCode<br>
+									Window &ndash; this.window</p>
+								<p>Window Frame Evals<br>
+									========================================================================</p>
+								<p>For the &ldquo;Direct Code&rdquo; and &ldquo;UTB Code&rdquo; notetags, you can use the this.window<br>
+									variable to reference various positions on the frame.</p>
+								<p>this.window.x &ndash; The X position of the Window<br>
+									this.window.y &ndash; The Y position of the Window<br>
+									this.window.width &ndash; The width of the Window<br>
+									this.window.height &ndash; The height of the Window<br>
+									this.window.left &ndash; The X position of the left side of the Window<br>
+									this.window.right &ndash; The X position of the right side of the Window<br>
+									this.window.top &ndash; The Y position of the top side of the Window<br>
+									this.window.bottom &ndash; The Y position of the bottom side of the Window<br>
+									this.window.x_middle &ndash; The X position of the middle of the Window<br>
+									this.window.y_middle &ndash; The Y position of the middle of the Window</p>
+								<p>Message Bubble Text Save<br>
+									========================================================================</p>
+								<p>In order to &ldquo;save&rdquo; text to be shown in the next Undertale attack, use<br>
+									the following Script Call:</p>
+								<p>$gameMessageBubble.saveText(`Insert the text<br>
+									you wish to use<br>
+									in here!`);</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-566" src="/wp-content/uploads/2016/12/Undertale-Battle-System-SS2.png" alt="undertale-battle-system-ss2" width="816" height="624" srcset="/wp-content/uploads/2016/12/Undertale-Battle-System-SS2.png 816w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS2-150x115.png 150w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS2-300x229.png 300w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS2-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+							<p><img decoding="async" class="alignnone size-full wp-image-567" src="/wp-content/uploads/2016/12/Undertale-Battle-System-SS.png" alt="undertale-battle-system-ss" width="816" height="624" srcset="/wp-content/uploads/2016/12/Undertale-Battle-System-SS.png 816w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS-150x115.png 150w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS-300x229.png 300w, /wp-content/uploads/2016/12/Undertale-Battle-System-SS-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+							<hr>
+							<h3>Detailed Changelog (do I still need this?)</h3>
+							<p>Version 1.00<br>
+								&ndash; Everything else (lol)</p>
+							<p>Version Beta 1.50<br>
+								&ndash; Added TRAP (Purple) Mode<br>
+								&ndash; Added Blue and Orange attacks<br>
+								&ndash; Added Player rotation effect<br>
+								&ndash; Added X/Y Scale, Opacity, Rotation attributes to UTB Attacks</p>
+							<p>Version Beta 1.40<br>
+								&ndash; Rewrote the entire plugin from scratch D:<br>
+								&ndash; Converted Bitmap-oriented system to a Sprite-oriented system<br>
+								&ndash; Added &ldquo;Defaults&rdquo; system<br>
+								&ndash; Tons of new Parameters added!</p>
+							<p>Version Beta 1.30<br>
+								&ndash; Added the ability to customize the image used for each Actor<br>
+								&ndash; Added the ability to customize the collision of each Actor<br>
+								&ndash; Attacks can now exist outside of the Battle Box<br>
+								&ndash; <strong>&lt;UTB Draw Outside Box&gt;</strong> can be used to draw the attacks outside of the Battle Box<br>
+								&ndash; Can now call &ldquo;Initial Code&rdquo; <strong>&lt;UTB Initial Code&gt;&hellip;&lt;/UTB Initial Code&gt;</strong><br>
+								&ndash; Removed Dynamic Speed and Set<br>
+								&ndash; Added more Parameters for customizing hue and opacity</p>
+							<p>Version Beta 1.20<br>
+								&ndash; Damage is now based odd the damage a Skill would normally do as opposed to consistently doing 50 damage.<br>
+								&ndash; &ldquo;Delete Distance&rdquo; can be used to specify a specific distance outside the box an attack may go before it is deleted.<br>
+								&ndash; Added YELLOW mode. It let&rsquo;s you shoot bullets when pushing &ldquo;Z&rdquo;. Use <strong>&lt;UTB Mode: 4&gt;</strong> to set the Skill to have YELLOW mode.</p>
+							<p>Version Beta 1.10<br>
+								&ndash; Added &ldquo;message&rdquo; function to be used in UTB Code <strong>(this.message(&ldquo;message&rdquo;))</strong><br>
+								&ndash; Added &ldquo;createAttack&rdquo; function to be used in UTB Code <strong>(this.createAttack(id))</strong><br>
+								&ndash; Added JavaScript Code Notetag for Code that will<br>
+								be called every frame the Skill is Active <strong>(&lt;UTB Code&gt;&hellip;&lt;/UTB Code&gt;)</strong><br>
+								&ndash; Fixed Compatbility Issue with YEP Battle Engine Core<br>
+								&ndash; Upgraded the Attack Deletion System<br>
+								&ndash; Preload Face Images</p>
+							<p>Version Beta 1.00<br>
+								&ndash; Added Parameters for various customization<br>
+								&ndash; Fixed various bugs<br>
+								&ndash; Created an individual class for the Player<br>
+								&ndash; Beta Plugin Released at this version</p>
+							<p>Version Alpha 1.40<br>
+								&ndash; Added the ability to give objects custom images<br>
+								&ndash; Added &ldquo;modes&rdquo; to the Player<br>
+								&ndash; Added the ability to customize &ldquo;mode&rdquo; per attack<br>
+								&ndash; Added &ldquo;blue mode&rdquo; aka. gravity game<br>
+								&ndash; Demo Created at this version</p>
+							<p>Version Alpha 1.30<br>
+								&ndash; Added Custom Spawn Rates<br>
+								&ndash; Added Spawn Delay<br>
+								&ndash; Custom Color<br>
+								&ndash; Added the ability to have 9 desperate UTB objects per attack<br>
+								&ndash; Further improved upon collision system</p>
+							<p>Version Alpha 1.20<br>
+								&ndash; Improved upon collision system<br>
+								&ndash; Made collisions cusomizable per UTB attack object<br>
+								&ndash; Added the ability to view collision masks of objects</p>
+							<p>Version Alpha 1.10<br>
+								&ndash; Build UTB Attacks based on Skills used by Enemy<br>
+								&ndash; Added Notetag system for customizing UTB attacks<br>
+								&ndash; Added customizable durations for the UTB attacks<br>
+								&ndash; Added &ldquo;Dynamic&rdquo; and &ldquo;Static&rdquo; movement</p>
+							<p>Version Alpha 1.00<br>
+								&ndash; Initial reveal version<br>
+								&ndash; Created the basic system with hard-coded attacks for each enemy<br>
+								&ndash; Demo Created at this version</p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/battle-plugins/" rel="tag">Battle Plugins</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/battle/" rel="tag">battle</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a>, <a href="/tag/skills/" rel="tag">Skills</a>, <a href="/tag/undertale/" rel="tag">Undertale</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/translation-engine/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Translation Engine &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-message-faces/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Message Faces &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/custom-faces/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Custom Faces &ndash; MV Plugin</a></div>
+									<div class="nav-next"><a href="/map-slip-damage/" rel="next">Map Slip Damage &ndash; MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							38 thoughts on &ldquo;<span>Undertale Battle System &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-4526">
+								<article id="comment-4526" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9abedc88c749e439c83371d66abe47968f031baf8c96422b439e2bedc6f5aeac?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9abedc88c749e439c83371d66abe47968f031baf8c96422b439e2bedc6f5aeac?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AcousticJamm</b> </cite><a href="/undertale-battle-system/#comment-4526"><time datetime="2019-08-27T14:39:56-05:00">August 27, 2019 at 2:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is it possible to only have the act button for actor 1 and the rest of the actors have a spell button? I&rsquo;m planning on making a Deltarune-similar game.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=4526#respond" data-commentid="4526" data-postid="565" data-belowelement="comment-4526" data-respondelement="respond" data-replyto="Reply to AcousticJamm" aria-label="Reply to AcousticJamm">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-14903">
+								<article id="comment-14903" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/b5d33b66d92417f068bae1ed0b1249a0c19cef56b5854d8371774ddce87d3113?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b5d33b66d92417f068bae1ed0b1249a0c19cef56b5854d8371774ddce87d3113?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="https://fb.me/DarkWorldUnderground" class="url" rel="ugc external nofollow">angel491</a></b> </cite><a href="/undertale-battle-system/#comment-14903"><time datetime="2019-09-15T19:39:19-05:00">September 15, 2019 at 7:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>hello and I found an error that is that the utb sprite does not appear during the first attack, but this happens when you change the tone of the image to different colors, but if it is predetermined (0) if it appears, I would like to fix this surely the solution it would be first to load the utb sprite first and then the rest<br>
+											but otherwise everything is fine</p>
+										<p>I hope to see myself explained well</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=14903#respond" data-commentid="14903" data-postid="565" data-belowelement="comment-14903" data-respondelement="respond" data-replyto="Reply to angel491" aria-label="Reply to angel491">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-42788">
+										<article id="comment-42788" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/92bb92730fc2effa4cfedf52c903503ef694642930ff808a28f713e59ab8c4e3?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/92bb92730fc2effa4cfedf52c903503ef694642930ff808a28f713e59ab8c4e3?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Fallon999</b> </cite><a href="/undertale-battle-system/#comment-42788"><time datetime="2019-11-22T15:29:49-05:00">November 22, 2019 at 3:29 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I encountered the same issue. Either the player sprite or the attack sprite are invisible for the first time they are used. After that they work fine but it is fairly annoying to deal with.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=42788#respond" data-commentid="42788" data-postid="565" data-belowelement="comment-42788" data-respondelement="respond" data-replyto="Reply to Fallon999" aria-label="Reply to Fallon999">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-47941">
+												<article id="comment-47941" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/158e731a33bed06d3db087a06d61e0f7f946916ce97271894c3dbefb34b82dcf?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/158e731a33bed06d3db087a06d61e0f7f946916ce97271894c3dbefb34b82dcf?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Fallon999</b> </cite><a href="/undertale-battle-system/#comment-47941"><time datetime="2020-03-04T13:16:38-05:00">March 4, 2020 at 1:16 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>I recently fixed the problem. Turns out that my Icon sheet was too big(5mb+) and that caused trouble with loading the graphics. Simply making it smaller fixed the issue.</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=47941#respond" data-commentid="47941" data-postid="565" data-belowelement="comment-47941" data-respondelement="respond" data-replyto="Reply to Fallon999" aria-label="Reply to Fallon999">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-46786">
+								<article id="comment-46786" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d426e555e72bc34014efa1546824882e0872f1d0a64d0f352943d98b3e5b30bc?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d426e555e72bc34014efa1546824882e0872f1d0a64d0f352943d98b3e5b30bc?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Sgt.Headcraba</b> </cite><a href="/undertale-battle-system/#comment-46786"><time datetime="2020-02-10T22:21:56-05:00">February 10, 2020 at 10:21 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;m just curious, is there anyway to make it so players start a &ldquo;Undertale attack&rdquo;, I wanted to edit the system to it&rsquo;s more of a minigame to increase the attack power</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=46786#respond" data-commentid="46786" data-postid="565" data-belowelement="comment-46786" data-respondelement="respond" data-replyto="Reply to Sgt.Headcraba" aria-label="Reply to Sgt.Headcraba">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-47902">
+										<article id="comment-47902" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/57619d045dcfea18c8cf59e26fe6e04d7c725c391423713117811d9d614e9ccc?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/57619d045dcfea18c8cf59e26fe6e04d7c725c391423713117811d9d614e9ccc?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AlicetheMalice</b> </cite><a href="/undertale-battle-system/#comment-47902"><time datetime="2020-03-04T06:07:11-05:00">March 4, 2020 at 6:07 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Have you tried making the Player attack a skill and adding in the note tag?</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=47902#respond" data-commentid="47902" data-postid="565" data-belowelement="comment-47902" data-respondelement="respond" data-replyto="Reply to AlicetheMalice" aria-label="Reply to AlicetheMalice">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-47901">
+								<article id="comment-47901" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/57619d045dcfea18c8cf59e26fe6e04d7c725c391423713117811d9d614e9ccc?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/57619d045dcfea18c8cf59e26fe6e04d7c725c391423713117811d9d614e9ccc?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AlicetheMalice</b> </cite><a href="/undertale-battle-system/#comment-47901"><time datetime="2020-03-04T06:03:57-05:00">March 4, 2020 at 6:03 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey Guys, </p>
+										<p>maybe this is a silly question but I&rsquo;m having trouble making the<br>
+											battle events last longer than two rounds.<br>
+											Can anyone help me out there?<br>
+											I&rsquo;ve been trying changing variables, renaming them, conditional branching, but<br>
+											nothing seems to work out properly for me.</p>
+										<p>Also I keep seeing the error message: failed to load command%205.png<br>
+											the thing is, there is no such data in my orders at all.<br>
+											Anyone else encountering this?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=47901#respond" data-commentid="47901" data-postid="565" data-belowelement="comment-47901" data-respondelement="respond" data-replyto="Reply to AlicetheMalice" aria-label="Reply to AlicetheMalice">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65636">
+										<article id="comment-65636" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/1fb76648f0dacafda83b89bb864fc171c0f172578115ac40c3d614e51bfb0840?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/1fb76648f0dacafda83b89bb864fc171c0f172578115ac40c3d614e51bfb0840?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Random</b> </cite><a href="/undertale-battle-system/#comment-65636"><time datetime="2025-07-11T14:25:51-05:00">July 11, 2025 at 2:25 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>X is the number of frames the attack will last. Usually you put it at the top of stuff i think.<br>
+													this.duration is the variable related to this i think. Do whatever you want with that info.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65636#respond" data-commentid="65636" data-postid="565" data-belowelement="comment-65636" data-respondelement="respond" data-replyto="Reply to Random" aria-label="Reply to Random">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-48206">
+								<article id="comment-48206" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d3887f34fbff2e1dd86d1c4117230bfbc007da7530c77798150ae4efdb76a4c8?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d3887f34fbff2e1dd86d1c4117230bfbc007da7530c77798150ae4efdb76a4c8?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Aiden Burke</b> </cite><a href="/undertale-battle-system/#comment-48206"><time datetime="2020-03-06T14:30:28-05:00">March 6, 2020 at 2:30 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>is it possible to replicate this menu system for vx ace in ruby<br>
+											i know its a different language but im having trouble trying to replicate it with my poor programming knowledge of Ruby and obscure offline vx ace manauls lmao</p>
+										<p>but i mean you dont have to do it if you dont feel like it/you dont know a lot of ruby either but man i wish i could get this for vx ace</p>
+										<p>AloneForLong from forums.rpgmakerweb.com</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=48206#respond" data-commentid="48206" data-postid="565" data-belowelement="comment-48206" data-respondelement="respond" data-replyto="Reply to Aiden Burke" aria-label="Reply to Aiden Burke">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-50787">
+								<article id="comment-50787" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d2316fa511745d3683ad8610d2b946289d93e20076062b39af9ba9b287326054?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d2316fa511745d3683ad8610d2b946289d93e20076062b39af9ba9b287326054?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AlternianGamer99</b> </cite><a href="/undertale-battle-system/#comment-50787"><time datetime="2020-04-27T21:40:34-05:00">April 27, 2020 at 9:40 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hi, I&rsquo;m having trouble as the SPARE button isn&rsquo;t showing up in my game. It shouldn&rsquo;t be the image as it&rsquo;s the default one. But I can&rsquo;t select it at all. The enemy is set to be separable with the common events set up. I don&rsquo;t know what I&rsquo;m doing wrong but I&rsquo;d really appreciate an ensure as my searches have found nothing of use. Thank you and have a nice Day, Noon, or Night were you are.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=50787#respond" data-commentid="50787" data-postid="565" data-belowelement="comment-50787" data-respondelement="respond" data-replyto="Reply to AlternianGamer99" aria-label="Reply to AlternianGamer99">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-51109">
+								<article id="comment-51109" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/45eb2a74a9c7f571a8b25ff8272f8f17f1b0399e56122bd4b9efaaf7656332d5?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/45eb2a74a9c7f571a8b25ff8272f8f17f1b0399e56122bd4b9efaaf7656332d5?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">RandomThisWay13</b> </cite><a href="/undertale-battle-system/#comment-51109"><time datetime="2020-05-09T23:46:31-05:00">May 9, 2020 at 11:46 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is it possible for this to be compatible with this<br>
+											<a href="https://forums.rpgmakerweb.com/index.php?threads/tactics-system-1-1.117600/" rel="nofollow ugc">https://forums.rpgmakerweb.com/index.php?threads/tactics-system-1-1.117600/</a><br>
+											SRPG Plugin?
+										</p>
+										<p>I kinda wanna make a game where you can do quick time events and dodging for combat but its also a tactics game. like when an enemy attacks me I can dodge it, undertale style and when i attack button prompts appear</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=51109#respond" data-commentid="51109" data-postid="565" data-belowelement="comment-51109" data-respondelement="respond" data-replyto="Reply to RandomThisWay13" aria-label="Reply to RandomThisWay13">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-57709">
+								<article id="comment-57709" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/435384f2bea415b936ce734bd7b5f39c3e8fbd07073bf366088767361cb9c9f5?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/435384f2bea415b936ce734bd7b5f39c3e8fbd07073bf366088767361cb9c9f5?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jojo</b> </cite><a href="/undertale-battle-system/#comment-57709"><time datetime="2020-09-11T07:43:21-05:00">September 11, 2020 at 7:43 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Can you please make Undertale Battle System engine for rpg maker mz.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=57709#respond" data-commentid="57709" data-postid="565" data-belowelement="comment-57709" data-respondelement="respond" data-replyto="Reply to Jojo" aria-label="Reply to Jojo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65208">
+										<article id="comment-65208" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/7a76e58970655f017f4142ddb43da3fdfc1806367a36085cd88ef0387b3de3ef?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/7a76e58970655f017f4142ddb43da3fdfc1806367a36085cd88ef0387b3de3ef?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">DirtyJoe</b> </cite><a href="/undertale-battle-system/#comment-65208"><time datetime="2023-03-03T10:41:30-05:00">March 3, 2023 at 10:41 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>+</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65208#respond" data-commentid="65208" data-postid="565" data-belowelement="comment-65208" data-respondelement="respond" data-replyto="Reply to DirtyJoe" aria-label="Reply to DirtyJoe">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+									<li class="comment odd alt depth-2" id="li-comment-65280">
+										<article id="comment-65280" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/2de3c02703face473c2751e0d90e80696b95d0fe47bec9e4b497939a5a142042?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/2de3c02703face473c2751e0d90e80696b95d0fe47bec9e4b497939a5a142042?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">???</b> </cite><a href="/undertale-battle-system/#comment-65280"><time datetime="2023-08-04T09:59:39-05:00">August 4, 2023 at 9:59 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Yes PLEEEEEASE!!!</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65280#respond" data-commentid="65280" data-postid="565" data-belowelement="comment-65280" data-respondelement="respond" data-replyto="Reply to ???" aria-label="Reply to ???">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-57712">
+								<article id="comment-57712" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/edcbdf0b68a643c6b00737698b35ed02297adbd529247cb61252dd3fc88b0c93?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/edcbdf0b68a643c6b00737698b35ed02297adbd529247cb61252dd3fc88b0c93?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nirashima</b> </cite><a href="/undertale-battle-system/#comment-57712"><time datetime="2020-09-12T04:01:38-05:00">September 12, 2020 at 4:01 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Sorry, but can you make such a battle plugin for rpg maker vx ace?<br>
+											Please!!!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=57712#respond" data-commentid="57712" data-postid="565" data-belowelement="comment-57712" data-respondelement="respond" data-replyto="Reply to Nirashima" aria-label="Reply to Nirashima">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-59086">
+								<article id="comment-59086" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/88ca1fd758deaecc4692c2ab24d5860da0926a2b35d1bc7cd17cb335722ec538?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/88ca1fd758deaecc4692c2ab24d5860da0926a2b35d1bc7cd17cb335722ec538?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">"Ethan"</b> </cite><a href="/undertale-battle-system/#comment-59086"><time datetime="2020-12-26T22:23:51-05:00">December 26, 2020 at 10:23 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey, idk if you&rsquo;ve stopped supporting this plugin, but I want to point out, that I think there&rsquo;s some kind of memory leak in green mode (SHIELD MODE).<br>
+											I&rsquo;ve noticed that used memory climbs pretty high when using green/shield mode and doesn&rsquo;t come back down. And comparing it to red/normal and blue/gravity but they don&rsquo;t increase the memory as much as green does, if at all. (I have not yet tried purple/trap mode)<br>
+											I watched the process in the task manager, and noted that at around 3.7 gigs of memory used the game is killed with no error message. Because of a fight I have which uses green mode through the entire thing it takes about 11 turns or so before it closes all of the sudden. While I&rsquo;m in the green mode, the memory starts climbing, and when I get back to the party fight menu it halts but doesn&rsquo;t come back down.<br>
+											Any idea why this is happening and/or how I can modify the script to fix it?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=59086#respond" data-commentid="59086" data-postid="565" data-belowelement="comment-59086" data-respondelement="respond" data-replyto="Reply to &quot;Ethan&quot;" aria-label="Reply to &quot;Ethan&quot;">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65637">
+										<article id="comment-65637" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/bc554f0a010bcce1475b8f221babab1bd6a1eec9e0585381240023331295ad71?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/bc554f0a010bcce1475b8f221babab1bd6a1eec9e0585381240023331295ad71?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Random</b> </cite><a href="/undertale-battle-system/#comment-65637"><time datetime="2025-07-11T14:26:44-05:00">July 11, 2025 at 2:26 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Weird&hellip;.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65637#respond" data-commentid="65637" data-postid="565" data-belowelement="comment-65637" data-respondelement="respond" data-replyto="Reply to Random" aria-label="Reply to Random">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64272">
+								<article id="comment-64272" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/eb51bbc40589b54655bbe52c9e4a7ba996c869978d129df8a831aefdd085db03?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/eb51bbc40589b54655bbe52c9e4a7ba996c869978d129df8a831aefdd085db03?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">BOIBOIBOIBOIBOIBOI</b> </cite><a href="/undertale-battle-system/#comment-64272"><time datetime="2021-04-01T04:33:08-05:00">April 1, 2021 at 4:33 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>So, for me this does not work, the error is</p>
+										<p>Script:<br>
+											C:\Users\hilip\Downloads\SRD_UndertaleBattleSystem.js<br>
+											Line: 807<br>
+											Point: 17<br>
+											Error: Expected indentificator<br>
+											Code: 800A03F2<br>
+											Source: Microsoft JScript &ndash; compilating error</p>
+										<p>im bad at translating from polish to english and my pc is polish so sorry for any mistakes there.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=64272#respond" data-commentid="64272" data-postid="565" data-belowelement="comment-64272" data-respondelement="respond" data-replyto="Reply to BOIBOIBOIBOIBOIBOI" aria-label="Reply to BOIBOIBOIBOIBOIBOI">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64294">
+								<article id="comment-64294" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c9718a1a04417ce44486bd855a05d5d990b181a9440725c6ebcbf41efa46eb27?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c9718a1a04417ce44486bd855a05d5d990b181a9440725c6ebcbf41efa46eb27?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">ASRIEL_DREEMURR251</b> </cite><a href="/undertale-battle-system/#comment-64294"><time datetime="2021-04-09T15:58:12-05:00">April 9, 2021 at 3:58 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>sprites are not running at first</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=64294#respond" data-commentid="64294" data-postid="565" data-belowelement="comment-64294" data-respondelement="respond" data-replyto="Reply to ASRIEL_DREEMURR251" aria-label="Reply to ASRIEL_DREEMURR251">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64623">
+								<article id="comment-64623" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/b75d1020e271b57b407c9c28614d4b4b100fc01e0b5450cbc1f8b31e72b1c622?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b75d1020e271b57b407c9c28614d4b4b100fc01e0b5450cbc1f8b31e72b1c622?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Shinyeevee</b> </cite><a href="/undertale-battle-system/#comment-64623"><time datetime="2021-09-04T09:16:06-05:00">September 4, 2021 at 9:16 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>i love it</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=64623#respond" data-commentid="64623" data-postid="565" data-belowelement="comment-64623" data-respondelement="respond" data-replyto="Reply to Shinyeevee" aria-label="Reply to Shinyeevee">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64913">
+								<article id="comment-64913" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/fdf36415d4d651103e969a46a4edbe74b6e5fc8716944792dc196c03a74daa02?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/fdf36415d4d651103e969a46a4edbe74b6e5fc8716944792dc196c03a74daa02?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Amieorandria</b> </cite><a href="/undertale-battle-system/#comment-64913"><time datetime="2022-02-23T14:55:02-05:00">February 23, 2022 at 2:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Can you make bullets aim at the player specifically?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=64913#respond" data-commentid="64913" data-postid="565" data-belowelement="comment-64913" data-respondelement="respond" data-replyto="Reply to Amieorandria" aria-label="Reply to Amieorandria">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65634">
+										<article id="comment-65634" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/5cb8a059ecb68910c68376a8b9151bf9e7e60d3c172b076e8ed188ac5d420fdb?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cb8a059ecb68910c68376a8b9151bf9e7e60d3c172b076e8ed188ac5d420fdb?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Random</b> </cite><a href="/undertale-battle-system/#comment-65634"><time datetime="2025-07-11T14:16:24-05:00">July 11, 2025 at 2:16 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Initial X: this._player.x + 100<br>
+													Initial Y: this._player.y + 100</p>
+												<p>And make them move to the player, the + 100 is just so that they don&rsquo;t spawn inside the player lol</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65634#respond" data-commentid="65634" data-postid="565" data-belowelement="comment-65634" data-respondelement="respond" data-replyto="Reply to Random" aria-label="Reply to Random">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64926">
+								<article id="comment-64926" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/05ac987dab5c34a3cb22a34aa37e14d00a6a34f7a0949f2e93564a75e48f5373?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/05ac987dab5c34a3cb22a34aa37e14d00a6a34f7a0949f2e93564a75e48f5373?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">nobodyishereyoufuc</b> </cite><a href="/undertale-battle-system/#comment-64926"><time datetime="2022-03-04T03:27:00-05:00">March 4, 2022 at 3:27 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I cant make a new description command.It seems that is a variable that makes the description works but I dont find the way to make the<br>
+											description works for my enemy.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=64926#respond" data-commentid="64926" data-postid="565" data-belowelement="comment-64926" data-respondelement="respond" data-replyto="Reply to nobodyishereyoufuc" aria-label="Reply to nobodyishereyoufuc">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65147">
+								<article id="comment-65147" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/231f1384d31a1282ad92e1b281e88b60a77505ee7e930a75165a330b84145e15?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/231f1384d31a1282ad92e1b281e88b60a77505ee7e930a75165a330b84145e15?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nevatron18</b> </cite><a href="/undertale-battle-system/#comment-65147"><time datetime="2022-09-03T16:36:53-05:00">September 3, 2022 at 4:36 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I cant get it to work, it keeps saying it &ldquo;cant read property &lsquo;window&rsquo; of undefined&rdquo;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65147#respond" data-commentid="65147" data-postid="565" data-belowelement="comment-65147" data-respondelement="respond" data-replyto="Reply to Nevatron18" aria-label="Reply to Nevatron18">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65437">
+								<article id="comment-65437" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/218c5449f4a23dbc1a0dc31a2c935c8a601ddf95ed4e3683f00f47d41c0fa9e8?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/218c5449f4a23dbc1a0dc31a2c935c8a601ddf95ed4e3683f00f47d41c0fa9e8?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Purrtid</b> </cite><a href="/undertale-battle-system/#comment-65437"><time datetime="2023-12-03T18:55:11-05:00">December 3, 2023 at 6:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>how do you change the image for the background and the white boxes?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65437#respond" data-commentid="65437" data-postid="565" data-belowelement="comment-65437" data-respondelement="respond" data-replyto="Reply to Purrtid" aria-label="Reply to Purrtid">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65484">
+								<article id="comment-65484" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/939bc9024eee5e2ef41af5ed5938d8e65954f80de3975f830f17597cc3cb85bf?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/939bc9024eee5e2ef41af5ed5938d8e65954f80de3975f830f17597cc3cb85bf?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Lunastifalia</b> </cite><a href="/undertale-battle-system/#comment-65484"><time datetime="2024-04-12T17:53:21-05:00">April 12, 2024 at 5:53 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Don&rsquo;t know if you&rsquo;re still supporting this, but I keep getting an error of &ldquo;Failed to load: img/SumRndmDde/utb/undefined.png&rdquo;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65484#respond" data-commentid="65484" data-postid="565" data-belowelement="comment-65484" data-respondelement="respond" data-replyto="Reply to Lunastifalia" aria-label="Reply to Lunastifalia">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65556">
+								<article id="comment-65556" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/48b6d9548c2ec342b20649a015279ced9cd97b5c91d41a7ec693fea1ed6bdbfe?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/48b6d9548c2ec342b20649a015279ced9cd97b5c91d41a7ec693fea1ed6bdbfe?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Fwkzpoulet</b> </cite><a href="/undertale-battle-system/#comment-65556"><time datetime="2024-10-03T01:36:18-05:00">October 3, 2024 at 1:36 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>why it deal 0 damage when i attack</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65556#respond" data-commentid="65556" data-postid="565" data-belowelement="comment-65556" data-respondelement="respond" data-replyto="Reply to Fwkzpoulet" aria-label="Reply to Fwkzpoulet">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65557">
+										<article id="comment-65557" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/48b6d9548c2ec342b20649a015279ced9cd97b5c91d41a7ec693fea1ed6bdbfe?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/48b6d9548c2ec342b20649a015279ced9cd97b5c91d41a7ec693fea1ed6bdbfe?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Fwkzpoulet</b> </cite><a href="/undertale-battle-system/#comment-65557"><time datetime="2024-10-03T02:13:56-05:00">October 3, 2024 at 2:13 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>forgot to add this lmao </p>
+												<p><a href="/timed-attack-core/" rel="ugc">/timed-attack-core/</a> </p>
+												<p>im dumb</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65557#respond" data-commentid="65557" data-postid="565" data-belowelement="comment-65557" data-respondelement="respond" data-replyto="Reply to Fwkzpoulet" aria-label="Reply to Fwkzpoulet">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65582">
+								<article id="comment-65582" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/13c4028a47cf6fb6725d0833552da5703801d585bb53d117912c722195162103?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/13c4028a47cf6fb6725d0833552da5703801d585bb53d117912c722195162103?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Qwazori</b> </cite><a href="/undertale-battle-system/#comment-65582"><time datetime="2025-02-12T11:37:41-05:00">February 12, 2025 at 11:37 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello from 2025! (Ha!). To get the sprites to display correctly on the first turn, simply add this script before each battle: ImageManager.loadBitmap(&ldquo;img/SumRndmDde/utb/&rdquo;, &ldquo;Command 1&rdquo;);<br>
+											ImageManager.loadBitmap(&ldquo;img/SumRndmDde/utb/&rdquo;, &ldquo;Command 2&rdquo;);<br>
+											ImageManager.loadBitmap(&ldquo;img/SumRndmDde/utb/&rdquo;, &ldquo;Command 3&rdquo;);<br>
+											ImageManager.loadBitmap(&ldquo;img/SumRndmDde/utb/&rdquo;, &ldquo;Command 4&rdquo;);<br>
+											ImageManager.loadBitmap(&lsquo;img/SumRndmDde/utb/&rsquo;, &lsquo;Heart&rsquo;, 0, true);<br>
+											ImageManager.loadBitmap(&lsquo;img/SumRndmDde/utb/&rsquo;, &lsquo;Heart&rsquo;, 200, true);<br>
+											ImageManager.loadBitmap(&lsquo;img/SumRndmDde/utb/&rsquo;, &lsquo;Heart&rsquo;, 100, true);<br>
+											ImageManager.loadBitmap(&lsquo;img/SumRndmDde/utb/&rsquo;, &lsquo;Heart&rsquo;, 300, true);<br>
+											ImageManager.loadBitmap(&lsquo;img/SumRndmDde/utb/&rsquo;, &lsquo;Heart&rsquo;, 40, true);</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65582#respond" data-commentid="65582" data-postid="565" data-belowelement="comment-65582" data-respondelement="respond" data-replyto="Reply to Qwazori" aria-label="Reply to Qwazori">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65583">
+										<article id="comment-65583" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/13c4028a47cf6fb6725d0833552da5703801d585bb53d117912c722195162103?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/13c4028a47cf6fb6725d0833552da5703801d585bb53d117912c722195162103?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Qwazori</b> </cite><a href="/undertale-battle-system/#comment-65583"><time datetime="2025-02-12T11:46:51-05:00">February 12, 2025 at 11:46 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>If some other sprites are missing, you can add strings using the same scheme. I may add others later</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65583#respond" data-commentid="65583" data-postid="565" data-belowelement="comment-65583" data-respondelement="respond" data-replyto="Reply to Qwazori" aria-label="Reply to Qwazori">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65591">
+								<article id="comment-65591" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/ee5600fdfb2ee27e381eecee8dca83460ada465dd746e6a465c92df6bdadeab0?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ee5600fdfb2ee27e381eecee8dca83460ada465dd746e6a465c92df6bdadeab0?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">CharlieMcBear</b> </cite><a href="/undertale-battle-system/#comment-65591"><time datetime="2025-03-08T14:09:13-05:00">March 8, 2025 at 2:09 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>SOLUTION FOR SPRITES AND IMAGES NOT LOADING!<br>
+											I&rsquo;m here in 2025! If sprites such as the player heart or attack images are not loading, I HAVE A SOLUTION! Download SumRandomDudes<br>
+											PreloaderCore plugin, and set a custom preload path to &rdquo; SumRndmDde/utb &rdquo; and then in the option below it labelled &ldquo;Preload images&rdquo;<br>
+											list all the images that were not loading previously. The video tutorial for the plugin explains this better than I have. I hope this helps some one because this issue has been annoying me for ages!</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65591#respond" data-commentid="65591" data-postid="565" data-belowelement="comment-65591" data-respondelement="respond" data-replyto="Reply to CharlieMcBear" aria-label="Reply to CharlieMcBear">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65619">
+										<article id="comment-65619" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/303ee9b74a60177c6a9116190da439b316e07ce1f0106b4126cb5b13c4a30d13?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/303ee9b74a60177c6a9116190da439b316e07ce1f0106b4126cb5b13c4a30d13?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">CosmicKitsune</b> </cite><a href="/undertale-battle-system/#comment-65619"><time datetime="2025-06-12T07:47:16-05:00">June 12, 2025 at 7:47 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Hello also from 2025. This solution only appears to work for me in the default mode. With every other mode the heart continues to disappear only on the first turn and then load on the next turn. I&rsquo;ve ensured it isn&rsquo;t a plugin conflicting issue either D:</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65619#respond" data-commentid="65619" data-postid="565" data-belowelement="comment-65619" data-respondelement="respond" data-replyto="Reply to CosmicKitsune" aria-label="Reply to CosmicKitsune">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment even depth-3" id="li-comment-65662">
+												<article id="comment-65662" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/b9fd2aa7c7cc78d9e34700d9351bcaf0a6a8ffa0ec4238f391c90460ef08bbcb?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/b9fd2aa7c7cc78d9e34700d9351bcaf0a6a8ffa0ec4238f391c90460ef08bbcb?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="https://shinyjiggly.github.io/dungeon-crashers-website/" class="url" rel="ugc external nofollow">lavenderSiren</a></b> </cite><a href="/undertale-battle-system/#comment-65662"><time datetime="2025-09-19T10:28:18-05:00">September 19, 2025 at 10:28 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>the answer to this is you gotta up the cache limit to like, 30</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65662#respond" data-commentid="65662" data-postid="565" data-belowelement="comment-65662" data-respondelement="respond" data-replyto="Reply to lavenderSiren" aria-label="Reply to lavenderSiren">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65618">
+								<article id="comment-65618" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/fd04bfb776713aa39bd8537154d6cda075c23b8800d2ce03feeffe17ace1bbe2?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/fd04bfb776713aa39bd8537154d6cda075c23b8800d2ce03feeffe17ace1bbe2?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Laisher</b> </cite><a href="/undertale-battle-system/#comment-65618"><time datetime="2025-06-09T01:28:11-05:00">June 9, 2025 at 1:28 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I&rsquo;ve been hours trying to understand even a single thing&hellip;<br>
+											NOTHING. Why I only can download one file .js but in the video I see many plugins related to the mod?????</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65618#respond" data-commentid="65618" data-postid="565" data-belowelement="comment-65618" data-respondelement="respond" data-replyto="Reply to Laisher" aria-label="Reply to Laisher">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-65635">
+										<article id="comment-65635" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/f1c2cdbbbcfa0ecc92c5f3c0779482aa55c20b9215174faf39932089ead30eae?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f1c2cdbbbcfa0ecc92c5f3c0779482aa55c20b9215174faf39932089ead30eae?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Random</b> </cite><a href="/undertale-battle-system/#comment-65635"><time datetime="2025-07-11T14:19:58-05:00">July 11, 2025 at 2:19 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Learn javascript first man, oh and also the rest are in the Undertale Engine Plugin link, gl</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65635#respond" data-commentid="65635" data-postid="565" data-belowelement="comment-65635" data-respondelement="respond" data-replyto="Reply to Random" aria-label="Reply to Random">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-65638">
+								<article id="comment-65638" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/d465eeeba68e683d6f71b28555b11eb2391930965a5bc60b58856204460a26b7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/d465eeeba68e683d6f71b28555b11eb2391930965a5bc60b58856204460a26b7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Vick</b> </cite><a href="/undertale-battle-system/#comment-65638"><time datetime="2025-07-18T14:09:11-05:00">July 18, 2025 at 2:09 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I have an issue with a RefferenceError<br>
+											It says that the box is not defined and I&rsquo;m not too advanced in code related stuff and am unsure on how to fix it. D:</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65638#respond" data-commentid="65638" data-postid="565" data-belowelement="comment-65638" data-respondelement="respond" data-replyto="Reply to Vick" aria-label="Reply to Vick">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-65670">
+								<article id="comment-65670" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/15fce02533823f17304ff03cc0862dcfa04d2f63646c53644a50752a180f33d7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/15fce02533823f17304ff03cc0862dcfa04d2f63646c53644a50752a180f33d7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">undertale</b> </cite><a href="/undertale-battle-system/#comment-65670"><time datetime="2025-10-08T11:18:55-05:00">October 8, 2025 at 11:18 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>All the skills (FIGHT, ACT, Spare and Flee) aren&rsquo;t working, and anytime I try and use them, it just goes to the error:</p>
+										<p>this.actor.actor is not a function</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65670#respond" data-commentid="65670" data-postid="565" data-belowelement="comment-65670" data-respondelement="respond" data-replyto="Reply to undertale" aria-label="Reply to undertale">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-65675">
+								<article id="comment-65675" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/2c7013732efa35e9edccd7dfcc67d653806cd4eda5d6cfb83f142a5e5192a64f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/2c7013732efa35e9edccd7dfcc67d653806cd4eda5d6cfb83f142a5e5192a64f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Hello</b> </cite><a href="/undertale-battle-system/#comment-65675"><time datetime="2025-10-14T12:22:36-05:00">October 14, 2025 at 12:22 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>how do i make the initial x relative to the players x</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/undertale-battle-system/?replytocom=65675#respond" data-commentid="65675" data-postid="565" data-belowelement="comment-65675" data-respondelement="respond" data-replyto="Reply to Hello" aria-label="Reply to Hello">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/undertale-battle-system/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="565" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+</body>
+
+</html>

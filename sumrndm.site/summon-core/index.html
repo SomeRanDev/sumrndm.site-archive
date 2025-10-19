@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Summon Core &ndash; MV Plugin &ndash; RPG Maker MZ Plugins</title>
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Feed" href="/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Comments Feed" href="/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="RPG Maker MZ Plugins &raquo; Summon Core &ndash; MV Plugin Comments Feed" href="/summon-core/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
+			}
+		};
+		/*! This file is auto-generated */
+		! function(s, n) {
+			var o, i, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function(e, t) {
+					return e === a[t]
+				})
+			}
+
+			function u(e, t) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+					if (0 !== n.data[a]) return !1;
+				return !0
+			}
+
+			function f(e, t, n, a) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+					case "emoji":
+						return !a(e, "\ud83e\udedf")
+				}
+				return !1
+			}
+
+			function g(e, t, n, a) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+					o = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+				return e.forEach(function(e) {
+					i[e] = t(o, e, n, a)
+				}), i
+			}
+
+			function t(e) {
+				var t = s.createElement("script");
+				t.src = e, t.defer = !0, s.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function(e) {
+				s.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function(t) {
+				var n = function() {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+							a = new Blob([e], {
+								type: "text/javascript"
+							}),
+							r = new Worker(URL.createObjectURL(a), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(r.onmessage = function(e) {
+							c(n = e.data), r.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = g(i, f, p, u))
+				}
+				t(n)
+			}).then(function(e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+					n.DOMReady = !0
+				}
+			}).then(function() {
+				return e
+			}).then(function() {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
+		/* ]]> */
+	</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3" type="text/css" media="all">
+	<style id="wp-block-library-theme-inline-css" type="text/css">
+		.wp-block-audio :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: #ffffffa6
+		}
+
+		:root :where(.wp-block-image figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme :root :where(.wp-block-image figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote:where(.has-text-align-right) {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote:where(.has-text-align-center) {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote:where(.is-style-plain) {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video :where(figcaption) {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video :where(figcaption) {
+			color: #ffffffa6
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		:root :where(.wp-block-template-part.has-background) {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--theme-color: #00BCD5;
+			--wp--preset--color--dark-gray: #333;
+			--wp--preset--color--medium-gray: #999;
+			--wp--preset--color--light-gray: #f2f2f2;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 12px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 20px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 24px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		:where(.is-layout-grid) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		:where(.wp-block-post-template.is-layout-flex) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-post-template.is-layout-grid) {
+			gap: 1.25em;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		:where(.wp-block-columns.is-layout-grid) {
+			gap: 2em;
+		}
+
+		:root :where(.wp-block-pullquote) {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel="stylesheet" id="prefix-style-css" href="/wp-content/plugins/agreement/css/agreement.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.2" type="text/css" media="all">
+	<link rel="stylesheet" id="collapseomatic-css-css" href="/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-fonts-css" href="https://fonts.googleapis.com/css?family=Cabin:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-style-css" href="/wp-content/themes/ribosome/style.css?ver=2.5.0" type="text/css" media="all">
+	<link rel="stylesheet" id="ribosome-block-style-css" href="/wp-content/themes/ribosome/css/blocks.css?ver=2.5.0" type="text/css" media="all">
+	<!--[if lt IE 9]>
+<link rel='stylesheet' id='ribosome-ie-css' href='/wp-content/themes/ribosome/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+	<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=6.8.3" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="/wp-content/themes/ribosome/css/font-awesome-4.7.0/css/font-awesome.min.css?ver=6.8.3" type="text/css" media="all">
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/agreement/js/agreement.js?ver=6.8.3" id="custom-script-js"></script>
+	<link rel="https://api.w.org/" href="/wp-json/">
+	<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/posts/1048">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.8.3">
+	<link rel="canonical" href="/summon-core/">
+	<link rel="shortlink" href="/?p=1048">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fsummon-core%2F">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fsummon-core%2F&amp;format=xml">
+	<style type="text/css">
+		a {
+			color: #0073AA;
+		}
+
+		a:hover {
+			color: #0073AA;
+		}
+
+		.social-icon-wrapper a:hover {
+			color: #0073AA;
+		}
+
+		.toggle-search {
+			color: #0073AA;
+		}
+
+		.prefix-widget-title {
+			color: #0073AA;
+		}
+
+		.sub-title a:hover {
+			color: #0073AA;
+		}
+
+		.entry-content a:visited,
+		.comment-content a:visited {
+			color: #0073AA;
+		}
+
+		button,
+		input[type="submit"],
+		input[type="button"],
+		input[type="reset"] {
+			background-color: #0073AA !important;
+		}
+
+		.bypostauthor cite span {
+			background-color: #0073AA;
+		}
+
+		.entry-header .entry-title a:hover {
+			color: #0073AA;
+		}
+
+		.archive-header {
+			border-left-color: #0073AA;
+		}
+
+		.main-navigation .current-menu-item>a,
+		.main-navigation .current-menu-ancestor>a,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current_page_ancestor>a {
+			color: #0073AA;
+		}
+
+		.main-navigation li a:hover {
+			color: #0073AA;
+		}
+
+		.widget-area .widget a:hover {
+			color: #0073AA !important;
+		}
+
+		footer[role="contentinfo"] a:hover {
+			color: #0073AA;
+		}
+
+		.author-info a {
+			color: #0073AA;
+		}
+
+		.entry-meta a:hover {
+			color: #0073AA;
+		}
+
+		.format-status .entry-header header a:hover {
+			color: #0073AA;
+		}
+
+		.comments-area article header a:hover {
+			color: #0073AA;
+		}
+
+		a.comment-reply-link:hover,
+		a.comment-edit-link:hover {
+			color: #0073AA;
+		}
+
+		.currenttext,
+		.paginacion a:hover {
+			background-color: #0073AA;
+		}
+
+		.aside {
+			border-left-color: #0073AA !important;
+		}
+
+		blockquote {
+			border-left-color: #0073AA;
+		}
+
+		.logo-header-wrapper {
+			background-color: #0073AA;
+		}
+
+		h3.cabeceras-fp {
+			border-bottom-color: #0073AA;
+		}
+
+		.encabezados-front-page {
+			background-color: #0073AA;
+		}
+
+		.icono-caja-destacados {
+			color: #0073AA;
+		}
+
+		.enlace-caja-destacados:hover {
+			background-color: #0073AA;
+		}
+
+		h2.comments-title {
+			border-left-color: #0073AA;
+		}
+
+		/* Gutenberg */
+		.has-theme-color-color,
+		a.has-theme-color-color:hover {
+			color: #0073AA;
+		}
+
+		.has-theme-color-background-color {
+			background-color: #0073AA;
+		}
+
+		.blog-info-sin-imagen {
+			background-color: #ffffff;
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen a {
+			color: #444444 !important;
+		}
+
+		.blog-info-sin-imagen h2 {
+			color: #444444 !important;
+		}
+
+		.widget-title-tab {
+			background-color: #0073AA;
+			color: #fff;
+		}
+
+		.widget-title-tab a.rsswidget {
+			color: #fff !important;
+		}
+
+		h3.widget-title {
+			border-bottom: 2px solid #0073AA;
+		}
+
+		.main-navigation {
+			border-top: 2px solid #0073AA
+		}
+
+		body.custom-font-enabled {
+			font-family: "Cabin", Arial, Verdana;
+		}
+
+		@media screen and (min-width: 768px) {
+			#primary {
+				float: left;
+			}
+
+			#secondary {
+				float: right;
+			}
+
+			.site-content {
+				border-left: none;
+				padding-left: 0;
+				padding-right: 24px;
+				padding-right: 1.714285714285714rem;
+			}
+		}
+
+		@media screen and (min-width: 960px) {
+			.site-content {
+				border-right: 1px solid #e0e0e0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.main-navigation ul.nav-menu,
+			.main-navigation div.nav-menu>ul {
+				background-color: #222222;
+				border-top: none;
+				border-bottom: none;
+			}
+
+			.main-navigation li a {
+				color: #EAEAEA;
+			}
+
+			.main-navigation li ul li a {
+				color: #444;
+			}
+
+			.main-navigation li ul li a {
+				background-color: #222222;
+				color: #eaeaea;
+				border-bottom-color: #444444;
+			}
+
+			.main-navigation li ul li a:hover {
+				background-color: #222222;
+				color: #0073AA;
+			}
+
+			#site-navigation ul {
+				text-align: center;
+			}
+
+			#site-navigation ul li ul {
+				text-align: left;
+			}
+		}
+	</style>
+	<style type="text/css" id="ribosome-header-css">
+		.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px);
+			/* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-color: #000000;
+			background-image: url("/wp-content/uploads/2016/06/starring.png");
+			background-position: left top;
+			background-size: auto;
+			background-repeat: repeat;
+			background-attachment: scroll;
+		}
+	</style>
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-32x32.png" sizes="32x32">
+	<link rel="icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2020/08/cropped-SiteIcon-180x180.png">
+	<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/08/cropped-SiteIcon-270x270.png">
+	<style type="text/css" id="wp-custom-css">
+		/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+		/*
+Multi Buttons
+
+by Ryan Mulligan
+*/
+		.multi-button {
+			display: flex;
+			width: 100%;
+		}
+
+		.multi-button button {
+			flex-grow: 1;
+			cursor: pointer;
+			position: relative;
+			padding:
+				calc(0.8rem / 1.125) 1rem 0.6rem;
+			border: 0.125rem solid black;
+			color: white;
+			background-color: white;
+			font-size: 1.2rem;
+			font-family: monospace;
+			text-transform: none;
+			text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+			transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+			box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+		}
+
+		.multi-button button+button {
+			border-left: 0.125rem solid black;
+			margin-left: calc(0.125rem * -1);
+		}
+
+		.multi-button button:hover,
+		.multi-button button:focus {
+			flex-grow: 2;
+			color: white;
+			outline: none;
+			text-shadow: none;
+			background: black;
+		}
+
+		.multi-button button:focus {
+			outline: 0.125rem dashed white;
+			outline-offset: calc(0.125rem * -3);
+		}
+
+		.multi-button:hover button:focus:not(:hover) {
+			flex-grow: 1;
+			color: white;
+			background-color: white;
+			outline-color: white;
+		}
+
+		.multi-button button:active {
+			transform: translateX(0.20rem) translateY(0.20rem);
+			box-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+		}
+	</style>
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-1048 single-format-standard custom-background wp-embed-responsive wp-theme-ribosome custom-font-enabled single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-bar">
+				<div class="boton-menu-movil"><i class="fa fa-align-justify"></i></div>
+				<div class="blog-title-wrapper">
+					RPG Maker MZ Plugins </div>
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
+				<div class="social-icon-wrapper">
+					<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div><!-- .social-icon-wrapper -->
+			</div><!-- .top-bar -->
+			<div class="wrapper-search-top-bar">
+				<div class="search-top-bar">
+					<div>
+						<form method="get" id="searchform-toggle" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search" name="s" id="s">
+							<input type="submit" name="submit" id="btn-search" value="Search">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative">
+				<div id="menu-movil">
+					<div class="search-form-movil">
+						<form method="get" id="searchform-movil" action="/">
+							<label for="s" class="assistive-text">Search</label>
+							<input type="search" class="txt-search-movil" placeholder="Search..." name="s" id="s">
+							<input type="submit" name="submit" id="btn-search-movil" value="Search">
+						</form>
+					</div><!-- search-form-movil -->
+					<div class="menu-movil-enlaces">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="nav-menu">
+								<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+								<li id="menu-item-57607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+									<ul class="sub-menu">
+										<li id="menu-item-57611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+										<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+								<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+								<li id="menu-item-57629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+								<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+								<li id="menu-item-57635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="social-icon-wrapper-movil">
+						<a href="https://twitter.com/SumRndmDde" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://youtube.com/SumRndmDde" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+					</div><!-- .social-icon-wrapper -->
+				</div><!-- #menu-movil -->
+			</div>
+			<div class="logo-header-wrapper" style="text-align:center;">
+				<a href="/"><img src="/wp-content/uploads/2020/09/SRDSiteBannerSmall-2.png" class="header-image" width="1800" height="270" alt="RPG Maker MZ Plugins"></a>
+			</div><!-- .logo-header-wrapper or .image-header-wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu-1" class="nav-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-30"><a href="/">Home</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-57607"><a href="/mz-plugins">Plugin List</a>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57611"><a href="/mz-plugins/">RPG Maker MZ</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="/mv-plugins/">RPG Maker MV</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://www.youtube.com/SumRndmDde">YouTube</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1206"><a href="https://discord.gg/xns8TwE">Discord</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57629"><a href="/report-bug/">Report Bug</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/terms-of-use/">Terms of Use</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57635"><a href="/contact-me/">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-1048" class="post-1048 post type-post status-publish format-standard hentry category-plugins category-battle-plugins tag-actor tag-battler tag-mv tag-plugin tag-summon">
+						<header class="entry-header">
+							<div class="entry-title-subtitle">
+								<h1 class="entry-title">Summon Core &ndash; MV Plugin</h1>
+								<!-- Author, date and comments -->
+								<div class="sub-title">
+									<div class="autor-fecha">
+										<span class="autor-in-full-posts"><i class="fa fa-user"></i> <span class="author vcard"><a class="fn" rel="author" href="/author/sumrndmdde/">SumRndmDde</a></span></span>
+										<span class="fecha-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-calendar-o"></i> <time class="entry-date published" datetime="2017-03-10T16:02:54-05:00">March 10, 2017</time> <time class="updated" style="display:none;" datetime="2017-04-30T04:00:07-05:00">April 30, 2017</time> </span>
+										<span class="comments-in-full-posts">
+											&nbsp;&nbsp;<i class="fa fa-comment-o"></i> <a href="/summon-core/#comments">40 Comments<span class="screen-reader-text"> on Summon Core &ndash; MV Plugin</span></a> </span>
+									</div><!-- autor-fecha -->
+								</div><!-- .sub-title -->
+							</div><!-- .entry-title-subtitle -->
+						</header><!-- .entry-header -->
+						<!-- Subtitle widget area -->
+						<div class="sub-title-widget-area">
+						</div><!-- .sub-title-widget-area -->
+						<div class="entry-content">
+							<p><iframe width="711" height="400" src="https://www.youtube.com/embed/Tcz7K4pFe4w?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+							<p>This plugin allows developers to create skills that summon Actors into the player&rsquo;s party using various parameters.</p>
+							<p><span id="more-1048"></span></p>
+							<hr>
+							<p>Look at the code or download the Plugin:</p>
+							<ul>
+								<li><a id="agreement" href="https://dl.dropboxusercontent.com/s/mvi6snoqln0asf9/SRD_SummonCore.js?dl=0" target="_blank">[View]</a></li>
+								<li><a id="agreement" href="https://www.dropbox.com/s/mvi6snoqln0asf9/SRD_SummonCore.js?dl=1">[Download]</a></li>
+							</ul>
+							<hr>
+							<blockquote>
+								<p>Summon Core<br>
+									SumRndmDde</p>
+								<p>This plugin allows developers to create skills that summon Actors into the<br>
+									player&rsquo;s party using various parameters.</p>
+								<p>=======================================================================<br>
+									Setting up Summoning Skill<br>
+									=======================================================================</p>
+								<p>In order to make a Skill become a Summon Skill, use the following notetag:</p>
+								<p><strong>&lt;Summon&gt;</strong><br>
+									<strong>Actor ID: x</strong><br>
+									<strong> &lt;End Summon&gt;</strong>
+								</p>
+								<p>Simply set &ldquo;x&rdquo; to the Actor ID you wish to be summoned.</p>
+								<p>=======================================================================<br>
+									Summoning Properties<br>
+									=======================================================================</p>
+								<p>Various properties can be added to the Summoning Skills. They can be<br>
+									customized within the Summon notetags:</p>
+								<p><strong>&lt;Summon&gt;</strong><br>
+									<strong>Actor ID: 2</strong><br>
+									<strong> Level: 10</strong><br>
+									<strong> Turns: 2</strong><br>
+									<strong> &lt;End Summon&gt;</strong>
+								</p>
+								<p>Here is a list of all the properties available:</p>
+								<p><strong>Level</strong></p>
+								<p>Determines the level of the summoned Actor. This can be a number or<br>
+									JavaScript code that uses the &ldquo;actor&rdquo; variable to reference the user.</p>
+								<p><strong>Turns</strong></p>
+								<p>Determines the number of turns the summon will last. Set to -1 to make<br>
+									the summon last until the end of the battle or death.</p>
+								<p><strong>Animation</strong></p>
+								<p>Determines the animation used for when the summon is summoned.</p>
+								<p><strong>Exit Animation</strong></p>
+								<p>Determines the exit animation used for when the summon leaves.</p>
+								<p><strong>X</strong></p>
+								<p>Determines the X position of the summon. Can use JavaScript code.<br>
+									If using JavaScript code, &ldquo;index&rdquo; refers to the summon&rsquo;s index within the<br>
+									party and &ldquo;master&rdquo; refers to the sprite of the summoner.*</p>
+								<p><strong>Y</strong></p>
+								<p>Determines the Y position of the summon. Can use JavaScript code.<br>
+									If using JavaScript code, &ldquo;index&rdquo; refers to the summon&rsquo;s index within the<br>
+									party and &ldquo;master&rdquo; refers to the sprite of the summoner.</p>
+								<p>=======================================================================<br>
+									Position Examples<br>
+									=======================================================================</p>
+								<p>If one wants to position the summoned Actor relative to the summoner,<br>
+									the following code could be used:</p>
+								<p><strong>&lt;Summon&gt;</strong><br>
+									<strong>Actor ID: 2</strong><br>
+									<strong> X: master._mainX &ndash; 120</strong><br>
+									<strong> Y: master._mainY</strong><br>
+									<strong> &lt;End Summon&gt;</strong>
+								</p>
+								<p>This would position the summon 120 pixels to the left of the summoner.</p>
+							</blockquote>
+							<hr>
+							<p><strong>Screenshot:</strong></p>
+							<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-1049" src="/wp-content/uploads/2017/03/Summon-Core-SS.png" alt="" width="816" height="624" srcset="/wp-content/uploads/2017/03/Summon-Core-SS.png 816w, /wp-content/uploads/2017/03/Summon-Core-SS-150x115.png 150w, /wp-content/uploads/2017/03/Summon-Core-SS-300x229.png 300w, /wp-content/uploads/2017/03/Summon-Core-SS-624x477.png 624w" sizes="(max-width: 816px) 100vw, 816px"></p>
+						</div><!-- .entry-content -->
+						<footer class="entry-meta">
+							<!-- Post end widget area -->
+							<div class="post-end-widget-area">
+							</div>
+							<div class="entry-meta-term-single">
+								<span class="entry-meta-categories"><span class="term-icon"><i class="fa fa-folder-open"></i></span> <a href="/category/plugins/" rel="tag">All Plugins</a>, <a href="/category/plugins/battle-plugins/" rel="tag">Battle Plugins</a>&nbsp;&nbsp;&nbsp;</span>
+								<span class="entry-meta-tags"><span class="term-icon"><i class="fa fa-tags"></i></span> <a href="/tag/actor/" rel="tag">actor</a>, <a href="/tag/battler/" rel="tag">battler</a>, <a href="/tag/mv/" rel="tag">MV</a>, <a href="/tag/plugin/" rel="tag">plugin</a>, <a href="/tag/summon/" rel="tag">summon</a></span>
+								<div style="float:right;"></div>
+							</div><!-- .entry-meta-term -->
+							<div class="wrapper-related-posts">
+								<p><span class="prefix-widget-title"><i class="fa fa-chevron-right"></i></span> Related posts</p>
+								<div class="recent-post">
+									<ul> <a href="/elemental-skill-colors/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Elemental Skill Colors &ndash; C++ MV Plugin </div>
+											</li>
+										</a>
+										<a href="/translation-engine/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Translation Engine &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/options-creator/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Options Creator &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/plugin-command-eval/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;Plugin Command Eval &ndash; MV Plugin </div>
+											</li>
+										</a>
+										<a href="/ccex-message-faces/">
+											<li>
+												<div style="padding:0 7px; padding:0 0.5rem;">
+													&raquo; &nbsp;CCEX Message Faces &ndash; MV Plugin </div>
+											</li>
+										</a>
+									</ul>
+								</div><!-- .recent-post -->
+							</div><!-- .wrapper-related-posts -->
+						</footer><!-- .entry-meta -->
+					</article><!-- #post -->
+					<nav class="nav-single">
+						<div class="wrapper-navigation-below">
+							<nav class="navigation post-navigation" aria-label="Posts">
+								<h2 class="screen-reader-text">Post navigation</h2>
+								<div class="nav-links">
+									<div class="nav-previous"><a href="/title-picture-choices/" rel="prev"><span class="meta-nav"><i class="fa fa-angle-double-left"></i></span> Title Picture Choices &ndash; MV Plugin</a></div>
+									<div class="nav-next"><a href="/retry-costs/" rel="next">Retry Costs &ndash; MV Plugin <span class="meta-nav"><i class="fa fa-angle-double-right"></i></span></a></div>
+								</div>
+							</nav>
+						</div><!-- .wrapper-navigation-below -->
+					</nav><!-- .nav-single -->
+					<div id="comments" class="comments-area">
+						<h2 class="comments-title">
+							40 thoughts on &ldquo;<span>Summon Core &ndash; MV Plugin</span>&rdquo; </h2>
+						<ol class="commentlist">
+							<li class="comment even thread-even depth-1" id="li-comment-6605">
+								<article id="comment-6605" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/ac49d75f04ec1688550d2e1c6c7ca50fe95ea1fc78d7b523f0ff0ecf02a6d240?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/ac49d75f04ec1688550d2e1c6c7ca50fe95ea1fc78d7b523f0ff0ecf02a6d240?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" decoding="async"><cite><b class="fn">Raen Andaleio</b> </cite><a href="/summon-core/#comment-6605"><time datetime="2019-08-31T08:06:57-05:00">August 31, 2019 at 8:06 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello,<br>
+											this is awesome, exactly what I need for my summoner class. Just one question, is it possible to limit the amount of summons? Say, depending on the level? If the player is level 1-9, they can summon one actor, if they are 10-19, they can summon 2 and so on?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=6605#respond" data-commentid="6605" data-postid="1048" data-belowelement="comment-6605" data-respondelement="respond" data-replyto="Reply to Raen Andaleio" aria-label="Reply to Raen Andaleio">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-19547">
+								<article id="comment-19547" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/3112d319a2df48595688ff69c5181a4d96dad9f0edaf2b0ca9d9b75769f26d9b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/3112d319a2df48595688ff69c5181a4d96dad9f0edaf2b0ca9d9b75769f26d9b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Leevan Morgan-Ramsaroup</b> </cite><a href="/summon-core/#comment-19547"><time datetime="2019-09-24T20:59:12-05:00">September 24, 2019 at 8:59 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there a way you can dismiss a summon whenever you want, so you switch out various summons with ease rather than them dying or having a few turns on the field?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=19547#respond" data-commentid="19547" data-postid="1048" data-belowelement="comment-19547" data-respondelement="respond" data-replyto="Reply to Leevan Morgan-Ramsaroup" aria-label="Reply to Leevan Morgan-Ramsaroup">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-43473">
+								<article id="comment-43473" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/4399be4899c2a6c9134ecaf13998e0b2aefda3cef525b7e4fe77da6d68fa80c3?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4399be4899c2a6c9134ecaf13998e0b2aefda3cef525b7e4fe77da6d68fa80c3?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Shane Crawford</b> </cite><a href="/summon-core/#comment-43473"><time datetime="2019-12-09T13:58:30-05:00">December 9, 2019 at 1:58 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hey there, just installed the plugin, but while trying to use it i get the error message<br>
+											cannot read property &lsquo;party ability&rsquo; of undefined</p>
+										<p>has anyone else encountered this?<br>
+											What do ya think??</p>
+										<p>Shane</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=43473#respond" data-commentid="43473" data-postid="1048" data-belowelement="comment-43473" data-respondelement="respond" data-replyto="Reply to Shane Crawford" aria-label="Reply to Shane Crawford">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-45490">
+										<article id="comment-45490" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/e92f98b3fc1fc4e01e598de5768b79682fde58c2e8b06e7ccc43f9265de199f6?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/e92f98b3fc1fc4e01e598de5768b79682fde58c2e8b06e7ccc43f9265de199f6?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Christian C</b> </cite><a href="/summon-core/#comment-45490"><time datetime="2020-01-16T01:30:46-05:00">January 16, 2020 at 1:30 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I&rsquo;m getting the same thing. No idea why.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=45490#respond" data-commentid="45490" data-postid="1048" data-belowelement="comment-45490" data-respondelement="respond" data-replyto="Reply to Christian C" aria-label="Reply to Christian C">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment even depth-3" id="li-comment-49171">
+												<article id="comment-49171" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/a241b3bcb2e8d8ee404f8c26923455c3a839a5286f828c32399b873cf597caa1?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a241b3bcb2e8d8ee404f8c26923455c3a839a5286f828c32399b873cf597caa1?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Domika</b> </cite><a href="/summon-core/#comment-49171"><time datetime="2020-03-19T06:59:41-05:00">March 19, 2020 at 6:59 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>its bcs of yanfly plugin these two dont work together<br>
+															animated sideviews battler<br>
+															if u disable this yanfly it will work (at least for me it works)</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=49171#respond" data-commentid="49171" data-postid="1048" data-belowelement="comment-49171" data-respondelement="respond" data-replyto="Reply to Domika" aria-label="Reply to Domika">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+												<ol class="children">
+													<li class="comment odd alt depth-4" id="li-comment-52089">
+														<article id="comment-52089" class="comment">
+															<header class="comment-meta comment-author vcard">
+																<img alt="" src="https://secure.gravatar.com/avatar/11ce17c045b99ad99160e5bc9b5477045844c90f8bae40ff88f57e263ed45543?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/11ce17c045b99ad99160e5bc9b5477045844c90f8bae40ff88f57e263ed45543?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">JustXHiro</b> </cite><a href="/summon-core/#comment-52089"><time datetime="2020-06-14T08:58:13-05:00">June 14, 2020 at 8:58 AM</time></a>
+															</header><!-- .comment-meta -->
+															<section class="comment-content comment">
+																<p>There&rsquo;s no error in my project when using Yanfly&rsquo;s Animated SV Enemies.<br>
+																	I had the error at one of SRD plugins&hellip; Between BattleGUICore and BattleStatusCustomizer(Part 1 &amp; Part 2), I don&rsquo;t remember ^^&rdquo;</p>
+															</section><!-- .comment-content -->
+															<div class="reply">
+																<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=52089#respond" data-commentid="52089" data-postid="1048" data-belowelement="comment-52089" data-respondelement="respond" data-replyto="Reply to JustXHiro" aria-label="Reply to JustXHiro">Reply</a> <span>&darr;</span>
+															</div><!-- .reply -->
+														</article><!-- #comment-## -->
+													</li><!-- #comment-## -->
+												</ol><!-- .children -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+									<li class="comment even depth-2" id="li-comment-59223">
+										<article id="comment-59223" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/a18ba5b883a568bf071188a8522c9c29c92813a173cf0637c65b8f00ce8347cd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/a18ba5b883a568bf071188a8522c9c29c92813a173cf0637c65b8f00ce8347cd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">JustifydWarrior</b> </cite><a href="/summon-core/#comment-59223"><time datetime="2020-12-29T02:04:49-05:00">December 29, 2020 at 2:04 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>I encountered an error on line 2773 of YEP_X_AnimatedSVEnemies.js.</p>
+												<p>it&rsquo;s just some bad (old es3 style) null checking. if you swap line 2 below for that line it will work just fine&hellip; now if its null/undefined/&rdquo;&rdquo;/0 it will skip the this section.</p>
+												<p>&ldquo;`<br>
+													Sprite_Animation.prototype.updateSvePosition = function() {<br>
+													if (this._target.parent._battler &amp;&amp; this._target.parent._battler.isEnemy() &amp;&amp; typeof this._target.parent._mainSprite != &lsquo;undefined&rsquo;){<br>
+													if (this._animation.position !== 3) {<br>
+													if (this._animation.position === 0) {<br>
+													this.y += this._target.parent._mainSprite.height &ndash; this._target.parent.texture.height;<br>
+													} else if (this._animation.position === 1) {<br>
+													this.y += (this._target.parent._mainSprite.height &ndash; this._target.parent.texture.height) / 2;<br>
+													}<br>
+													}<br>
+													}<br>
+													};<br>
+													&ldquo;`</p>
+												<p>in the case of our summons plugin, this value is null rather than undefined. </p>
+												<p>I simply swapped `if(typeof this._target.parent._battler != &lsquo;undefined&rsquo; &hellip;` for `if(this._target.parent._battler &hellip;`</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=59223#respond" data-commentid="59223" data-postid="1048" data-belowelement="comment-59223" data-respondelement="respond" data-replyto="Reply to JustifydWarrior" aria-label="Reply to JustifydWarrior">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-64219">
+												<article id="comment-64219" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/62310da37fbcc14cd0ea94705bac59902e175080c6ac3c4eb43fea9b79e21b56?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/62310da37fbcc14cd0ea94705bac59902e175080c6ac3c4eb43fea9b79e21b56?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Metachaser</b> </cite><a href="/summon-core/#comment-64219"><time datetime="2021-03-08T17:50:33-05:00">March 8, 2021 at 5:50 PM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>Thanks for providing this. However, It seems like when using this code, other functionality of the Animated SV Enemies YanFly plugin becomes disabled. For instance, making enemy actors &ldquo;breathe&rdquo; does not work, and calling side view battlers no longer works either. Were you able to find a fix for these other issues? I appreciate you providing the above fix, but I wanted to check if you were able to get these other issues fixed as well, or how you handled them.</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64219#respond" data-commentid="64219" data-postid="1048" data-belowelement="comment-64219" data-respondelement="respond" data-replyto="Reply to Metachaser" aria-label="Reply to Metachaser">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-44912">
+								<article id="comment-44912" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/05f55f28ebb434484820bdd040b18b0ba3d16c932a7467a5d627f4b109b1dcde?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/05f55f28ebb434484820bdd040b18b0ba3d16c932a7467a5d627f4b109b1dcde?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">夏目漠漠</b> </cite><a href="/summon-core/#comment-44912"><time datetime="2019-12-31T10:40:02-05:00">December 31, 2019 at 10:40 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Is there any other way to get rid of this plug-in and the drill﹐ miniplateforstate?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=44912#respond" data-commentid="44912" data-postid="1048" data-belowelement="comment-44912" data-respondelement="respond" data-replyto="Reply to 夏目漠漠" aria-label="Reply to 夏目漠漠">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-45148">
+								<article id="comment-45148" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/edd837df928108397837f9f57e8b81491e0dc1ebd3e7f95df4a6af3fbebb31e5?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/edd837df928108397837f9f57e8b81491e0dc1ebd3e7f95df4a6af3fbebb31e5?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="https://www.instagram.com/evolution.artist.forever/" class="url" rel="ugc external nofollow">EAP</a></b> </cite><a href="/summon-core/#comment-45148"><time datetime="2020-01-04T01:03:14-05:00">January 4, 2020 at 1:03 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Anyone having issues with this I had it working a while back but no longer working now.<br>
+											Seems odd.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=45148#respond" data-commentid="45148" data-postid="1048" data-belowelement="comment-45148" data-respondelement="respond" data-replyto="Reply to EAP" aria-label="Reply to EAP">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-46006">
+								<article id="comment-46006" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/58f3f1a29e9764cff7e7bba8ccdb1fba5fcb3d5f199c95184ed3e05c07a0e205?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/58f3f1a29e9764cff7e7bba8ccdb1fba5fcb3d5f199c95184ed3e05c07a0e205?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AlexClips</b> </cite><a href="/summon-core/#comment-46006"><time datetime="2020-01-27T10:13:07-05:00">January 27, 2020 at 10:13 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Whenever i use this with your BattleStatusCustomizer the summoned actor is outside the screen and sometimes it covers the skills/items men&ugrave;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=46006#respond" data-commentid="46006" data-postid="1048" data-belowelement="comment-46006" data-respondelement="respond" data-replyto="Reply to AlexClips" aria-label="Reply to AlexClips">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-46007">
+										<article id="comment-46007" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/58f3f1a29e9764cff7e7bba8ccdb1fba5fcb3d5f199c95184ed3e05c07a0e205?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/58f3f1a29e9764cff7e7bba8ccdb1fba5fcb3d5f199c95184ed3e05c07a0e205?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">AlexClips</b> </cite><a href="/summon-core/#comment-46007"><time datetime="2020-01-27T10:20:14-05:00">January 27, 2020 at 10:20 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>It also make the game summoned actor literaly broke, as it isn&rsquo;t animated anymore, it doesn&rsquo;t show the skills, and also it makes the game crash when the summoned actor turn comes</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=46007#respond" data-commentid="46007" data-postid="1048" data-belowelement="comment-46007" data-respondelement="respond" data-replyto="Reply to AlexClips" aria-label="Reply to AlexClips">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-51441">
+								<article id="comment-51441" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">jefferson gonzaga figueiredo</b> </cite><a href="/summon-core/#comment-51441"><time datetime="2020-05-25T20:04:47-05:00">May 25, 2020 at 8:04 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>look &hellip; if i have only one player in the group, summon, when used, involves the amount of space that i have free.<br>
+											example: if there is room for 3 more players. it involves 3 summon<br>
+											of the same involved.<br>
+											how to solve this?<br>
+											I want to involve just one.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=51441#respond" data-commentid="51441" data-postid="1048" data-belowelement="comment-51441" data-respondelement="respond" data-replyto="Reply to jefferson gonzaga figueiredo" aria-label="Reply to jefferson gonzaga figueiredo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-61526">
+										<article id="comment-61526" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/cc9d726abad3b74b70dcc6974abd13739f8c4a6334ad9960a7f33a3c0e39d4bf?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/cc9d726abad3b74b70dcc6974abd13739f8c4a6334ad9960a7f33a3c0e39d4bf?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Durance Gaming</b> </cite><a href="/summon-core/#comment-61526"><time datetime="2021-01-23T21:20:06-05:00">January 23, 2021 at 9:20 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Did you ever find out the solution to this? I have the same problem as well. I had to update my project files and the plugin still works perfectly with the exception that it&rsquo;s summoning in 3 of each thing I summon. If I summon a dog, I get 3 dogs all in the same location.</p>
+												<p>If I set maximum summons to 1 then I only get 1 dog. So it&rsquo;s definitely just executing something 3 times for some reason. I wonder if there&rsquo;s a way to make a summoned unit unique, so that there can only be 1 of that summon on the battlefield at a time. That&rsquo;d be an easy fix I think.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=61526#respond" data-commentid="61526" data-postid="1048" data-belowelement="comment-61526" data-respondelement="respond" data-replyto="Reply to Durance Gaming" aria-label="Reply to Durance Gaming">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+									<li class="comment even depth-2" id="li-comment-61527">
+										<article id="comment-61527" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/cc9d726abad3b74b70dcc6974abd13739f8c4a6334ad9960a7f33a3c0e39d4bf?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/cc9d726abad3b74b70dcc6974abd13739f8c4a6334ad9960a7f33a3c0e39d4bf?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Durance Gaming</b> </cite><a href="/summon-core/#comment-61527"><time datetime="2021-01-24T01:19:22-05:00">January 24, 2021 at 1:19 AM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>It was a plugin conflict with SRD Timed Attack Core. I turned off the timed attacks and it summons the right amount.</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=61527#respond" data-commentid="61527" data-postid="1048" data-belowelement="comment-61527" data-respondelement="respond" data-replyto="Reply to Durance Gaming" aria-label="Reply to Durance Gaming">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+										<ol class="children">
+											<li class="comment odd alt depth-3" id="li-comment-64615">
+												<article id="comment-64615" class="comment">
+													<header class="comment-meta comment-author vcard">
+														<img alt="" src="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">jefferson gonzaga figueiredo</b> </cite><a href="/summon-core/#comment-64615"><time datetime="2021-08-29T10:44:29-05:00">August 29, 2021 at 10:44 AM</time></a>
+													</header><!-- .comment-meta -->
+													<section class="comment-content comment">
+														<p>intrigante o plug-in do proprio e mesmo desenvolvedor entrarem em conflito. ent&atilde;o por em quanto &eacute; isso.<br>
+															ficarei sem o uso do timed attack ja que para meu projeto os summon faz parte da historia.<br>
+															obg pela ajuda</p>
+													</section><!-- .comment-content -->
+													<div class="reply">
+														<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64615#respond" data-commentid="64615" data-postid="1048" data-belowelement="comment-64615" data-respondelement="respond" data-replyto="Reply to jefferson gonzaga figueiredo" aria-label="Reply to jefferson gonzaga figueiredo">Reply</a> <span>&darr;</span>
+													</div><!-- .reply -->
+												</article><!-- #comment-## -->
+											</li><!-- #comment-## -->
+										</ol><!-- .children -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-54369">
+								<article id="comment-54369" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/4b45fcab5e03b3429e07708b45b22732535944b537966f804970cadab47dff8c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4b45fcab5e03b3429e07708b45b22732535944b537966f804970cadab47dff8c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">SoulOfRock</b> </cite><a href="/summon-core/#comment-54369"><time datetime="2020-07-15T17:58:47-05:00">July 15, 2020 at 5:58 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>When i summon a character all its ok but when the summon atack and finish the atack this happend: </p>
+										<p>TypeError: Cannot read property &lsquo;isEnemy&rsquo; of null<br>
+											at Sprite_Animation.updateSvePosition (YEP_X_AnimatedSVEnemies.js:2773)<br>
+											at Sprite_Animation.updatePosition (YEP_X_AnimatedSVEnemies.js:2769)<br>
+											at Sprite_Animation.updatePosition (MOG_FlashDamage.js:331)<br>
+											at Sprite_Animation.updateMain (rpg_sprites.js:1354)<br>
+											at Sprite_Animation.update (rpg_sprites.js:1240)<br>
+											at rpg_core.js:4068<br>
+											at Array.forEach ()<br>
+											at Sprite.update (rpg_core.js:4066)<br>
+											at rpg_core.js:4068<br>
+											at Array.forEach ()</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=54369#respond" data-commentid="54369" data-postid="1048" data-belowelement="comment-54369" data-respondelement="respond" data-replyto="Reply to SoulOfRock" aria-label="Reply to SoulOfRock">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-54370">
+										<article id="comment-54370" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/4b45fcab5e03b3429e07708b45b22732535944b537966f804970cadab47dff8c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4b45fcab5e03b3429e07708b45b22732535944b537966f804970cadab47dff8c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">SoulOfRock</b> </cite><a href="/summon-core/#comment-54370"><time datetime="2020-07-15T18:02:19-05:00">July 15, 2020 at 6:02 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Oh, when i summon the new actor happends too, sorry<br>
+													TypeError: Cannot read property &lsquo;isEnemy&rsquo; of null<br>
+													at Sprite_Animation.updateSvePosition (YEP_X_AnimatedSVEnemies.js:2773)<br>
+													at Sprite_Animation.updatePosition (YEP_X_AnimatedSVEnemies.js:2769)<br>
+													at Sprite_Animation.updateMain (rpg_sprites.js:1354)<br>
+													at Sprite_Animation.update (rpg_sprites.js:1240)<br>
+													at rpg_core.js:4068<br>
+													at Array.forEach ()<br>
+													at Sprite.update (rpg_core.js:4066)<br>
+													at rpg_core.js:4068<br>
+													at Array.forEach ()<br>
+													at Sprite.update (rpg_core.js:4066)</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=54370#respond" data-commentid="54370" data-postid="1048" data-belowelement="comment-54370" data-respondelement="respond" data-replyto="Reply to SoulOfRock" aria-label="Reply to SoulOfRock">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-55876">
+								<article id="comment-55876" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/f4aa1eeb76ed9c99698822aca4571b480035bb077ada641b5573289731c1ce9b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f4aa1eeb76ed9c99698822aca4571b480035bb077ada641b5573289731c1ce9b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Kronos</b> </cite><a href="/summon-core/#comment-55876"><time datetime="2020-08-11T17:39:40-05:00">August 11, 2020 at 5:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello everyone.</p>
+										<p>Can anyone, if possible at all, tell me how to set the summonning&rsquo;s level to the summonner&rsquo;s one? (I mean, if Harold at lvl 60 summons SummoningTest_01, what do I have to do to set SummonningTest_01&rsquo;s level to Harold&rsquo;s by default)</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=55876#respond" data-commentid="55876" data-postid="1048" data-belowelement="comment-55876" data-respondelement="respond" data-replyto="Reply to Kronos" aria-label="Reply to Kronos">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-58648">
+								<article id="comment-58648" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c84b20b2848441f6d336a52375dfdd9abba58b6c8dfd4d3f7592b1b4f8bbe707?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c84b20b2848441f6d336a52375dfdd9abba58b6c8dfd4d3f7592b1b4f8bbe707?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Essention</b> </cite><a href="/summon-core/#comment-58648"><time datetime="2020-10-29T13:21:36-05:00">October 29, 2020 at 1:21 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello! Is it possible to use this plugin in some way so that the summon&rsquo;s skills affect the summoner&rsquo;s MP/HP/TP rather than it&rsquo;s own? Or would I have to use different plugins in conjunction with this one?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=58648#respond" data-commentid="58648" data-postid="1048" data-belowelement="comment-58648" data-respondelement="respond" data-replyto="Reply to Essention" aria-label="Reply to Essention">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-62623">
+								<article id="comment-62623" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9df6d280da693f285937b453eab9835e42208c802b18a11bff8d71b6873dbe51?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9df6d280da693f285937b453eab9835e42208c802b18a11bff8d71b6873dbe51?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Seryu</b> </cite><a href="/summon-core/#comment-62623"><time datetime="2021-02-08T16:51:00-05:00">February 8, 2021 at 4:51 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello !<br>
+											I have a little problem with the plugin, in fact, I filled the notetag of the skill with the right terms like the video (I made a copy and pasted of the plugin help)<br>
+											Everything works, the invocation appears well on the battle screen, but the problem is that it does not appear in the list of characters playable in battle, impossible to control it, it does not appear in the list.<br>
+											And even if you add automatic combat in the character, it never attacks, it just appears on the screen but you can&rsquo;t control it, or move it by itself&hellip;<br>
+											I don&rsquo;t get any plugin conflict error message&hellip;<br>
+											Anyone have an idea ?<br>
+											Thanks in advance !</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=62623#respond" data-commentid="62623" data-postid="1048" data-belowelement="comment-62623" data-respondelement="respond" data-replyto="Reply to Seryu" aria-label="Reply to Seryu">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64229">
+								<article id="comment-64229" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/e9084808c22e38b475d03310a83826850a9d7fb42f93e5fb00c607e21a4c38e6?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/e9084808c22e38b475d03310a83826850a9d7fb42f93e5fb00c607e21a4c38e6?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">shaman king</b> </cite><a href="/summon-core/#comment-64229"><time datetime="2021-03-16T17:39:13-05:00">March 16, 2021 at 5:39 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>why when you cast your summon as the same lv of your caster(Level: actor.level) its hp/mp is the default lv1?? </p>
+										<p>does anyone know how to cast the summon with its HP/MP full??</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64229#respond" data-commentid="64229" data-postid="1048" data-belowelement="comment-64229" data-respondelement="respond" data-replyto="Reply to shaman king" aria-label="Reply to shaman king">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment even depth-2" id="li-comment-64232">
+										<article id="comment-64232" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/e9084808c22e38b475d03310a83826850a9d7fb42f93e5fb00c607e21a4c38e6?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/e9084808c22e38b475d03310a83826850a9d7fb42f93e5fb00c607e21a4c38e6?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">shaman king</b> </cite><a href="/summon-core/#comment-64232"><time datetime="2021-03-18T18:45:53-05:00">March 18, 2021 at 6:45 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Nevermind, this plugin just do its job if you have no intent on leveling your summon and keep it at lv1 cause its stats(HP, ATK, etc) will be at that level even if you change the lv you want it to have when summoned&hellip; </p>
+												<p>What can also be done is make various actors to represent one character with different stats each and when you feel like your summon is too weak in a part of your game and want to power it up you just change the summoning skill and actor ID for a stronger version of itself</p>
+												<p>A prefereable plugin for a levelable summon than this one is Seki_Summon by Sekunri</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64232#respond" data-commentid="64232" data-postid="1048" data-belowelement="comment-64232" data-respondelement="respond" data-replyto="Reply to shaman king" aria-label="Reply to shaman king">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-even depth-1" id="li-comment-64407">
+								<article id="comment-64407" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/693fc5d4c108773331ddcf926f010439b73be7c22263fadd798e30ee96fef72d?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/693fc5d4c108773331ddcf926f010439b73be7c22263fadd798e30ee96fef72d?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="https://www.facebook.com/TheFullArmorofGodVG/" class="url" rel="ugc external nofollow">Dasheek</a></b> </cite><a href="/summon-core/#comment-64407"><time datetime="2021-06-20T02:23:38-05:00">June 20, 2021 at 2:23 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>What Javascript code can I run to set the actor level if they&rsquo;re level is subject to change:</p>
+										<p>For example: upon conditions, my Summon actor level will increase outside of battle. But the plugin will only let me set that level in the notetag or by default. </p>
+										<p>When I Summon the actor, I want him to be at the customized level which changes. How can I achieve this?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64407#respond" data-commentid="64407" data-postid="1048" data-belowelement="comment-64407" data-respondelement="respond" data-replyto="Reply to Dasheek" aria-label="Reply to Dasheek">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-odd thread-alt depth-1" id="li-comment-64560">
+								<article id="comment-64560" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/385c1b51d0214f1d0a346330506dce5f3338d4861ed9f8ce88a8900e7fb79581?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/385c1b51d0214f1d0a346330506dce5f3338d4861ed9f8ce88a8900e7fb79581?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jaakurin</b> </cite><a href="/summon-core/#comment-64560"><time datetime="2021-08-07T20:26:35-05:00">August 7, 2021 at 8:26 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>In case this is helpful for those asking about adding an option to &ldquo;dismiss&rdquo; your summon: </p>
+										<p>I looked through the JavaScript for the function that removes the summons at the end of battle. In my game the summoner can only control one summon at a time, so this worked perfectly for me. I just created a skill called Dismiss Summon that calls a common event, and in the common event I call the script: $gameParty.removeAllSummons();</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64560#respond" data-commentid="64560" data-postid="1048" data-belowelement="comment-64560" data-respondelement="respond" data-replyto="Reply to Jaakurin" aria-label="Reply to Jaakurin">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+								<ol class="children">
+									<li class="comment odd alt depth-2" id="li-comment-65552">
+										<article id="comment-65552" class="comment">
+											<header class="comment-meta comment-author vcard">
+												<img alt="" src="https://secure.gravatar.com/avatar/4d3db1f5b23fdf00afe70bbdebcd74438d59e87304720cb08e77a7e1e3b36225?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/4d3db1f5b23fdf00afe70bbdebcd74438d59e87304720cb08e77a7e1e3b36225?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Igor Santos</b> </cite><a href="/summon-core/#comment-65552"><time datetime="2024-09-06T12:23:57-05:00">September 6, 2024 at 12:23 PM</time></a>
+											</header><!-- .comment-meta -->
+											<section class="comment-content comment">
+												<p>Boa tarde, tentei fazer isso e deu v&aacute;rios erros!</p>
+											</section><!-- .comment-content -->
+											<div class="reply">
+												<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65552#respond" data-commentid="65552" data-postid="1048" data-belowelement="comment-65552" data-respondelement="respond" data-replyto="Reply to Igor Santos" aria-label="Reply to Igor Santos">Reply</a> <span>&darr;</span>
+											</div><!-- .reply -->
+										</article><!-- #comment-## -->
+									</li><!-- #comment-## -->
+								</ol><!-- .children -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64616">
+								<article id="comment-64616" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">jefferson gonzaga figueiredo</b> </cite><a href="/summon-core/#comment-64616"><time datetime="2021-08-29T14:26:30-05:00">August 29, 2021 at 2:26 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>ap&oacute;s finalizar o combate esta dando esse erro : &lsquo;isEnemy&rsquo; de null<br>
+											alguem pode me ajudar por favor?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64616#respond" data-commentid="64616" data-postid="1048" data-belowelement="comment-64616" data-respondelement="respond" data-replyto="Reply to jefferson gonzaga figueiredo" aria-label="Reply to jefferson gonzaga figueiredo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64625">
+								<article id="comment-64625" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/944a2c988c2bef255437274d41522be00958f0c35d0104433744cedfd47aa507?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">jefferson gonzaga figueiredo</b> </cite><a href="/summon-core/#comment-64625"><time datetime="2021-09-05T17:50:17-05:00">September 5, 2021 at 5:50 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>este pluggin esta incompativel com os pluggins yanfly</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64625#respond" data-commentid="64625" data-postid="1048" data-belowelement="comment-64625" data-respondelement="respond" data-replyto="Reply to jefferson gonzaga figueiredo" aria-label="Reply to jefferson gonzaga figueiredo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64663">
+								<article id="comment-64663" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/8eba37b61824e57e057871d98f9c03e63725eb66c724b58d79ec1019b3eab302?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/8eba37b61824e57e057871d98f9c03e63725eb66c724b58d79ec1019b3eab302?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">M&aacute;rcio Eduine</b> </cite><a href="/summon-core/#comment-64663"><time datetime="2021-09-21T11:34:41-05:00">September 21, 2021 at 11:34 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Estou a usar este plugin no RPG Maker MZ e funciona com os plugins Battle Engine Core e Animated SV Enemies do YEF.<br>
+											PROBLEMAS:<br>
+											&ndash; N&atilde;o consigo invocar um Actor nas coordenadas que eu quero. O Actor invocado desaparece.<br>
+											&ndash; Quando tenho 4 Actors em batalha e dois deles invocam cada um Actor (assim fico com 6 Actors em batalha), os 6 n&atilde;o podem usar magias no mesmo turno (aparece uma mensagem a dizer &ldquo;MAXIMUM STACK EXCEEDED&rdquo;).</p>
+										<p>SUGEST&Otilde;ES:<br>
+											&ndash; Seria muito bom se desse para invocar um Actor usando um item.<br>
+											&ndash; Tamb&eacute;m seria muito bom se o Actor invocado fosse &uacute;nico alvo dos ataques inimigos.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64663#respond" data-commentid="64663" data-postid="1048" data-belowelement="comment-64663" data-respondelement="respond" data-replyto="Reply to M&aacute;rcio Eduine" aria-label="Reply to M&aacute;rcio Eduine">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64798">
+								<article id="comment-64798" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9026383e0ee3765747de0ea95b7bbc10b2474c96d50b3beb02209ff71971c3bd?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9026383e0ee3765747de0ea95b7bbc10b2474c96d50b3beb02209ff71971c3bd?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Nymoddo</b> </cite><a href="/summon-core/#comment-64798"><time datetime="2022-01-02T14:06:28-05:00">January 2, 2022 at 2:06 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>All was working well until suddenly everytime i use a summon skill i get the error<br>
+											&ldquo;TypeError Failed to execute &lsquo;createLinearGradient&rsquo; on &lsquo;CanvasRenderingContext2D&rsquo;: The provided double value is non-finite.&rdquo;</p>
+										<p>Ive followed it down to this addon but i cannot find where the error is, could someone help me?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64798#respond" data-commentid="64798" data-postid="1048" data-belowelement="comment-64798" data-respondelement="respond" data-replyto="Reply to Nymoddo" aria-label="Reply to Nymoddo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-64947">
+								<article id="comment-64947" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/9bace74a88553982c22372c0a3eb1c97547c9332cbdb67d2b080f69982654132?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/9bace74a88553982c22372c0a3eb1c97547c9332cbdb67d2b080f69982654132?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">gonzalo</b> </cite><a href="/summon-core/#comment-64947"><time datetime="2022-03-18T18:33:12-05:00">March 18, 2022 at 6:33 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>can you update a fix to yanfly sv animated enemy?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64947#respond" data-commentid="64947" data-postid="1048" data-belowelement="comment-64947" data-respondelement="respond" data-replyto="Reply to gonzalo" aria-label="Reply to gonzalo">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64996">
+								<article id="comment-64996" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/f4bbbeeec69ce4e05bb75d73182814fa0bcfc8b25aebb6fdb311918adee8aad7?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/f4bbbeeec69ce4e05bb75d73182814fa0bcfc8b25aebb6fdb311918adee8aad7?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Smatfox</b> </cite><a href="/summon-core/#comment-64996"><time datetime="2022-04-21T04:52:16-05:00">April 21, 2022 at 4:52 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>How can I replace the group with the summoned battler</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=64996#respond" data-commentid="64996" data-postid="1048" data-belowelement="comment-64996" data-respondelement="respond" data-replyto="Reply to Smatfox" aria-label="Reply to Smatfox">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65100">
+								<article id="comment-65100" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/1e424b991beaf22cab885120aee2c1abe2a2dd70da426900a03f448f889fffc1?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/1e424b991beaf22cab885120aee2c1abe2a2dd70da426900a03f448f889fffc1?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn"><a href="/summon-core/" class="url" rel="ugc">Ray</a></b> </cite><a href="/summon-core/#comment-65100"><time datetime="2022-07-29T19:55:51-05:00">July 29, 2022 at 7:55 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>How to make the summoning actor disappear after he dies ?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65100#respond" data-commentid="65100" data-postid="1048" data-belowelement="comment-65100" data-respondelement="respond" data-replyto="Reply to Ray" aria-label="Reply to Ray">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65229">
+								<article id="comment-65229" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/c98010c31ddde6423781825bbfc1c815858f40afe91d14e3e4ad50d1d8f6fd87?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/c98010c31ddde6423781825bbfc1c815858f40afe91d14e3e4ad50d1d8f6fd87?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Petah</b> </cite><a href="/summon-core/#comment-65229"><time datetime="2023-04-11T23:31:39-05:00">April 11, 2023 at 11:31 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Does this work for items as well as skills?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65229#respond" data-commentid="65229" data-postid="1048" data-belowelement="comment-65229" data-respondelement="respond" data-replyto="Reply to Petah" aria-label="Reply to Petah">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65272">
+								<article id="comment-65272" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/0169362e1dcf61d7cc64d172ef017544f3aeabe4a72228f8e125bdb4d3f5af50?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0169362e1dcf61d7cc64d172ef017544f3aeabe4a72228f8e125bdb4d3f5af50?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Jedink Games</b> </cite><a href="/summon-core/#comment-65272"><time datetime="2023-07-29T05:13:21-05:00">July 29, 2023 at 5:13 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>when i summon actor, the animation does not show when i summon an actor</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65272#respond" data-commentid="65272" data-postid="1048" data-belowelement="comment-65272" data-respondelement="respond" data-replyto="Reply to Jedink Games" aria-label="Reply to Jedink Games">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65278">
+								<article id="comment-65278" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/0169362e1dcf61d7cc64d172ef017544f3aeabe4a72228f8e125bdb4d3f5af50?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0169362e1dcf61d7cc64d172ef017544f3aeabe4a72228f8e125bdb4d3f5af50?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">jedite1000</b> </cite><a href="/summon-core/#comment-65278"><time datetime="2023-08-02T19:11:36-05:00">August 2, 2023 at 7:11 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I get an error if my summoned monster is out after the battle ends, it says Error: object too deep<br>
+											it probably cant be seen during the victory screen or something since its not a real actor and only a temporary one</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65278#respond" data-commentid="65278" data-postid="1048" data-belowelement="comment-65278" data-respondelement="respond" data-replyto="Reply to jedite1000" aria-label="Reply to jedite1000">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65485">
+								<article id="comment-65485" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/cfa2c750dce380f11fdccceab5a241b6519fefe0b01c264315ad013844b9df2b?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/cfa2c750dce380f11fdccceab5a241b6519fefe0b01c264315ad013844b9df2b?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">anananks</b> </cite><a href="/summon-core/#comment-65485"><time datetime="2024-04-15T01:11:02-05:00">April 15, 2024 at 1:11 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Hello i have a question is it possible for each skill to have different max number of summon per actor for example. i mean the restrict per skill and restrict per position variable. could it be possible to have them different for each skill. this is because i would want multiple categories of summon.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65485#respond" data-commentid="65485" data-postid="1048" data-belowelement="comment-65485" data-respondelement="respond" data-replyto="Reply to anananks" aria-label="Reply to anananks">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65496">
+								<article id="comment-65496" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/0cf3a8983726751e1534c8a7c8b0881850ff828df02db17bea51f153def7174c?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/0cf3a8983726751e1534c8a7c8b0881850ff828df02db17bea51f153def7174c?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">voodoorocket</b> </cite><a href="/summon-core/#comment-65496"><time datetime="2024-05-15T19:58:00-05:00">May 15, 2024 at 7:58 PM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>Uncaught TypeError: Cannot read property &lsquo;length&rsquo; of undefined</p>
+										<p>I get this error, this is the only active plugin, how do I fix this?</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65496#respond" data-commentid="65496" data-postid="1048" data-belowelement="comment-65496" data-respondelement="respond" data-replyto="Reply to voodoorocket" aria-label="Reply to voodoorocket">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment even thread-even depth-1" id="li-comment-65595">
+								<article id="comment-65595" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/809a57e16d8c96f4305dd50bd105aba3aedb69d9aa72d4c2edc90dca9f33b5eb?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/809a57e16d8c96f4305dd50bd105aba3aedb69d9aa72d4c2edc90dca9f33b5eb?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Midna</b> </cite><a href="/summon-core/#comment-65595"><time datetime="2025-03-19T11:58:06-05:00">March 19, 2025 at 11:58 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>I have &ldquo;Type Error : cannot read property &ldquo;map&rdquo; of undefined&rdquo; when the summoner attacks and an invocation is present&hellip;</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65595#respond" data-commentid="65595" data-postid="1048" data-belowelement="comment-65595" data-respondelement="respond" data-replyto="Reply to Midna" aria-label="Reply to Midna">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+							<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-65652">
+								<article id="comment-65652" class="comment">
+									<header class="comment-meta comment-author vcard">
+										<img alt="" src="https://secure.gravatar.com/avatar/42fb33a8440fd6694fb95899c3291da871bd092e06e24328dd655a1e0de8014f?s=44&amp;d=blank&amp;r=g" srcset="https://secure.gravatar.com/avatar/42fb33a8440fd6694fb95899c3291da871bd092e06e24328dd655a1e0de8014f?s=88&amp;d=blank&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy" decoding="async"><cite><b class="fn">Shikaraptor</b> </cite><a href="/summon-core/#comment-65652"><time datetime="2025-08-24T09:41:46-05:00">August 24, 2025 at 9:41 AM</time></a>
+									</header><!-- .comment-meta -->
+									<section class="comment-content comment">
+										<p>As soon as I use the plugin with Yanfly&rsquo;s plugins, my summon works, but I no longer have the animation and the sprite for my summon does not appear.</p>
+									</section><!-- .comment-content -->
+									<div class="reply">
+										<a rel="nofollow" class="comment-reply-link" href="/summon-core/?replytocom=65652#respond" data-commentid="65652" data-postid="1048" data-belowelement="comment-65652" data-respondelement="respond" data-replyto="Reply to Shikaraptor" aria-label="Reply to Shikaraptor">Reply</a> <span>&darr;</span>
+									</div><!-- .reply -->
+								</article><!-- #comment-## -->
+							</li><!-- #comment-## -->
+						</ol><!-- .commentlist -->
+						<div class="wrapper-form-comments">
+							<div id="respond" class="comment-respond">
+								<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/summon-core/#respond" style="display:none;">Cancel reply</a></small></h3>
+								<form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
+									<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea autocomplete="new-password" id="fb8a015351" name="fb8a015351" cols="45" rows="8" maxlength="65525" required="required"></textarea><textarea id="comment" aria-label="hp-comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea>
+										<script data-noptimize>
+											document.getElementById("comment").setAttribute("id", "a7439b05ad240220630f610090c4d130");
+											document.getElementById("fb8a015351").setAttribute("id", "comment");
+										</script>
+									</p>
+									<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+									<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+									<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+									<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+									<!-- BEGIN: Email notification plugin by Elance360 -->
+									<p><label for="subscribe-reloaded"> If A New Comment Is Posted:<br><select name="subscribe-reloaded" id="subscribe-reloaded">
+												<option value="none" selected>Do Not Send Email Notifications.</option>
+												<option value="yes">Send Email Notification ONLY If Someone Replies To My Comment(s).</option>
+												<option value="replies">Send Email Notification Whenever A New Comment Is Posted.</option>
+											</select></label></p><!-- END: Email notification plugin by Elance360 -->
+									<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1048" id="comment_post_ID">
+										<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+									</p>
+									<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4b3a9a44de"></p>
+									<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&Delta;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="167">
+										<script>
+											document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+										</script>
+									</p>
+								</form>
+							</div><!-- #respond -->
+						</div>
+					</div><!-- #comments .comments-area -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+			<div id="secondary" class="widget-area" role="complementary">
+				<aside id="black-studio-tinymce-5" class="widget widget_black_studio_tinymce">
+					<div class="textwidget"><a href="https://www.patreon.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/PatreonButton.png" alt="" height="96"></a><a href="https://www.twitter.com/SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/TwitterButton.png" alt="" height="96"></a><a href="https://ko-fi.com/sumrndmdde"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/KoFiButton.png" alt="" height="96"></a><a href="https://www.youtube.com/@SomeRanDev"><img class="aligncenter size-full wp-image-717" src="/wp-content/uploads/2020/08/YouTubeButton.png" alt="" height="96"></a>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+						<script src="moz-extension://fe80717f-cca9-4ca2-9be0-2b77a3bbee1d/js/app.js" type="text/javascript"></script>
+					</div>
+				</aside>
+				<aside id="black-studio-tinymce-6" class="widget widget_black_studio_tinymce">
+					<h3 class="widget-title"><span class="widget-title-tab">Other Links</span></h3>
+					<div class="textwidget">
+						<p><a href="https://atelierrgss.wordpress.com/"><img class="size-full aligncenter" src="https://atelierrgss.files.wordpress.com/2013/03/atelier-rgss2.gif?w=660" width="200" height="40"></a></p>
+						<p><a href="http://hudell.com/blog/"><img class="size-full wp-image-704 aligncenter" src="/wp-content/uploads/2016/12/Hudell.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://triacontane.blogspot.jp/"><img class="size-full wp-image-705 aligncenter" src="/wp-content/uploads/2016/12/Triacontane.png" alt="" width="200" height="40"></a></p>
+						<p><a href="https://galvs-scripts.com/"><img class="size-full wp-image-706 aligncenter" src="/wp-content/uploads/2016/12/Galv.png" alt="" width="200" height="40"></a></p>
+						<p><a href="http://himeworks.com/"><img class="size-full aligncenter" src="http://himeworks.com/images/rpgmaker/banner200x40.png" width="200" height="40"></a></p>
+						<p><a href="http://yanfly.moe/"><img class="size-full aligncenter" src="/wp-content/uploads/2016/12/yanflymoe.png" width="200" height="55"></a></p>
+						<p><a href="https://fungamemake.com/srd-japanese"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/banner_fungamemake.png" width="200" height="55"></a></p>
+						<p><a href="/"><img class="size-full aligncenter" src="/wp-content/uploads/2020/08/SRDBanner.png" width="200" height="55"></a></p>
+					</div>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<div class="credits credits-left">
+					&copy; Maybee Rezbit 2025 </div>
+				<div class="credits credits-center">
+				</div>
+				<div class="credits credits-right">
+					<a href="https://galussothemes.com/wordpress-themes/ribosome">Ribosome</a> by GalussoThemes.com<br>
+					Powered by<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform"> WordPress</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<div class="ir-arriba"><i class="fa fa-arrow-up"></i></div>
+	<script type="speculationrules">
+		{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/ribosome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<div class="licence-agreementbase" style="display:none;"> </div>
+	<div class="licence-agreement" style="display:none;">
+		<p>Do you agree to follow SomeRanDev's<br>
+			<a href="/terms-of-use" target="_blank">Terms of Use</a> when using any of the<br>
+			plugins obtained from this site?
+		</p>
+		<div class="licence-submit-button">
+			<input id="agree" type="submit" value="Yes!"><input id="dis-agree" type="submit" value="Never!"><input id="what" type="submit" value="What?">
+		</div>
+	</div>
+	<script type='text/javascript'>
+		var colomatduration = 'fast';
+		var colomatslideEffect = 'slideFade';
+		var colomatpauseInit = '';
+		var colomattouchstart = '';
+	</script>
+	<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+	<script type="text/javascript" id="wp-i18n-js-after">
+		/* <![CDATA[ */
+		wp.i18n.setLocaleData({
+			'text direction\u0004ltr': ['ltr']
+		});
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.2" id="swv-js"></script>
+	<script type="text/javascript" id="contact-form-7-js-before">
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.2" id="contact-form-7-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.23" id="collapseomatic-js-js"></script>
+	<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.8.3" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/navigation.js?ver=20140711" id="ribosome-navigation-js"></script>
+	<script type="text/javascript" src="/wp-content/themes/ribosome/js/ribosome-scripts-functions.js?ver=2.5.0" id="ribosome-scripts-functions-js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7" id="page-links-to-js"></script>
+	<script defer type="text/javascript" src="/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1752612151" id="akismet-frontend-js"></script>
+</body>
+
+</html>
